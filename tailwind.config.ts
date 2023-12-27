@@ -9,10 +9,29 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'blue-green-500': 'linear-gradient(45deg, #82DBF7 0%, #B6F09C 100%)',
+        'green-blue-500': 'linear-gradient(225deg, #82DBF7 0%, #B6F09C 100%)',
+        'blue-green-600': 'linear-gradient(45deg, #4D62E5 0%, #87DDEE 45.31%, #B6F09C 100%)',
+        'green-blue-600': 'linear-gradient(225deg, #4D62E5 0%, #87DDEE 45.31%, #B6F09C 100%)',
+        'blue-green-700': 'linear-gradient(45deg, #3045C9 0%, #65BEDA 45.31%, #9AD37F 100%)',
+        'green-blue-700': 'linear-gradient(225deg, #3045C9 0%, #65BEDA 45.31%, #9AD37F 100%)',
+        'glass-fill': 'linear-gradient(118deg, rgba(215, 237, 237, 0.16) -47.79%, rgba(204, 235, 235, 0.00) 100%)'
       },
+      colors: {
+        // bg
+        'dark': '#131619',
+        'dark-800': '#0D0F10',
+        'theme': {
+          'primary': '#B6F09C'
+        },
+        'light-dark': '#1A1D21',
+        
+        // text
+        'gray': '#9B9C9E',
+        'gray-200': '#E8E9E9',
+        'gray-light': '#686B6E',
+        'blue': '#82DBF7'
+      }
     },
   },
   plugins: [],
