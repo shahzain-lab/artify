@@ -8,7 +8,6 @@ interface Props {
 
 const Input = ({className, placeholder=''}: Props) => {
     return (
-        <div>
             <input
                 type="text"
                 id="first_name"
@@ -21,7 +20,6 @@ const Input = ({className, placeholder=''}: Props) => {
                     )}
                 required
             />
-        </div>
     )
 }
 

@@ -29,6 +29,7 @@ const config: Config = {
         // text
         'gray': '#9B9C9E',
         'gray-200': '#E8E9E9',
+        'gray-300': '#363A3D',
         'gray-light': '#686B6E',
         'blue': '#82DBF7'
       }
