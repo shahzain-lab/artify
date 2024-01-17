@@ -19,13 +19,15 @@ const sizes = {
     xl: 'text-4xl leading-[44px]',
     lg: 'text-[32px] leading-10',
     md: 'text-[28px] leading-9',
-    sm: 'text-2xl leading-8',
-    xs: 'text-xl leading-8',
+    ms: 'text-base leading-9',
+    sm: 'text-sm leading-8',
+    xs: 'text-[12px] leading-8',
+    '2xs': 'text-[10px] leading-8',
     default: 'text-base leading-8'
 }
 interface Props {
     children: React.ReactNode
-    size?: 'xl' | 'lg' | 'md' | 'sm' | 'xs' | 'default'
+    size?: 'xl' | 'lg' | 'md' | 'ms' | 'sm' | 'xs' | 'default'
     variant?: 'regular' | 'medium' | 'semibold' | 'bold'
     theme?: 'default' | 'blueGreen500' | 'blueGreen600' | 'blueGreen700'
     className?: string

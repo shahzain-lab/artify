@@ -32,6 +32,10 @@ const config: Config = {
         'gray-300': '#363A3D',
         'gray-light': '#686B6E',
         'blue': '#82DBF7'
+      },
+      boxShadow: {
+        '1': '0px 0px 64px 0px rgba(182, 240, 156, 0.16)',
+        xl: '0px 8px 10px -6px rgba(6, 7, 8, 0.06), 0px 25px 50px -12px rgba(6, 7, 8, 0.16)'
       }
     },
   },

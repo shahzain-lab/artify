@@ -5,7 +5,7 @@ import Navigation from './navigation'
 
 const Headers = () => {
   return (
-    <div className='w-full flex flex-col justify-between bg-dark-800 rounded-[12px] h-[190px]'>
+    <div className='w-[79%] flex flex-col justify-between bg-dark-800 rounded-[12px] h-[190px]'>
         <Workspace />
         <Divider />
         <Navigation />

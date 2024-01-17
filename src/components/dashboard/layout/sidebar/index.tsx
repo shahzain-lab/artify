@@ -7,7 +7,7 @@ import Settings from './settings'
 
 const Sidebar = () => {
   return (
-    <div className='w-[25%] h-full flex flex-col justify-between px-3 py-2 bg-dark-800 rounded-[12px]'>
+    <div className='w-[20%] fixed h-[96%] flex flex-col justify-between px-3 py-2 bg-dark-800 rounded-[12px]'>
         <div>
             <Profile />
             <Divider />
