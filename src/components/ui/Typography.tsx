@@ -20,7 +20,7 @@ const sizes = {
     lg: 'text-[32px] leading-10',
     md: 'text-[28px] leading-9',
     ms: 'text-base leading-9',
-    sm: 'text-sm leading-8',
+    sm: 'text-sm leading-6',
     xs: 'text-[12px] leading-8',
     '2xs': 'text-[10px] leading-8',
     default: 'text-base leading-8'

@@ -25,17 +25,22 @@ const config: Config = {
           'primary': '#B6F09C'
         },
         'light-dark': '#1A1D21',
+        'bg-layer': 'rgba(6, 7, 8, 0.64)',
+        'glass-modal': 'rgba(26, 29, 33, 0.96)',
+        'glass-stroke': 'rgba(255, 255, 255, 0.08)',
         
         // text
         'gray': '#9B9C9E',
         'gray-200': '#E8E9E9',
         'gray-300': '#363A3D',
         'gray-light': '#686B6E',
-        'blue': '#82DBF7'
+        'blue-md': '#82DBF7',
+        'purple-md': '#A6B0F2'
       },
       boxShadow: {
         '1': '0px 0px 64px 0px rgba(182, 240, 156, 0.16)',
-        xl: '0px 8px 10px -6px rgba(6, 7, 8, 0.06), 0px 25px 50px -12px rgba(6, 7, 8, 0.16)'
+        xl: '0px 8px 10px -6px rgba(6, 7, 8, 0.06), 0px 25px 50px -12px rgba(6, 7, 8, 0.16)',
+        'xl-inset': '0px 8px 12px 0px rgba(255, 255, 255, 0.04) inset, 0px 24px 64px -16px rgba(0, 0, 0, 0.24), 16px 24px 64px -24px rgba(255, 255, 255, 0.04) inset'
       }
     },
   },

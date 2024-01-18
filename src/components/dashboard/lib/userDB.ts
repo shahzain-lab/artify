@@ -1,7 +1,7 @@
 import _robot from '@/assets/avatars/robot.png'
 import user1 from '@/assets/avatars/Avatar-6.png'
 import user2 from '@/assets/avatars/Avatar-6.png'
-import { IUser } from '../main/IUser.interface'
+import { IUser, ROLE } from '../main/IUser.interface'
 
 export const users: IUser[] = [
     {
@@ -9,12 +9,14 @@ export const users: IUser[] = [
         fullName: 'Ryan Lee',
         username: '@ryan',
         status: 'ON',
+        role: ROLE.OWNER
     },
     {
         profilePic: user2,
         fullName: 'Mia Park',
         username: '@cute-mia',
         status: 'OFF',
+        role: ROLE.EDITOR
     },
 ]
 

@@ -10,6 +10,8 @@ import user3 from '@/assets/avatars/Avatar-3.png'
 import user4 from '@/assets/avatars/Avatar-4.png'
 import share from '@/assets/icons/share.svg'
 import edit from '@/assets/icons/edit.svg'
+import ModalLayer from '@/components/ui/ModalLayer'
+import ShareSpace from './ShareSpace'
 
 const Workspace = () => {
     const avatars = [
@@ -60,6 +62,9 @@ const Workspace = () => {
                     />
                     Share
                 </Button>
+                <ModalLayer>
+                    <ShareSpace />
+                </ModalLayer>
                 <Button variant={'gray'}>
                     <Image
                         src={edit}

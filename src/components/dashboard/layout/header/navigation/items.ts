@@ -7,7 +7,6 @@ import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 export interface IMenu {
     title: string
     path?: string
-    active: boolean
     icon?: string | StaticImport 
     tag?: string
   }
@@ -15,22 +14,18 @@ export interface IMenu {
 export const IMenuItems: IMenu[] = [
     {
         title: 'Get Started',
-        icon: getStarted,
-        active: false
+        icon: getStarted
     },
     {
         title: 'Artificium',
-        icon: artificium,
-        active: true
+        icon: artificium
     },
     {
         title: 'Chat',
-        icon: commentCircle,
-        active: false,
+        icon: commentCircle
     },
     {
         title: 'Library',
-        icon: folder,
-        active: false,
+        icon: folder
     },
 ]
