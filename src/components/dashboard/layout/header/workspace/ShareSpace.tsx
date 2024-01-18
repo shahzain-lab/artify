@@ -1,8 +1,12 @@
 import { users } from '@/components/dashboard/lib/userDB'
+import { Button } from '@/components/ui/Button'
+import Input from '@/components/ui/Input'
 import Typography from '@/components/ui/Typography'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import React from 'react'
+import InviteeList from './InviteeList'
+import InviteForm from './InviteForm'
 
 const ShareSpace = () => {
     return (
@@ -16,9 +20,13 @@ const ShareSpace = () => {
                 variant='medium'
                 className='text-gray'
             >Select which users can access and view this project. Only users with access can view and edit the project.</Typography>
-            <div className='my-10 flex flex-col gap-4'>
-                {users.map((user) => (
-                    <div className='flex items-center justify-between'>
+            <InviteForm />
+            <div className={cn(
+                'flex flex-col gap-4 mb-10 mt-5',
+                //   users.length > 5 ? 'max-h-64 overflow-y-scroll' : ''
+            )}>
+                {users.slice(0, 4).map((user) => (
+                    <div key={user.username} className='flex items-center justify-between'>
                         <div className='flex items-start gap-2'>
                             <Image
                                 src={user.profilePic}
@@ -28,12 +36,12 @@ const ShareSpace = () => {
                             />
                             <div className='flex flex-col -mt-1'>
                                 <Typography className='' size='ms' variant='semibold'>{user.fullName}</Typography>
-                                <Typography className='text-[12px] text-theme-primary' variant='medium'>{user.username}</Typography>
+                                <Typography className='text-[12px] -mt-1 text-theme-primary' variant='medium'>{user.username}</Typography>
                             </div>
                         </div>
                         <button className={cn(
                             'bg-glass-fill border-t border-glass-stroke rounded-xl shadow-xl-inset px-3 py-2 text-[12px]',
-                            user.role === 0 ? 'text-theme-primary' : user.role === 1 ? 'text-blue-md' : 'text-purple-md' 
+                            user.role === 0 ? 'text-theme-primary' : user.role === 1 ? 'text-blue-md' : 'text-purple-md'
                         )}>
                             {user.role === 0 ? 'Owner' : user.role === 1 ? 'Editor' : 'Viewer'}
                         </button>
