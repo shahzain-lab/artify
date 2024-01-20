@@ -8,10 +8,8 @@ import user1 from '@/assets/avatars/Avatar-1.png'
 import user2 from '@/assets/avatars/Avatar-2.png'
 import user3 from '@/assets/avatars/Avatar-3.png'
 import user4 from '@/assets/avatars/Avatar-4.png'
-import share from '@/assets/icons/share.svg'
 import edit from '@/assets/icons/edit.svg'
-import ModalLayer from '@/components/ui/ModalLayer'
-import ShareSpace from './ShareSpace'
+import Share from './Share'
 
 const Workspace = () => {
     const avatars = [
@@ -36,7 +34,7 @@ const Workspace = () => {
                                 width={40}
                                 height={40}
                             />
-                            {user.active?(
+                            {user.active ? (
                                 <span className='absolute -top-1 left-3 z-20'>
                                     <Image
                                         src={status}
@@ -45,26 +43,14 @@ const Workspace = () => {
                                         height={20}
                                     />
                                 </span>
-                            ):null}
+                            ) : null}
                         </div>
                     ))}
                     <div className='text-gray bg-dark w-9 h-9 -ml-2 rounded-[20px] flex justify-center items-center'>
                         +4
                     </div>
                 </div>
-                <Button
-                    className='bg-transparent text-sm font-semibold text-gray-light flex gap-1'>
-                    <Image
-                        src={share}
-                        alt='share'
-                        width={20}
-                        height={20}
-                    />
-                    Share
-                </Button>
-                <ModalLayer>
-                    <ShareSpace />
-                </ModalLayer>
+               <Share />
                 <Button variant={'gray'}>
                     <Image
                         src={edit}

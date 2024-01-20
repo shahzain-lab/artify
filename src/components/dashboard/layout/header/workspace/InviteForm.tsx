@@ -20,7 +20,7 @@ const InviteForm = () => {
             <div className='relative border border-gray-300 p-2 rounded-lg w-full flex items-center'>
                 <div className='flex items-center gap-2'>
                     {selectedUsers.map((user: IUser) => (
-                        <div key={user.username} className='bg-glass-fill p-1 min-w-[160px] border h-[32px] rounded-xl border-glass-stroke flex items-center gap-2'>
+                        <div key={user.username} className='bg-glass-fill p-1 border h-[32px] rounded-xl border-glass-stroke flex items-center gap-2'>
                             <Image
                                 src={users[0].profilePic}
                                 alt=''
@@ -36,8 +36,9 @@ const InviteForm = () => {
                 </div>
                 <input
                     value={text}
+                    placeholder='Name'
                     onChange={(e) => setText(e.target.value)}
-                    className='bg-inherit text-white outline-none pl-2 border-none w-full'
+                    className='bg-inherit text-white outline-none pl-2 border-none'
                 />
                 {text?.length ? (
                     <InviteeList

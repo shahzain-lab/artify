@@ -11,6 +11,7 @@ const variants = {
 }
 const themes = {
   'default': 'text-inherit',
+  'gray': 'text-gray',
   "blueGreen500": 'bg-clip-text bg-blue-green-500 text-transparent',
   "blueGreen600": 'bg-clip-text bg-blue-green-600 text-transparent',
   "blueGreen700": 'bg-clip-text bg-blue-green-700 text-transparent'
@@ -29,7 +30,7 @@ interface Props {
     children: React.ReactNode
     size?: 'xl' | 'lg' | 'md' | 'ms' | 'sm' | 'xs' | 'default'
     variant?: 'regular' | 'medium' | 'semibold' | 'bold'
-    theme?: 'default' | 'blueGreen500' | 'blueGreen600' | 'blueGreen700'
+    theme?: 'default' | 'gray' | 'blueGreen500' | 'blueGreen600' | 'blueGreen700'
     className?: string
 }
 const Typography = ({children, size='default', variant='regular', className, theme='default'}: Props) => {

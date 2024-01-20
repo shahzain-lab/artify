@@ -13,42 +13,48 @@ export const users: IUser[] = [
         fullName: 'Ryan Lee',
         username: '@ryan',
         status: 'ON',
-        role: ROLE.OWNER
+        role: ROLE.OWNER,
+        activity: 'Exploring Library'
     },
     {
         profilePic: user2,
         fullName: 'Lily Patel',
         username: '@lilly-las',
-        status: 'OFF',
-        role: ROLE.EDITOR
+        status: 'ON',
+        role: ROLE.EDITOR,
+        activity: 'Exploring Library'
     },
     {
         profilePic: user3,
         fullName: 'Harper Singh',
         username: '@singh-hp',
         status: 'OFF',
-        role: ROLE.EDITOR
+        role: ROLE.EDITOR,
+        activity: 'Away for 20 minutes'
     },
     {
         profilePic: user4,
         fullName: 'David Singh',
         username: '@dv-singh',
         status: 'OFF',
-        role: ROLE.EDITOR
+        role: ROLE.EDITOR,
+        activity: 'Do not disturb'
     },
     {
         profilePic: user5,
         fullName: 'Mia Park',
         username: '@cute-mia',
         status: 'OFF',
-        role: ROLE.EDITOR
+        role: ROLE.EDITOR,
+        activity: 'Last visit: 14 hr ago'
     },
     {
         profilePic: user6,
         fullName: 'Ryan Lee',
         username: '@ryan',
         status: 'OFF',
-        role: ROLE.EDITOR
+        role: ROLE.EDITOR,
+        activity: 'Last visit: 17 hr ago'
     },
 ]
 

@@ -11,5 +11,6 @@ export interface IUser {
     fullName: string,
     username: string,
     status: 'ON' | 'OFF',
-    role: ROLE
+    role: ROLE,
+    activity: string
 }

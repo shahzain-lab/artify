@@ -15,7 +15,8 @@ const config: Config = {
         'green-blue-600': 'linear-gradient(225deg, #4D62E5 0%, #87DDEE 45.31%, #B6F09C 100%)',
         'blue-green-700': 'linear-gradient(45deg, #3045C9 0%, #65BEDA 45.31%, #9AD37F 100%)',
         'green-blue-700': 'linear-gradient(225deg, #3045C9 0%, #65BEDA 45.31%, #9AD37F 100%)',
-        'glass-fill': 'linear-gradient(118deg, rgba(215, 237, 237, 0.16) -47.79%, rgba(204, 235, 235, 0.00) 100%)'
+        'glass-fill': 'linear-gradient(118deg, rgba(215, 237, 237, 0.16) -47.79%, rgba(204, 235, 235, 0.00) 100%)',
+        'glass-fill-light': 'linear-gradient(180deg, rgba(19, 22, 25, 0.00) 0%, #131619 100%)'
       },
       colors: {
         // bg
@@ -41,6 +42,9 @@ const config: Config = {
         '1': '0px 0px 64px 0px rgba(182, 240, 156, 0.16)',
         xl: '0px 8px 10px -6px rgba(6, 7, 8, 0.06), 0px 25px 50px -12px rgba(6, 7, 8, 0.16)',
         'xl-inset': '0px 8px 12px 0px rgba(255, 255, 255, 0.04) inset, 0px 24px 64px -16px rgba(0, 0, 0, 0.24), 16px 24px 64px -24px rgba(255, 255, 255, 0.04) inset'
+      },
+      zIndex: {
+        '9999': '9999'
       }
     },
   },
