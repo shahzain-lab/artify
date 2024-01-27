@@ -6,19 +6,19 @@ import React from 'react'
 
 const Participant = () => {
     return (
-        <div className='w-1/3'>
+        <div>
             <Typography theme='gray' variant='semibold' size='xs'>Currently Online</Typography>
             <div className='flex flex-col gap-2'>
                 {users.slice(0, 2).map((user) => (
                     <div
                         key={user.username}
-                        className='flex items-start gap-2 py-2 px-3 rounded-2xl hover:shadow-xl-inset hover:bg-glass-fill border border-dark-800 hover:border-glass-stroke'>
+                        className='flex items-start gap-2 py-2 px-3 rounded-2xl hover:shadow-xl-inset hover:bg-glass-fill border border-transparent hover:border-glass-stroke'>
                         <div className=' z-10 relative'>
                             <Image
                                 src={user.profilePic}
                                 alt=''
-                                width={40}
-                                height={40}
+                                width={48}
+                                height={48}
                             />
                             {user.status === 'ON' ? (
                                 <span className='absolute -top-1 right-0 z-20'>
@@ -43,13 +43,13 @@ const Participant = () => {
                 {users.slice(2, -1).map((user) => (
                     <div
                         key={user.username}
-                        className='flex items-start gap-2 py-2 px-3 rounded-2xl hover:shadow-xl-inset hover:bg-glass-fill border border-dark-800 hover:border-glass-stroke'>
+                        className='flex items-start gap-2 py-2 px-3 rounded-2xl hover:shadow-xl-inset hover:bg-glass-fill border border-transparent hover:border-glass-stroke'>
                         <div className=' z-10 relative'>
                             <Image
                                 src={user.profilePic}
                                 alt=''
-                                width={40}
-                                height={40}
+                                width={48}
+                                height={48}
                             />
                             {user.status === 'ON' ? (
                                 <span className='absolute -top-1 left-3 z-20'>

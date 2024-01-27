@@ -10,14 +10,10 @@ import user3 from '@/assets/avatars/Avatar-3.png'
 import user4 from '@/assets/avatars/Avatar-4.png'
 import edit from '@/assets/icons/edit.svg'
 import Share from './Share'
+import UsersList from '../../UsersList'
+import { users } from '@/components/dashboard/lib/userDB'
 
 const Workspace = () => {
-    const avatars = [
-        { avatar: user1, active: true },
-        { avatar: user2, active: false },
-        { avatar: user3, active: true },
-        { avatar: user4, active: false },
-    ]
     return (
         <div className='flex justify-between items-center p-6'>
             <div className='flex flex-col gap-2'>
@@ -25,31 +21,7 @@ const Workspace = () => {
                 <Typography variant='medium' className='text-gray text-sm'>Marketing Campaign for a new TV series Launch</Typography>
             </div>
             <div className='flex items-center gap-2'>
-                <div className='flex items-center'>
-                    {avatars.map((user, i: number) => (
-                        <div key={i} className='-ml-5 z-10 relative'>
-                            <Image
-                                src={user.avatar}
-                                alt=''
-                                width={40}
-                                height={40}
-                            />
-                            {user.active ? (
-                                <span className='absolute -top-1 left-3 z-20'>
-                                    <Image
-                                        src={status}
-                                        alt='status'
-                                        width={20}
-                                        height={20}
-                                    />
-                                </span>
-                            ) : null}
-                        </div>
-                    ))}
-                    <div className='text-gray bg-dark w-9 h-9 -ml-2 rounded-[20px] flex justify-center items-center'>
-                        +4
-                    </div>
-                </div>
+               <UsersList depth={4} users={users} />
                <Share />
                 <Button variant={'gray'}>
                     <Image

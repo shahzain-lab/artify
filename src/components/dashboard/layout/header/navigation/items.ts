@@ -1,31 +1,28 @@
-import artificium from '@/assets/icons/artificium.svg'
-import commentCircle from '@/assets/icons/comment-circle.svg'
-import getStarted from '@/assets/icons/get-started.svg'
-import folder from '@/assets/icons/folder.svg'
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import { Artificium, Chat, GetStarted, Library } from '@/lib/icons'
 
 export interface IMenu {
     title: string
     path?: string
-    icon?: string | StaticImport 
+    Icon?: () => JSX.Element
     tag?: string
   }
   
-export const IMenuItems: IMenu[] = [
+export const menuItems: IMenu[] = [
     {
         title: 'Get Started',
-        icon: getStarted
+        Icon: GetStarted
     },
     {
         title: 'Artificium',
-        icon: artificium
+        Icon: Artificium
     },
     {
         title: 'Chat',
-        icon: commentCircle
+        Icon: Chat
     },
     {
         title: 'Library',
-        icon: folder
+        Icon: Library
     },
 ]

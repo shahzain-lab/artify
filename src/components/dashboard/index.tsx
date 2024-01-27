@@ -12,7 +12,6 @@ const Dashboard = () => {
                 <Headers />
                 <Main />
             </div>
-            <Prompt />
         </main>
     )
 }

@@ -36,6 +36,7 @@ const config: Config = {
         'gray-300': '#363A3D',
         'gray-light': '#686B6E',
         'blue-md': '#82DBF7',
+        'silver': '#CDCECF',
         'purple-md': '#A6B0F2'
       },
       boxShadow: {

@@ -1,18 +1,22 @@
+'use client'
 import React from 'react'
-import { IMenuItems } from './items'
-import PanalRoute from './PanalRoute'
+import { menuItems } from './items'
+import RoutePanel from '../../RoutePanel'
+import { setPanalRoute } from '@/store/slices/navigationSlice'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootState } from '@/store'
 
 const Navigation = () => {
-
+  const dispatch = useDispatch()
+  const handleChange = (i: number) => {
+    dispatch(setPanalRoute(i))
+  }
   return (
-    <div className='px-6 flex items-center gap-6'>
-      {IMenuItems.map((item, i) => (
-        <PanalRoute 
-          key={i}
-          route={item}  
-          index={i} />
-      ))}
-    </div>
+    <RoutePanel
+      className='px-6'
+      menuItems={menuItems}
+      setChange={handleChange}
+    />
   )
 }
 

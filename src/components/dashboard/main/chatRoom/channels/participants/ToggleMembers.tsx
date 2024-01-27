@@ -1,0 +1,40 @@
+import React, { useState } from 'react'
+import chatPrimary from '@/assets/icons/chat-primary.svg'
+import groupGray from '@/assets/icons/group-gray.svg'
+import Image from 'next/image'
+
+interface Props {
+  toggleBar: number
+  setToggleBar: React.Dispatch<React.SetStateAction<number>>
+}
+
+const ToggleMembers = ({toggleBar, setToggleBar}: Props) => {
+  return (
+    <div className='fixed bottom-5 z-10 bg-dark flex items-center border-[2px] rounded-xl border-light-dark '>
+      <div 
+       onClick={() => setToggleBar(0)}
+       className={`cursor-pointer px-6 py-4 flex items-center gap-2  ${toggleBar === 0 ? 'bg-light-dark rounded-xl text-white ' : 'text-gray'}`}>
+        <Image
+          src={chatPrimary}
+          alt='chatPrimary'
+          width={24}
+          height={24}
+        />
+        <span>Chats</span>
+      </div>
+      <div
+       onClick={() => setToggleBar(1)} 
+       className={`cursor-pointer px-6 py-4 flex items-center gap-2 ${toggleBar === 1 ? 'bg-light-dark rounded-xl text-white' : 'text-gray'} `}>
+        <Image
+          src={groupGray}
+          alt='groupGray'
+          width={24}
+          height={24}
+        />
+        <span>Members</span>
+      </div>
+    </div>
+  )
+}
+
+export default ToggleMembers
