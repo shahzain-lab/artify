@@ -22,7 +22,7 @@ const Login = () => {
 
           <div className='px-20'>
               <div className='flex flex-col gap-4'>
-                <Typography size='xl' variant='regular'>Let's get {" "}
+                <Typography size='xl' variant='regular'>Let&apos;s get {" "}
                   <span className='bg-clip-text bg-blue-green-500 text-transparent font-bold'>creative!</span>
                 </Typography>
                 <Typography size='xs' variant='medium' className='text-gray'>Log in to Artificium to start creating magic.</Typography>
