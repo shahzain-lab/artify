@@ -10,7 +10,7 @@ const Features = () => {
     return (
         <div className='flex items-start gap-10'>
             {features.map((feat: IFeature) => (
-                <div className='flex flex-col items-center gap-2 mt-5'>
+                <div key={feat.src} className='flex flex-col items-center gap-2 mt-5'>
                     <span className='bg-glass-fill py-[13px] px-1 rounded-[100%]'>
                         <Image
                             src={feat.src}

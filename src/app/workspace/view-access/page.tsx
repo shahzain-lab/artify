@@ -46,7 +46,7 @@ const page = () => {
                         ))}
                     </div>
                     <Typography size='lg' variant='medium'>Sophia, Kamil, Emily and 2,012 others are already here!</Typography>
-                    <Typography className='text-gray text-lg' variant='medium'>But... it looks like you don't have access to this workspace.</Typography>
+                    <Typography className='text-gray text-lg' variant='medium'>But... it looks like you don&apos;t have access to this workspace.</Typography>
                     <Button>Request access </Button>
                     <Typography variant='medium' className='text-gray-light text-[12px]'>or</Typography>
                     <Button variant={'gray'}>Back</Button>

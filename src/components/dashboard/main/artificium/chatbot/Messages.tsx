@@ -8,7 +8,7 @@ const Messages = () => {
   return (
     <div className='p-1 flex flex-col gap-3 relative'>
         {chats.map((chat: IMessage) => (
-            <Message message={chat} />
+            <Message key={chat.id} message={chat} />
         ))}
     </div>
   )

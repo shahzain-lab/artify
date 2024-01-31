@@ -12,7 +12,7 @@ const MessagePhotos = ({photos}: Props) => {
   return (
     <div className='py-4 flex items-start gap-4'>
         {photos.map((photo) => (
-            <div>
+            <div key={photo.id}>
                 <Image 
                    src={photo.src}
                    alt='photos'

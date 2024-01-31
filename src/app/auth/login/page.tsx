@@ -50,7 +50,7 @@ const Login = () => {
             </div>
 
             <div>
-              <Typography className='text-gray-light text-base'>Don’t have an account? <span className='bg-clip-text bg-blue-green-500 text-transparent text-bold'>Sign Up</span></Typography>
+              <Typography className='text-gray-light text-base'>Don&apos;t have an account? <span className='bg-clip-text bg-blue-green-500 text-transparent text-bold'>Sign Up</span></Typography>
             </div>
           </div>
         

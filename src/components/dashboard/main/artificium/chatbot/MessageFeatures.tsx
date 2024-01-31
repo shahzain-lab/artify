@@ -11,7 +11,7 @@ const MessageFeatures = ({features}: Props) => {
   return (
     <div className='flex items-center gap-3'>
         {features.map((feat) => (
-            <div className='flex flex-col items-center p-6 gap-2 mt-5 bg-glass-fill rounded-[12px]'>
+            <div key={feat.src} className='flex flex-col items-center p-6 gap-2 mt-5 bg-glass-fill rounded-[12px]'>
              <span className='bg-glass-fill py-[13px] px-1 rounded-[100%]'>
                  <Image
                      src={feat.src}
