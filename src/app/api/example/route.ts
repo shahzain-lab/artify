@@ -1,4 +1,5 @@
+import { NextResponse } from "next/server";
 
 export async function GET() {
-    Response.json("Hello World!")
+    return NextResponse.json({ data: "Hello World!" }, { status: 200 });
 }
