@@ -10,7 +10,7 @@ interface Props {
 
 const ToggleMembers = ({toggleBar, setToggleBar}: Props) => {
   return (
-    <div className='fixed bottom-5 z-10 bg-dark flex items-center border-[2px] rounded-xl border-light-dark '>
+    <div className='fixed bottom-5 z-10 bg-dark flex items-center shadow-lg border-[2px] rounded-xl border-light-dark '>
       <div 
        onClick={() => setToggleBar(0)}
        className={`cursor-pointer px-6 py-4 flex items-center gap-2  ${toggleBar === 0 ? 'bg-light-dark rounded-xl text-white ' : 'text-gray'}`}>

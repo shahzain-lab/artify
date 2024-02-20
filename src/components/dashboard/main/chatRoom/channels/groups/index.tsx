@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { IUser } from '../../../IUser.interface'
-import { CheveronDown, CheveronRight, Status, TriLine } from '@/lib/icons'
+import { CheveronDown, CheveronRight, Status, TriLine } from '@/model/icons'
 import Image from 'next/image'
 import Typography from '@/components/ui/Typography'
 
@@ -24,8 +24,8 @@ const Groups = ({ channelGroups }: Props) => {
         group: null | number,
         channel: null | number
     }>({
-        group: null,
-        channel: null
+        group: 1,
+        channel: 2
     })
 
     return (

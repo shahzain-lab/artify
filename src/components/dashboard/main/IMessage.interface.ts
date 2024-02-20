@@ -26,6 +26,6 @@ export interface IMessage {
 
 export interface IFeature {
     title: string
-    src: string
+    Icon: React.ReactNode
     tools: {title: string; link: string}[]
 }

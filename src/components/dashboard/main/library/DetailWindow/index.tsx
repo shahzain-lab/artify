@@ -3,7 +3,7 @@ import React, { Dispatch, SetStateAction, useState } from 'react'
 import { ILibraryAssets } from '../LibraryItem'
 import Typography from '@/components/ui/Typography'
 import RoutePanel from '@/components/dashboard/layout/RoutePanel'
-import { Artificium, Chat, GetStarted, Library } from '@/lib/icons'
+import { Artificium, Chat, GetStarted, Library } from '@/model/icons'
 
 interface Props {
     asset: ILibraryAssets

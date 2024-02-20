@@ -17,14 +17,16 @@ const PanalRoute = ({ route, index, active, setChange }: Props) => {
         <div
           onClick={() => setChange(index)} 
           className={cn(
-            'flex items-center justify-start h-20 gap-3',
+            'flex items-center justify-start h-14 md:h-20 gap-1 md:gap-3',
             'cursor-pointer',
             index === active ? 'border-b-[3px] border-theme-primary' : ''
         )}>
             {route.Icon ? (
-                <route.Icon />
+                <p className='w-4 h-4'>
+                    <route.Icon />
+                </p>
             ) : null}
-            <Typography variant='semibold' className='text-sm'>{route.title}</Typography>
+            <Typography variant='semibold' className='text-[11px] md:text-sm'>{route.title}</Typography>
         </div>
     )
 }

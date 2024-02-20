@@ -1,10 +1,10 @@
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
-import { Artificium, Chat, GetStarted, Library } from '@/lib/icons'
+import { Artificium, Chat, GetStarted, Library } from '@/model/icons'
 
 export interface IMenu {
     title: string
     path?: string
-    Icon?: () => JSX.Element
+    Icon?: ({}) => JSX.Element
     tag?: string
   }
   

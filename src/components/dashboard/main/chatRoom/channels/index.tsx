@@ -3,10 +3,14 @@ import Participant from './participants'
 import ToggleMembers from './participants/ToggleMembers'
 import { users } from '@/components/dashboard/lib/userDB'
 import Groups from './groups'
-import { Globe, Lock } from '@/lib/icons'
+import { Globe, Lock } from '@/model/icons'
 
-const Channels = () => {
-    const [toggleBar, setToggleBar] = useState(0)
+interface Props {
+    isOpen: boolean
+}
+
+const Channels = ({ isOpen }: Props) => {
+    const [toggleBar, setToggleBar] = useState(1)
 
     const channelGroups = [
         {
@@ -44,8 +48,10 @@ const Channels = () => {
         },
     ]
     return (
-        <div className='w-1/3 relative'>
-            <div className='sticky top-0'>
+        <div className={`  
+        ${isOpen ? 'block w-[80%] fixed h-full top-0 p-3 z-30 bg-light-dark right-0' : 'hidden'} 
+        md:block md:relative md:w-1/3`}>
+            <div className='h-screen pb-20 overflow-y-scroll md:sticky top-0'>
                 {toggleBar === 0 ?
                     <Participant /> : <Groups channelGroups={channelGroups} />
                 }

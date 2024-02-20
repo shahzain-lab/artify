@@ -8,7 +8,7 @@ interface Props {
     className?: string
 }
 
-const RoutePanel = ({menuItems, className, setChange}: Props) => {
+const RoutePanel = ({ menuItems, className, setChange }: Props) => {
     const [active, setActive] = useState(0)
 
     const handleChange = (i: number) => {
@@ -16,15 +16,15 @@ const RoutePanel = ({menuItems, className, setChange}: Props) => {
         setActive(i)
     }
     return (
-        <div className={`flex items-center gap-6 ${className}`}>
+        <div className={`flex items-center gap-5 md:gap-6 ${className}`}>
             {menuItems.map((item, i) => (
                 <PanalRoute
                     key={i}
                     route={item}
-                    index={i} 
+                    index={i}
                     active={active}
                     setChange={handleChange}
-                    />
+                />
             ))}
         </div>
     )

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { IMenuItems } from './items'
 import Typography from '@/components/ui/Typography'
 import Image from 'next/image'
@@ -7,7 +7,7 @@ const General = () => {
     return (
         <div className='py-4'>
             {IMenuItems.map((item) => (
-                <>
+                <Fragment key={item.path}>
                     {item.heading ? (
                         <Typography variant='semibold' className='text-[12px] text-gray-light'>{item.heading}</Typography>
                     ) : (
@@ -35,7 +35,7 @@ const General = () => {
                             ) : null}
                         </div>
                     )}
-                </>
+                </Fragment>
             ))}
         </div>
     )

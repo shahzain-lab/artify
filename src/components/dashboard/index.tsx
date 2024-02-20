@@ -6,7 +6,7 @@ import Main from './main'
 
 const Dashboard = () => {
     return (
-        <main className='p-3 min-h-screen flex w-full gap-3 relative'>
+        <main className='p-2 md:p-3 min-h-screen flex w-full gap-3 relative'>
             <Sidebar />
             <div className='flex flex-col w-full items-end'>
                 <Headers />

@@ -10,7 +10,7 @@ const TextMessage = ({message}: Props) => {
     
   return (
     <div>
-        <Typography variant='medium' size='ms' className='text-gray'>
+        <Typography variant='medium' className='text-gray text-[12px] md:text-auto'>
            <span dangerouslySetInnerHTML={{__html: formatTextMessage(message)}}></span> 
         </Typography>
     </div>

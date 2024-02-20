@@ -11,7 +11,7 @@ const Main = () => {
     const panalRoute = useSelector((state: RootState) => state.navigation.panalRoute)
     
     return (
-        <div className='w-[79%] pb-28 relative'>
+        <div className='w-full md:w-[79%] pb-28 relative'>
             {panalRoute === 0 ? <Starter /> : panalRoute === 1 ? <Artificium /> : panalRoute === 2 ? <ChatRoom /> : <Library />}
         </div>
     )

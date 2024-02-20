@@ -2,26 +2,63 @@ import React from 'react'
 import arrowRightGray from '@/assets/icons/arrow-right-gray.svg'
 import Image from 'next/image'
 import Typography from '@/components/ui/Typography'
-import { features } from '../../lib/AI'
 import { IFeature } from '../IMessage.interface'
+import { Code, Comment, Idea, Pencil } from '@/model/icons'
+
+const features: IFeature[] = [
+    {
+        title: 'Creative Assets',
+        Icon: <Comment />,
+        tools: [
+            { title: 'UI wireframe', link: '' },
+            { title: 'Brochure design', link: '' },
+            { title: 'Social media', link: '' },
+            { title: 'Brand guidelines', link: '' },
+        ]
+    },
+    {
+        title: 'Developer Tools',
+        Icon: <Code />,
+        tools: [
+            { title: 'API Integration', link: '' },
+            { title: 'Test automation', link: '' },
+            { title: 'DB optimization', link: '' },
+            { title: 'Code review', link: '' },
+        ]
+    },
+    {
+        title: 'Content Creation',
+        Icon: <Pencil />,
+        tools: [
+            { title: 'Product description', link: '' },
+            { title: 'E-mail copy', link: '' },
+            { title: 'Whitepaper', link: '' },
+            { title: 'Press release', link: '' },
+        ]
+    },
+    {
+        title: 'Idea Generation',
+        Icon: <Idea />,
+        tools: [
+            { title: 'Hashtag ideas', link: '' },
+            { title: 'Brainstorming', link: '' },
+            { title: 'Trend analysis', link: '' },
+            { title: 'Social media posts', link: '' },
+        ]
+    },
+]
 
 const Features = () => {
     
     return (
-        <div className='flex items-start gap-10'>
-            {features.map((feat: IFeature) => (
-                <div key={feat.src} className='flex flex-col items-center gap-2 mt-5'>
-                    <span className='bg-glass-fill py-[13px] px-1 rounded-[100%]'>
-                        <Image
-                            src={feat.src}
-                            alt={feat.title}
-                            width={45}
-                            height={45}
-                            className='-mb-5'
-                        />
-                    </span>
-                    <Typography variant='semibold' className='text-lg'>{feat.title}</Typography>
-                    <ul className='flex flex-col gap-2'>
+        <div className='md:flex md:items-start gap-10 grid grid-cols-2 pt-3 md:pt-0'>
+            {features.map((feat: IFeature, i: number) => (
+                <div key={i} className='flex flex-col items-center gap-2 mt-5'>
+                    <p className='bg-glass-fill p-2 md:p-3 rounded-[100%]'>
+                        {feat.Icon}
+                    </p>
+                    <Typography variant='semibold' className='text-sm md:text-lg'>{feat.title}</Typography>
+                    <ul className='md:flex flex-col gap-2 hidden'>
                         {feat.tools.map((asst) => (
                             <li className='bg-glass-fill shadow-sm p-4 flex justify-between items-center gap-16 rounded-[12px]' key={asst.title}>
                                 <Typography variant='semibold' size='sm'>{asst.title}</Typography>

@@ -17,7 +17,7 @@ interface Props {
 const Message = ({ message }: Props) => {
     return (
         <div className={cn(
-            'p-4 rounded-[16px] border border-light-dark',
+            'p-2 md:p-4 rounded-[16px] border border-light-dark',
             `${message.isHuman && 'hover:border-dark-800 group hover:shadow-xl hover:bg-dark-800'}`,
             )}>
             <div className='flex items-center justify-between'>
@@ -29,12 +29,13 @@ const Message = ({ message }: Props) => {
                         <Image
                             src={message.issuer.profilePic}
                             alt={message.issuer.fullName}
-                            width={message.isHuman ? 50 : 43}
-                            height={message.isHuman ? 50 : 43}
+                            width={50}
+                            height={50}
+                            className={`${message.isHuman ? 'w-[40px] md:w-[50px] h-[40px] md:h-[50px]':'w-[37px] md:w-[43px] h-[37px] md:h-[43px]'}`}
                         />
                     </div>
-                    <Typography variant='semibold' size='ms'>{message.issuer.fullName}</Typography>
-                    <Typography variant='medium' size='xs' className='text-gray-light'>{formatTimeDifference(message.timeAgo)}</Typography>
+                    <Typography variant='semibold' className='md:text-base text-sm'>{message.issuer.fullName}</Typography>
+                    <Typography variant='medium' className="text-[11px] md:text-[12px] text-gray-light">{formatTimeDifference(message.timeAgo)}</Typography>
                 </div>
                 <div>
                     <Image
@@ -45,7 +46,7 @@ const Message = ({ message }: Props) => {
                     />
                 </div>
             </div>
-            <div className='ml-[77px]'>
+            <div className='ml-[65px] md:ml-[77px]'>
                 <MessageText message={message.message.text} />
                 {(message.message.medias)?.length ? (
                     <MessagePhotos photos={message.message.medias} />

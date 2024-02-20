@@ -16,10 +16,11 @@ const Share = () => {
                 <Image
                     src={share}
                     alt='share'
-                    width={20}
-                    height={20}
+                    width={35}
+                    height={35}
+                    className='hover:bg-light-dark p-2 rounded-[8px]'
                 />
-                Share
+                <span className='hidden md:block'>Share</span>
             </Button>
             {isOpen ? (
             <ModalLayer setIsOpen={setIsOpen}>

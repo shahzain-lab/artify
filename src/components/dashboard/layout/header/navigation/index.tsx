@@ -13,7 +13,7 @@ const Navigation = () => {
   }
   return (
     <RoutePanel
-      className='px-6'
+      className='md:px-6 px-2 md:overflow-x-auto md:overflow-y-auto overflow-x-scroll overflow-y-hidden'
       menuItems={menuItems}
       setChange={handleChange}
     />

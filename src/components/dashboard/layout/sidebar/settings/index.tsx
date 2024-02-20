@@ -6,7 +6,7 @@ import Typography from '@/components/ui/Typography'
 
 const Settings = () => {
     return (
-        <div className='bg-glass-fill p-4 rounded-[16px] flex items-center justify-between'>
+        <div className='bg-glass-fill p-4 rounded-[16px] flex items-center z-20 md:z-auto justify-between'>
             <div className='flex items-center gap-3'>
                 <Image
                     src={avatar}
