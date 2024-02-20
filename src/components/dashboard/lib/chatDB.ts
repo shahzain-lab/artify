@@ -3,7 +3,6 @@ import media1 from '@/assets/generated/spaceship1.png'
 import media2 from '@/assets/generated/spaceship2.png'
 import media3 from '@/assets/generated/spaceship3.png'
 import { IMessage } from "../main/IMessage.interface";
-import { features } from "./AI";
 
 const projects = [
     {
@@ -56,7 +55,7 @@ export const chats: IMessage[] = [
             text: "Okay, let's explore some options related to the spaceship. Here are some things I can do for you:",
             medias: [],
             // Only if its robot's message
-            variants: features
+            // variants: features
         },
         timeAgo: new Date(),
         project: projects[0]
