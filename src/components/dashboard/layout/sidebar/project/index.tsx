@@ -22,7 +22,7 @@ const Project = () => {
                 </div>
             ))}
             {org.projects.map((project, i) => (
-                <div className={`${active === i ? 'bg-glass-fill' : ''} hover:bg-glass-fill rounded-[8px] my-1 px-1 py-4 flex justify-between items-center`}>
+                <div key={i} className={`${active === i ? 'bg-glass-fill' : ''} hover:bg-glass-fill rounded-[8px] my-1 px-1 py-4 flex justify-between items-center`}>
                     <div className=' flex items-center gap-2'>
                         {project.logo ? (
                             <Image

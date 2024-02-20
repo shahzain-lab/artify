@@ -30,7 +30,7 @@ const LibraryItem = ({ library, index, currentIndex, setCurrentIndex }: Props) =
             <div className={`${currentIndex === index ? 'flex' : 'hidden'} md:flex flex-col gap-4 h-screen overflow-y-scroll no-scrollbar w-full `}>
                 <div className='flex items-center gap-2 justify-between md:hidden'>
                    {['Images', 'Documents', 'Ideas'].map((t, i) => (
-                       <p onClick={() => setCurrentIndex(i)} className={`bg-light-dark text-sm p-1 px-3 rounded-[8px] ${i===index?'text-theme-primary':''}`}>{t}</p>
+                       <p key={i} onClick={() => setCurrentIndex(i)} className={`bg-light-dark text-sm p-1 px-3 rounded-[8px] ${i===index?'text-theme-primary':''}`}>{t}</p>
                    ))}
                    </div>
                 {library.assets.map((asset, i) => (
