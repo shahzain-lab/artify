@@ -36,8 +36,10 @@ const config: Config = {
         'gray-300': '#363A3D',
         'gray-light': '#686B6E',
         'blue-md': '#82DBF7',
-        'silver': '#CDCECF',
-        'purple-md': '#A6B0F2'
+        'silver': '#CDCECF', //noble-black/300
+        'purple-md': '#A6B0F2',
+        'noble-black/800': '#1A1D21',
+        'noble-black/300': '#CDCECF'
       },
       boxShadow: {
         '1': '0px 0px 64px 0px rgba(182, 240, 156, 0.16)',

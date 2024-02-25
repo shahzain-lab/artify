@@ -3,7 +3,7 @@ import arrowRightGray from '@/assets/icons/arrow-right-gray.svg'
 import Image from 'next/image'
 import Typography from '@/components/ui/Typography'
 import { IFeature } from '../IMessage.interface'
-import { Code, Comment, Idea, Pencil } from '@/model/icons'
+import { Code, Comment, Idea, Pencil } from '@/components/dashboard/shared/icons'
 
 const features: IFeature[] = [
     {

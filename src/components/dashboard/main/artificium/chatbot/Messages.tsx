@@ -6,7 +6,7 @@ import Prompt from '@/components/dashboard/prompt'
 
 const Messages = () => {
   return (
-    <div className='p-1 flex flex-col gap-3 relative'>
+    <div className='p-1 flex flex-col gap-5 relative'>
         {chats.map((chat: IMessage) => (
             <Message key={chat.id} message={chat} />
         ))}

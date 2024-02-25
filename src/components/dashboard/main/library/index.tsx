@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import LibraryItem from './LibraryItem'
-import { Plus } from '@/model/icons'
+import { Plus } from '@/components/dashboard/shared/icons'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/store'
 

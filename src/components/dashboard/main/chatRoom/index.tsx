@@ -3,7 +3,7 @@ import Messages from '../artificium/chatbot/Messages'
 import Participant from './channels/participants'
 import Prompt from '../../prompt'
 import Channels from './channels'
-import { DoubleLeft, DoubleRight } from '@/model/icons'
+import { DoubleLeft, DoubleRight } from '@/components/dashboard/shared/icons'
 import { preventScroll } from '@/lib/preventScroll'
 
 const ChatRoom = () => {

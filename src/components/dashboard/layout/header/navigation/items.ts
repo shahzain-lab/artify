@@ -1,5 +1,5 @@
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
-import { Artificium, Chat, GetStarted, Library } from '@/model/icons'
+import { Artificium, Chat, GetStarted, Library } from '@/components/dashboard/shared/icons'
 
 export interface IMenu {
     title: string

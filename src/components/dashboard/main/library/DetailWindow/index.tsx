@@ -2,7 +2,7 @@ import WindowLayer from '@/components/ui/WindowLayer'
 import React, { Dispatch, SetStateAction, useState } from 'react'
 import Typography from '@/components/ui/Typography'
 import RoutePanel from '@/components/dashboard/layout/RoutePanel'
-import { Artificium, Chat, GetStarted, Library } from '@/model/icons'
+import { Artificium, Chat, GetStarted, Library } from '@/components/dashboard/shared/icons'
 import { ILibraryAsset } from '@/app/app.interface'
 
 interface Props {

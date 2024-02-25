@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { IUser } from '../../../IUser.interface'
-import { CheveronDown, CheveronRight, Status, TriLine } from '@/model/icons'
+import { CheveronDown, CheveronRight, Status, TriLine } from '@/components/dashboard/shared/icons'
 import Image from 'next/image'
 import Typography from '@/components/ui/Typography'
 

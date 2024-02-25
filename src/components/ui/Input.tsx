@@ -1,26 +1,18 @@
 import { cn } from '@/lib/utils'
-import React from 'react'
+import React from 'react';
 
-interface Props {
-    className?: string
-    placeholder?: string
-} 
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> { }
 
-const Input = ({className, placeholder=''}: Props) => {
-    return (
-            <input
-                type="text"
-                id="first_name"
-                placeholder={placeholder}
-                className={cn(
-                    "bg-light-dark border border-gray text-gray-900 text-sm rounded-lg focus:border-blue",
-                    "focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600",
-                    "dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue",
-                    className
-                    )}
-                required
-            />
-    )
-}
+const Input: React.FC<InputProps> = (props) => {
+    return <input
+        {...props}
+        className={cn(
+            "bg-light-dark border border-gray text-gray-900 text-sm rounded-lg focus:border-blue",
+            "focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600",
+            "dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue",
+            props.className
+        )}
+    />;
+};
 
-export default Input
+export default Input;

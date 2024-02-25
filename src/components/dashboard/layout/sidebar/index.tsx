@@ -9,7 +9,7 @@ import Settings from './settings'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '@/store'
 import { preventScroll } from '@/lib/preventScroll'
-import { Cross } from '@/model/icons'
+import { Cross } from '@/components/dashboard/shared/icons'
 import { setOpenMobileMenu } from '@/store/slices/navigationSlice'
 
 const Sidebar = () => {
