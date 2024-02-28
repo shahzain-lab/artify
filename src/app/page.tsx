@@ -1,11 +1,10 @@
-
-import Dashboard from '@/components/dashboard'
+import Project from "@/modules/project";
 
 export default function Home() {
   
   return (
     <main>
-     <Dashboard />
+     <Project />
     </main>
   )
 }

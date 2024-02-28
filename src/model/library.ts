@@ -1,5 +1,5 @@
 import { StaticImageData } from "next/image";
-import { ILibraryAsset, IComments, IUser } from "@/app/app.interface";
+import { ILibraryAsset, IComments, IUser } from "@/interfaces/app.interface";
 import users from "./users";
 import media1 from '@/assets/generated/spaceship1.png'
 import media2 from '@/assets/generated/spaceship2.png'

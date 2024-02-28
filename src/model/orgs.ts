@@ -2,7 +2,7 @@ import { uid } from "@/lib/utils";
 import space1 from '@/assets/avatars/Avatar-8.png';
 import { StaticImageData } from "next/image";
 import projects from "./projects";
-import { IProject } from "@/app/app.interface";
+import { IProject } from "@/interfaces/app.interface";
 
 const orgFormat = (
     id: string,

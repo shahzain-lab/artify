@@ -2,12 +2,12 @@ import Image from 'next/image'
 import React from 'react'
 import imgSrc from '@/assets/backgrounds/bg-4.png'
 import logo from '@/assets/Logo.svg'
-import Typography from '@/components/ui/Typography'
-import Input from '@/components/ui/Input'
-import { Button } from '@/components/ui/Button'
-import Divider from '@/components/ui/Divider'
-import SocialButton from '@/components/ui/SocialButton'
-import Checkbox from '@/components/ui/Checkbox'
+import Typography from '@/components/elements/Typography'
+import Input from '@/components/elements/Input'
+import { Button } from '@/components/elements/Button'
+import Divider from '@/components/elements/Divider'
+import SocialButton from '@/components/elements/SocialButton'
+import Checkbox from '@/components/elements/Checkbox'
 
 const Login = () => {
     return (

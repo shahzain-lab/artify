@@ -4,7 +4,7 @@ import octa from "@/assets/icons/octagonPrime.svg";
 import tri from "@/assets/icons/triPrime.svg";
 import { StaticImageData } from "next/image";
 import users from "./users";
-import { IUser } from "@/app/app.interface";
+import { IUser } from "@/interfaces/app.interface";
 
 const projectFormat = (
     title: string,

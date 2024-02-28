@@ -1,11 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 import logo from '@/assets/Logo.svg'
-import Typography from '@/components/ui/Typography'
+import Typography from '@/components/elements/Typography'
 import Link from 'next/link'
-import { Button } from '@/components/ui/Button'
-import Checkbox from '@/components/ui/Checkbox'
-import Input from '@/components/ui/Input'
+import { Button } from '@/components/elements/Button'
+import Checkbox from '@/components/elements/Checkbox'
+import Input from '@/components/elements/Input'
 import imgSrc from '@/assets/backgrounds/bg-3.png'
 
 const page = () => {

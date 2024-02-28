@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import logo from '@/assets/Logo.svg'
 import imgSrc from '@/assets/backgrounds/bg-2.png'
-import Typography from '@/components/ui/Typography'
+import Typography from '@/components/elements/Typography'
 import Link from 'next/link'
 // Avatars
 import user1 from '@/assets/avatars/Avatar-1.png'
@@ -12,7 +12,7 @@ import user4 from '@/assets/avatars/Avatar-4.png'
 import user5 from '@/assets/avatars/Avatar-5.png'
 import user6 from '@/assets/avatars/Avatar-6.png'
 import avatar from '@/assets/avatars/Avatar-7.png'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/elements/Button'
 
 const page = () => {
     const avatars = [
