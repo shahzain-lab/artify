@@ -19,7 +19,7 @@ const EmojiList: React.FC<EmojiListProps> = ({ emoji }) => {
         <div className='flex'>
             {emojiList.map((emoji, index) => (
                 // <Tooltip key={index} content={emoji.description}>
-                <div
+                <div key={index}
                     className='rounded-full border-2 shadow-xl px-[1px] border-dark-800 hover:text-md hover:z-30 -ml-2 bg-noble-black/800'
                     aria-label={emoji.description}
                 >

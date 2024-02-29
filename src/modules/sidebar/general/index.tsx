@@ -6,8 +6,8 @@ import Typography from '@/components/elements/Typography'
 const General = () => {
     return (
         <div className='-mt-3'>
-            {IMenuItems.map((item) => item.heading ? null : (
-                <div className='py-4 flex justify-between items-center'>
+            {IMenuItems.map((item, i) => item.heading ? null : (
+                <div key={i} className='py-4 flex justify-between items-center'>
                     <div className=' flex items-center'>
                         {item.icon ? (
                             <Image
