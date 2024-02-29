@@ -2,7 +2,6 @@ import React from 'react'
 import Message from './Message'
 import { chats } from '@/lib/chatDB'
 import { IMessage } from '../../../../interfaces/IMessage.interface'
-import Prompt from '@/components/dashboard/prompt'
 
 const Messages = () => {
   return (
