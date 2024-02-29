@@ -1,7 +1,7 @@
 import WindowLayer from '@/components/elements/WindowLayer'
 import React, { Dispatch, SetStateAction, useState } from 'react'
 import Typography from '@/components/elements/Typography'
-import RoutePanel from '@/modules/project/header/RoutePanel'
+// import RoutePanel from '@/modules/project/header/RoutePanel'
 import { Artificium, Chat, GetStarted, Library } from '@/shared/icons'
 import { ILibraryAsset } from '@/interfaces/app.interface'
 
@@ -36,10 +36,8 @@ const DetailWindow = ({asset, setIsOpen}: Props) => {
             <Typography className='text-2xl font-semibold'>{asset.name}</Typography>
             <Typography className='text-base font-medium text-gray'>{asset.caption}</Typography>
         </div>
-        <RoutePanel 
-          menuItems={menuItems}
-          setChange={handleChange} 
-        />
+        {/* <RoutePanel 
+        /> */}
     </WindowLayer>
   )
 }

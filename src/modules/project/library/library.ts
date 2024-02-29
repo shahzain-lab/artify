@@ -1,9 +1,9 @@
 import { IUser } from '@/interfaces/app.interface'
-import { users } from '../../../../lib/userDB'
 import media1 from '@/assets/generated/spaceship1.png'
 import media2 from '@/assets/generated/spaceship2.png'
 import media3 from '@/assets/generated/spaceship3.png'
 import { StaticImageData } from 'next/image'
+import { users } from '@/lib/userDB'
 
 export const library = [
     {

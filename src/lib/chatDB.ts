@@ -2,7 +2,7 @@ import { robot, users } from "./userDB";
 import media1 from '@/assets/generated/spaceship1.png'
 import media2 from '@/assets/generated/spaceship2.png'
 import media3 from '@/assets/generated/spaceship3.png'
-import { IMessage } from "../components/dashboard/main/IMessage.interface";
+import { IMessage } from "@/interfaces/IMessage.interface";
 
 const projects = [
     {
