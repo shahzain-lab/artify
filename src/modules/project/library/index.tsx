@@ -1,8 +1,9 @@
+'use client'
 import React, { useState } from 'react'
 import LibraryItem from './LibraryItem'
 import { Plus } from '@/shared/icons'
 import { useSelector } from 'react-redux'
-import { RootState } from '@/store'
+import { RootState } from '@/model/store'
 
 const Library = () => {
   const [currentIndex, setCurrentIndex] = useState(0)

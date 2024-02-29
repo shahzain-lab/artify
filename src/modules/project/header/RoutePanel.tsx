@@ -1,29 +1,20 @@
-import React, { useState } from 'react'
-import { IMenu } from './header/navigation/items'
+import React from 'react'
 import PanalRoute from './PanalRoute'
+import { IMenu } from './navigation/items'
 
 interface Props {
     menuItems: IMenu[]
-    setChange: (i: number) => void
     className?: string
 }
 
-const RoutePanel = ({ menuItems, className, setChange }: Props) => {
-    const [active, setActive] = useState(0)
+const RoutePanel = ({ menuItems, className }: Props) => {
 
-    const handleChange = (i: number) => {
-        setChange(i)
-        setActive(i)
-    }
     return (
         <div className={`flex items-center gap-5 md:gap-6 ${className}`}>
             {menuItems.map((item, i) => (
                 <PanalRoute
                     key={i}
                     route={item}
-                    index={i}
-                    active={active}
-                    setChange={handleChange}
                 />
             ))}
         </div>

@@ -1,3 +1,4 @@
+'use client'
 import Typography from '@/components/elements/Typography'
 import Image from 'next/image'
 import React, { useState } from 'react'
@@ -12,7 +13,6 @@ import MessageFeatures from './MessageFeatures'
 import EmojiList from '@/components/app/EmojiList'
 import ReactEmojiPicker from '@/components/app/EmojiPicker'
 import { IEmoji } from '../../../../interfaces/IApp.interface'
-import { AngleBR } from '@/shared/icons'
 
 interface Props {
     message: IMessage

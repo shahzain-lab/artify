@@ -1,26 +1,16 @@
 'use client'
 import React from 'react'
-import { IMenuItems } from './items'
 import Typography from '@/components/elements/Typography'
 import plusCircle from '@/assets/icons/plus-circle.svg'
 import Image from 'next/image'
 import { useSelector } from 'react-redux'
-import { RootState } from '@/store'
+import { RootState } from '@/model/store'
 
 const Project = () => {
     const active = 0;
     const org = useSelector((state: RootState) => state.workspace.selectedOrg)
     return (
-        <div className='py-4'>
-            {IMenuItems.map((item, i) => (
-                <div key={i}>
-                    {item.heading ? (
-                        <div className='mb-5'>
-                            <Typography variant='semibold' className='text-[12px] text-gray-light'>{item.heading}</Typography>
-                        </div>
-                    ) : null}
-                </div>
-            ))}
+        <>
             {org.projects.map((project, i) => (
                 <div key={i} className={`${active === i ? 'bg-glass-fill' : ''} hover:bg-glass-fill rounded-[8px] my-1 px-1 py-4 flex justify-between items-center`}>
                     <div className=' flex items-center gap-2'>
@@ -46,7 +36,7 @@ const Project = () => {
                 />
                 <Typography variant='semibold' className='text-sm'>Add new project</Typography>
             </div>
-        </div>
+        </>
     )
 }
 

@@ -1,6 +1,6 @@
+'use client'
 import React, { useEffect, useState } from 'react'
 import Messages from '../artificium/chatbot/Messages'
-import Participant from './channels/participants'
 import Prompt from '../../prompt'
 import Channels from './channels'
 import { DoubleLeft, DoubleRight } from '@/shared/icons'

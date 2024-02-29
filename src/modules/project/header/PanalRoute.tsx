@@ -1,25 +1,23 @@
-'use client'
-
 import { cn } from '@/lib/utils'
 import React from 'react'
-import { IMenu } from './header/navigation/items'
 import Typography from '@/components/elements/Typography'
+import { IMenu } from './navigation/items'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 interface Props {
     route: IMenu
-    index: number
-    active: number
-    setChange: (i: number) => void
 }
 
-const PanalRoute = ({ route, index, active, setChange }: Props) => {
+const PanalRoute = ({ route }: Props) => {
+    const pathname = usePathname()
     return (
-        <div
-          onClick={() => setChange(index)} 
+        <Link
+          href={route.path}
           className={cn(
             'flex items-center justify-start h-14 md:h-20 gap-1 md:gap-3',
             'cursor-pointer',
-            index === active ? 'border-b-[3px] border-theme-primary' : ''
+            pathname === route.path ? 'border-b-[3px] border-theme-primary' : ''
         )}>
             {route.Icon ? (
                 <p className='w-4 h-4'>
@@ -27,7 +25,7 @@ const PanalRoute = ({ route, index, active, setChange }: Props) => {
                 </p>
             ) : null}
             <Typography variant='semibold' className='text-[11px] md:text-sm'>{route.title}</Typography>
-        </div>
+        </Link>
     )
 }
 

@@ -1,11 +1,9 @@
 import { users } from '@/lib/userDB'
 import { Button } from '@/components/elements/Button'
-import Input from '@/components/elements/Input'
 import Typography from '@/components/elements/Typography'
 import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import React from 'react'
-import InviteeList from './InviteeList'
 import InviteForm from './InviteForm'
 
 const ShareSpace = () => {

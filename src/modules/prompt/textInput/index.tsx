@@ -1,3 +1,4 @@
+'use client'
 import Input from '@/components/elements/Input'
 import React, { useState } from 'react'
 import { extractMentions } from '../utils';
