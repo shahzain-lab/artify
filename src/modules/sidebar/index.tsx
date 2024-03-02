@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import Profile from './profile'
 import Divider from '@/components/elements/Divider'
 import General from './general'
@@ -7,7 +7,7 @@ import Project from './project'
 import Settings from './settings'
 import { useDispatch, useSelector } from 'react-redux'
 import { preventScroll } from '@/lib/preventScroll'
-import { Cross } from '@/shared/icons'
+import { CheveronDown, CheveronRight, Cross } from '@/shared/icons'
 import { RootState } from '@/model/store'
 import { setOpenMobileMenu } from '@/model/store/slices/navigationSlice'
 import Typography from '@/components/elements/Typography'
@@ -15,6 +15,7 @@ import ListPages from './listPages'
 
 const Sidebar = () => {
   const dispatch = useDispatch()
+  const [active, setActive] = useState<number | null>(null)
   const openMobileMenu = useSelector((state: RootState) => state.navigation.openMobileMenu)
   useEffect(() => {
     if (openMobileMenu) {
@@ -54,16 +55,23 @@ const Sidebar = () => {
         )}
         <div className='z-20 md:z-auto'>
           <Profile />
-          {modules.map((module) => (
-            <>
+          {modules.map((module, i) => (
+            <Fragment key={i}>
               <Divider />
               <div className='py-4'>
-                  <div className='mb-5'>
+                  <div onClick={() => setActive(active===i?null:i)} className='mb-5 cursor-pointer flex justify-between items-center'>
                     <Typography variant='semibold' className='text-[12px] text-gray-light'>{module.title}</Typography>
+                    {active===i?(
+                      <CheveronDown />
+                      ):(
+                      <CheveronRight />
+                    )}
                   </div>
-                <module.Route />
+                  {active===i&&(
+                    <module.Route />
+                  )}
               </div>
-            </>
+            </Fragment>
           ))}
         </div>
         <Settings />

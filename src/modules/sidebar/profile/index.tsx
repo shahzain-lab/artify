@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Typography from '@/components/elements/Typography'
 import chevron from '@/assets/icons/chevron.svg'
 import { useSelector } from 'react-redux'
-import { RootState } from '@/store'
+import { RootState } from '@/model/store'
 
 const Profile = () => {
     const org = useSelector((state: RootState) => state.workspace.selectedOrg)
