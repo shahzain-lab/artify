@@ -18,7 +18,7 @@ const SocialButton = ({variant, className, type="button", children, onClick}: Pr
         onClick={onClick}
         type={type}   
         className={cn(
-            'flex items-center gap-2 text-gray-light text-base justify-center bg-[#1A1D21] px-6 py-2 rounded-[12px]',
+            'flex items-center gap-2 text-noble-black-400 text-base justify-center bg-[#1A1D21] px-6 py-2 rounded-[12px]',
             className
         )}>
             <Image 

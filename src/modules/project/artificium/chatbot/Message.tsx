@@ -22,8 +22,8 @@ const Message = ({ message }: Props) => {
     const [emoji, setEmoji] = useState<IEmoji | null>(null)
     return (
         <div className={cn(
-            'p-2 md:p-4 rounded-[16px] border border-light-dark',
-            `${message.isHuman && 'hover:border-dark-800 group hover:shadow-xl hover:bg-dark-800'}`,
+            'p-2 md:p-4 rounded-[16px] border border-noble-black-600',
+            `${message.isHuman && 'hover:border-noble-black-800 group hover:shadow-xl hover:bg-noble-black-800'}`,
         )}>
             <div className='flex items-center justify-between'>
                 <div className='flex items-center gap-4'>
@@ -40,7 +40,7 @@ const Message = ({ message }: Props) => {
                         />
                     </div>
                     <Typography variant='semibold' className='md:text-base text-sm'>{message.issuer.fullName}</Typography>
-                    <Typography variant='medium' className="text-[11px] md:text-[12px] text-gray-light">{formatTimeDifference(message.timeAgo)}</Typography>
+                    <Typography variant='medium' className="text-[11px] md:text-[12px] text-noble-black-400">{formatTimeDifference(message.timeAgo)}</Typography>
                 </div>
                 <div>
                     <Image

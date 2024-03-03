@@ -46,15 +46,15 @@ const page = () => {
                         ))}
                     </div>
                     <Typography size='lg' variant='medium'>Sophia, Kamil, Emily and 2,012 others are already here!</Typography>
-                    <Typography className='text-gray text-lg' variant='medium'>But... it looks like you don&apos;t have access to this workspace.</Typography>
+                    <Typography className='text-gray-light-100 text-lg' variant='medium'>But... it looks like you don&apos;t have access to this workspace.</Typography>
                     <Button>Request access </Button>
-                    <Typography variant='medium' className='text-gray-light text-[12px]'>or</Typography>
+                    <Typography variant='medium' className='text-noble-black-400 text-[12px]'>or</Typography>
                     <Button variant={'gray'}>Back</Button>
                 </div>
 
                 <div className='flex items-center justify-between'>
-                    <Typography variant='medium' className='text-gray text-sm'>Artificium.app © 2024</Typography>
-                    <Link href={'#'}><Typography variant='medium' className='text-gray text-sm'>Privacy Policy</Typography></Link>
+                    <Typography variant='medium' className='text-gray-light-100 text-sm'>Artificium.app © 2024</Typography>
+                    <Link href={'#'}><Typography variant='medium' className='text-gray-light-100 text-sm'>Privacy Policy</Typography></Link>
                 </div>
             </div>
 

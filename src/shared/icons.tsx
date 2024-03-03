@@ -50,9 +50,9 @@ export const Globe = ({ color = '#9B9C9E' }: Props) => {
     )
 }
 
-export const Cross = ({ color = '#686B6E' }: Props) => {
+export const Cross = ({ color = '#686B6E', className }: Props) => {
     return (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="20" className={className} height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="cross">
                 <path id="icon" d="M4.16699 4.16666L15.8337 15.8333M15.8337 4.16666L4.16699 15.8333" stroke={color} stroke-width="1.5" stroke-linecap="round" />
             </g>
@@ -229,12 +229,49 @@ export const IconPlus = ({ color = "#CDCECF" }: Props) => {
 export const AngleBR = ({ color = "#363A3D" }: Props) => {
     return (
         <svg width="34" height="94" viewBox="0 0 34 94" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 0.838623V84.8386C1 89.2569 4.58172 92.8386 9 92.8386H33" 
-            stroke={color} 
-            strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <path d="M1 0.838623V84.8386C1 89.2569 4.58172 92.8386 9 92.8386H33"
+                stroke={color}
+                strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
     )
 }
+
+// export const Idea = ({ color = '#4D62E5' }) => (
+//     <svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+//         <path d="M3.14286 12.3333V13.6429C3.14286 15.2208 4.42204 16.5 6 16.5V16.5C7.57796 16.5 8.85714 15.2208 8.85714 13.6429V12.3333M3.14286 12.3333V11.9627C3.14286 11.321 2.81521 10.7353 2.38089 10.2629C1.52531 9.33241 1 8.07241 1 6.68519C1 3.82149 3.23858 1.5 6 1.5C8.76142 1.5 11 3.82149 11 6.68519C11 8.07241 10.4747 9.33241 9.61911 10.2629C9.18479 10.7353 8.85714 11.321 8.85714 11.9627V12.3333M3.14286 12.3333H8.85714"
+//             stroke={color}
+//             strokeWidth="1.5"
+//             strokeLinecap="round"
+//             strokeLinejoin="round" />
+//     </svg>
+// )
+
+export const Warning = ({ color = '#FF7B20' }) => (
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.00016 6.49994V9.83327M9.00016 13.1666H9.00849M13.9386 16.4999H4.06167C2.16016 16.4999 0.954754 14.4613 1.87113 12.7951L7.5398 2.48847C8.17301 1.33718 9.82731 1.33718 10.4605 2.48847L16.1292 12.7951C17.0456 14.4613 15.8402 16.4999 13.9386 16.4999Z"
+            stroke={color}
+            strokeWidth="1.5"
+            strokeLinecap="round" />
+    </svg>
+)
+
+export const Danger = ({ color = '#D90200' }) => (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.00007 4.66663V7.99997M8.00007 11.3333H8.00841M1.50488 5.69334V10.3066C1.50488 11.1998 1.98138 12.0251 2.75488 12.4717L6.75007 14.7783C7.52358 15.2249 8.47657 15.2249 9.25007 14.7783L13.2453 12.4717C14.0188 12.0251 14.4953 11.1998 14.4953 10.3066V5.69334C14.4953 4.80018 14.0188 3.97486 13.2453 3.52828L9.25007 1.22166C8.47657 0.775073 7.52358 0.775073 6.75007 1.22166L2.75488 3.52828C1.98138 3.97486 1.50488 4.80018 1.50488 5.69334Z"
+            stroke={color}
+            strokeWidth="1.5"
+            strokeLinecap="round" />
+    </svg>
+)
+
+export const Success = ({ color = '#4AC97E' }) => (
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.66667 9L7.57741 10.9107C7.90285 11.2362 8.43049 11.2362 8.75592 10.9107L12.3333 7.33333M16.5 9C16.5 13.1421 13.1421 16.5 9 16.5C4.85786 16.5 1.5 13.1421 1.5 9C1.5 4.85786 4.85786 1.5 9 1.5C13.1421 1.5 16.5 4.85786 16.5 9Z" 
+        stroke={color} 
+        strokeWidth="1.5" 
+        strokeLinecap="round" />
+    </svg>
+)
 
 export const Artificium = ({ className }: Props) => {
     return (

@@ -23,9 +23,9 @@ const ChatRoom = () => {
     <div className='flex gap-2'>
       <div>
         <Messages />
-        <Prompt className='w-full md:w-[57%] left-0 md:left-[22%]' />
+        <Prompt className='w-full md:w-[53%] left-0 md:left-[22%]' />
       </div>
-      <div onClick={() => setIsOpen(!isOpen)} className={`md:hidden fixed px-0.5 z-30 top-[40%] bg-light-dark py-10 rounded-s-[12px] ${isOpen ? 'right-[80%]' : 'right-0'} `}>
+      <div onClick={() => setIsOpen(!isOpen)} className={`md:hidden fixed px-0.5 z-30 top-[40%] bg-noble-black-600 py-10 rounded-s-[12px] ${isOpen ? 'right-[80%]' : 'right-0'} `}>
         {isOpen ? (
           <DoubleRight />
         ):(

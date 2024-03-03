@@ -16,7 +16,7 @@ const Settings = () => {
                 />
                 <div className='flex flex-col'>
                     <Typography variant='semibold'>Ryan Lee</Typography>
-                    <Typography variant="medium" className='text-[12px] text-theme-primary'>Premium</Typography>
+                    <Typography variant="medium" className='text-[12px] text-theme-greenish'>Premium</Typography>
                 </div>
             </div>
             <Image

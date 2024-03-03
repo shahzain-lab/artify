@@ -19,7 +19,7 @@ const Profile = () => {
                 />
                 <div className='flex flex-col'>
                     <Typography variant='semibold'>{org.name}</Typography>
-                    <Typography variant="medium" className='text-[12px] text-theme-primary'>{org.membersCount} members</Typography>
+                    <Typography variant="medium" className='text-[12px] text-theme-greenish'>{org.membersCount} members</Typography>
                 </div>
             </div>
             <Image

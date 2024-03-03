@@ -20,7 +20,7 @@ const EmojiList: React.FC<EmojiListProps> = ({ emoji }) => {
             {emojiList.map((emoji, index) => (
                 // <Tooltip key={index} content={emoji.description}>
                 <div key={index}
-                    className='rounded-full border-2 shadow-xl px-[1px] border-dark-800 hover:text-md hover:z-30 -ml-2 bg-noble-black/800'
+                    className='rounded-full border-2 shadow-xl px-[1px] border-noble-black-800 hover:text-md hover:z-30 -ml-2 bg-noble-black-600'
                     aria-label={emoji.description}
                 >
                     {emoji.emoji}
@@ -28,7 +28,7 @@ const EmojiList: React.FC<EmojiListProps> = ({ emoji }) => {
                 // </Tooltip>
             ))}
             <div
-                className='rounded-full flex justify-center items-center px-2 text-noble-black/300 border-2 shadow-xl border-dark-800 text-[12px] hover:z-30 -ml-1.5 bg-noble-black/800'>
+                className='rounded-full flex justify-center items-center px-2 text-noble-black-200 border-2 shadow-xl border-noble-black-800 text-[12px] hover:z-30 -ml-1.5 bg-noble-black-600'>
                 {emoji ? 5+1 : 5}
             </div>
         </div>

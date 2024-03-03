@@ -43,9 +43,9 @@ const page = () => {
                         />
                     </div>
                     <Typography size='xl' variant='bold'>Vertexia</Typography>
-                    <Typography className='text-theme-primary text-lg' variant='medium'>vertexia.artficium.app</Typography>
+                    <Typography className='text-theme-greenish text-lg' variant='medium'>vertexia.artficium.app</Typography>
                     <div className='my-5 flex items-center gap-2'>
-                        <Button className='bg-transparent text-gray-light'>Change workspace</Button>
+                        <Button className='bg-transparent text-noble-black-400'>Change workspace</Button>
                         <Button>Join Now</Button>
                     </div>
                     <div className='flex items-center gap-3'>
@@ -61,13 +61,13 @@ const page = () => {
                             </div>
                         ))}
                     </div>
-                    <Typography className='text-gray text-sm' variant='medium'>and 873 others have already joined</Typography>
+                    <Typography className='text-gray-light-100 text-sm' variant='medium'>and 873 others have already joined</Typography>
                     </div>
                 </div>
 
                 <div className='flex items-center justify-between'>
-                    <Typography variant='medium' className='text-gray text-sm'>Artificium.app © 2024</Typography>
-                    <Link href={'#'}><Typography variant='medium' className='text-gray text-sm'>Privacy Policy</Typography></Link>
+                    <Typography variant='medium' className='text-gray-light-100 text-sm'>Artificium.app © 2024</Typography>
+                    <Link href={'#'}><Typography variant='medium' className='text-gray-light-100 text-sm'>Privacy Policy</Typography></Link>
                 </div>
             </div>
 

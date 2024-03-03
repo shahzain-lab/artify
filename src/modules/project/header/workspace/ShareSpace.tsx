@@ -16,7 +16,7 @@ const ShareSpace = () => {
             <Typography
                 size='sm'
                 variant='medium'
-                className='text-gray'
+                className='text-gray-light-100'
             >Select which users can access and view this project. Only users with access can view and edit the project.</Typography>
             <InviteForm />
             <div className={cn(
@@ -34,19 +34,19 @@ const ShareSpace = () => {
                             />
                             <div className='flex flex-col -mt-1'>
                                 <Typography className='' size='ms' variant='semibold'>{user.fullName}</Typography>
-                                <Typography className='text-[12px] -mt-1 text-theme-primary' variant='medium'>{user.username}</Typography>
+                                <Typography className='text-[12px] -mt-1 text-theme-greenish' variant='medium'>{user.username}</Typography>
                             </div>
                         </div>
                         <button className={cn(
                             'bg-glass-fill border-t border-glass-stroke rounded-xl shadow-xl-inset px-3 py-2 text-[12px]',
-                            user.role === 0 ? 'text-theme-primary' : user.role === 1 ? 'text-blue-md' : 'text-purple-md'
+                            user.role === 0 ? 'text-theme-greenish' : user.role === 1 ? 'text-blue-md' : 'text-purple-md'
                         )}>
                             {user.role === 0 ? 'Owner' : user.role === 1 ? 'Editor' : 'Viewer'}
                         </button>
                     </div>
                 ))}
             </div>
-            <div className='bg-dark rounded-xl flex justify-between items-center py-4 px-6'>
+            <div className='bg-noble-black-700 rounded-xl flex justify-between items-center py-4 px-6'>
                 <div className='flex gap-2 items-center'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M21 12C21 16.9706 16.9706 21 12 21M21 12C21 7.02944 16.9706 3 12 3M21 12H3M12 21C7.02944 21 3 16.9706 3 12M12 21C13.6569 21 15 16.9706 15 12C15 7.02944 13.6569 3 12 3M12 21C10.3431 21 9 16.9706 9 12C9 7.02944 10.3431 3 12 3M3 12C3 7.02944 7.02944 3 12 3" stroke="#B6F09C" strokeWidth="1.5" strokeLinecap="round" />
@@ -57,7 +57,7 @@ const ShareSpace = () => {
                     >Anyone with the link</Typography>
                 </div>
                 <div className='flex items-center gap-3'>
-                    <span className='text-theme-primary text-sm'>can view</span>
+                    <span className='text-theme-greenish text-sm'>can view</span>
                     <button className={cn(
                         'bg-glass-fill shadow-xl-inset px-3 py-2 rounded-xl text-[12px] font-semibold',
                         'flex items-center gap-1'

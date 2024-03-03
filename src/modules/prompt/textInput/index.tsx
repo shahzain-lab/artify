@@ -52,10 +52,10 @@ const TextInput = () => {
         const filteredList = filterList(query, list);
 
         return (
-            <ul className="absolute bg-dark-800 bottom-[100%] border border-zinc-700 w-[250px] p-2 rounded-[12px]">
+            <ul className="absolute bg-noble-black-800 bottom-[100%] border border-zinc-700 w-[250px] p-2 rounded-[12px]">
                 {filteredList.map((item, i) => (
                     <li 
-                    className={` py-2 flex items-center gap-2 cursor-pointer hover:bg-light-dark text-sm ${i === (filteredList?.length-1) ? '' : 'border-b border-zinc-700'}`} 
+                    className={` py-2 flex items-center gap-2 cursor-pointer hover:bg-noble-black-600 text-sm ${i === (filteredList?.length-1) ? '' : 'border-b border-zinc-700'}`} 
                     key={i} 
                     onClick={() => handleSelect({ symbol: lastMention.symbol, value: item.name })}>
                         {item.Icon ? (
@@ -79,7 +79,7 @@ const TextInput = () => {
         <div className='w-full relative'>
             {showList && renderList()}
             <Input
-                className='text-gray-300 bg-transparent border-none outline-none w-full'
+                className='text-noble-black-500 dark:bg-transparent border-none outline-none w-full'
                 placeholder='You can ask me anything! I am here to help.'
                 value={inputValue}
                 onChange={handleTextChange}

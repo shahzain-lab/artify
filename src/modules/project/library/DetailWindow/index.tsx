@@ -34,7 +34,7 @@ const DetailWindow = ({asset, setIsOpen}: Props) => {
     <WindowLayer setIsOpen={setIsOpen}>
         <div className='flex flex-col gap-3'>
             <Typography className='text-2xl font-semibold'>{asset.name}</Typography>
-            <Typography className='text-base font-medium text-gray'>{asset.caption}</Typography>
+            <Typography className='text-base font-medium text-gray-light-100'>{asset.caption}</Typography>
         </div>
         {/* <RoutePanel 
         /> */}

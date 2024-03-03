@@ -18,7 +18,7 @@ const General = () => {
                                 className='-mb-5'
                             />
                         ) : null}
-                        <Typography variant='semibold' className='text-sm text-gray-200'>{item.title}</Typography>
+                        <Typography variant='semibold' className='text-sm text-noble-black-100'>{item.title}</Typography>
                     </div>
                     {item.tag ? (
                         <Image

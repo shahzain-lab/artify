@@ -23,11 +23,11 @@ const Project = () => {
                                 className=''
                             />
                         ) : null}
-                        <Typography variant='semibold' className='text-sm text-gray-200'>{project.title}</Typography>
+                        <Typography variant='semibold' className='text-sm text-noble-black-100'>{project.title}</Typography>
                     </div>
                 </div>
             ))}
-            <div className='text-gray-light flex items-center gap-2 px-2 my-3'>
+            <div className='text-noble-black-400 flex items-center gap-2 px-2 my-3'>
                 <Image
                     src={plusCircle}
                     alt='plusCircle'

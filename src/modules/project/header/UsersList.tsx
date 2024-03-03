@@ -27,7 +27,7 @@ const UsersList = ({users, depth = 0}: Props) => {
             ) : null}
         </div>
     ))}
-    <div className='text-gray bg-dark mt-1 md:mt-auto w-7 h-7 md:w-9 md:h-9 text-sm -ml-2 rounded-[12px] flex justify-center items-center'>
+    <div className='text-gray-light-100 bg-noble-black-700 mt-1 md:mt-auto w-7 h-7 md:w-9 md:h-9 text-sm -ml-2 rounded-[12px] flex justify-center items-center'>
         +{users.length - depth}
     </div>
 </div>

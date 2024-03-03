@@ -17,7 +17,7 @@ const PanalRoute = ({ route }: Props) => {
           className={cn(
             'flex items-center justify-start h-14 md:h-20 gap-1 md:gap-3',
             'cursor-pointer',
-            pathname === route.path ? 'border-b-[3px] border-theme-primary' : ''
+            pathname === route.path ? 'border-b-[3px] border-theme-greenish' : ''
         )}>
             {route.Icon ? (
                 <p className='w-4 h-4'>

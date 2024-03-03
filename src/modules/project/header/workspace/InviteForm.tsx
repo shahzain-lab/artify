@@ -17,7 +17,7 @@ const InviteForm = () => {
     }
     return (
         <div className='mt-5 flex items-center gap-2'>
-            <div className='relative border border-gray-300 p-2 rounded-lg w-full flex items-center'>
+            <div className='relative border border-noble-black-500 p-2 rounded-lg w-full flex items-center'>
                 <div className='flex items-center gap-2'>
                     {selectedUsers.map((user: IUser) => (
                         <div key={user.username} className='bg-glass-fill p-1 border h-[32px] rounded-xl border-glass-stroke flex items-center gap-2'>
@@ -27,7 +27,7 @@ const InviteForm = () => {
                                 width={24}
                                 height={24}
                             />
-                            <Typography className='text-[12px] text-gray' variant='semibold'>{user.fullName}</Typography>
+                            <Typography className='text-[12px] text-gray-light-100' variant='semibold'>{user.fullName}</Typography>
                             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 8 8" fill="none">
                                 <path d="M1.6665 1.66666L6.33317 6.33332M6.33317 1.66666L1.6665 6.33332" stroke="#686B6E" strokeWidth="1.5" strokeLinecap="round" />
                             </svg>

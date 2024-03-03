@@ -25,7 +25,7 @@ const Login = () => {
                 <Typography size='xl' variant='regular'>Let&apos;s get {" "}
                   <span className='bg-clip-text bg-blue-green-500 text-transparent font-bold'>creative!</span>
                 </Typography>
-                <Typography size='xs' variant='medium' className='text-gray'>Log in to Artificium to start creating magic.</Typography>
+                <Typography size='xs' variant='medium' className='text-gray-light-100'>Log in to Artificium to start creating magic.</Typography>
                 <div className='my-4 flex flex-col gap-4'>
                   <Input />          
                   <Input /> 
@@ -39,7 +39,7 @@ const Login = () => {
 
               <div className='grid grid-cols-3 items-center my-8'>
                 <Divider />
-                <Typography className='text-[12px] tracking-[0.15px] text-gray-light text-center' size='sm' variant='medium'>or continue with</Typography>
+                <Typography className='text-[12px] tracking-[0.15px] text-noble-black-400 text-center' size='sm' variant='medium'>or continue with</Typography>
                 <Divider />
               </div>
 
@@ -50,7 +50,7 @@ const Login = () => {
             </div>
 
             <div>
-              <Typography className='text-gray-light text-base'>Don&apos;t have an account? <span className='bg-clip-text bg-blue-green-500 text-transparent text-bold'>Sign Up</span></Typography>
+              <Typography className='text-noble-black-400 text-base'>Don&apos;t have an account? <span className='bg-clip-text bg-blue-green-500 text-transparent text-bold'>Sign Up</span></Typography>
             </div>
           </div>
         

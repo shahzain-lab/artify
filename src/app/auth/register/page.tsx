@@ -33,8 +33,8 @@ const page = () => {
                     <Button>Create free account</Button>
                 </div>
                 <div className='flex items-center justify-between'>
-                    <Typography variant='medium' className='text-gray text-sm'>Artificium.app © 2024</Typography>
-                    <Link href={'#'}><Typography variant='medium' className='text-gray text-sm'>Privacy Policy</Typography></Link>
+                    <Typography variant='medium' className='text-gray-light-100 text-sm'>Artificium.app © 2024</Typography>
+                    <Link href={'#'}><Typography variant='medium' className='text-gray-light-100 text-sm'>Privacy Policy</Typography></Link>
                 </div>
             </div>
 

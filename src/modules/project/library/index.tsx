@@ -20,7 +20,7 @@ const Library = () => {
             />)}
             {/* <LibraryItem key={1} index={1} library={library[1]} /> */}
         </div>
-        <div className='bg-light-dark p-4 flex items-center justify-center rounded-[10px] sticky top-0 h-[100vh] cursor-pointer'>
+        <div className='bg-noble-black-600 p-4 flex items-center justify-center rounded-[10px] sticky top-0 h-[100vh] cursor-pointer'>
             <Plus />
         </div>
     </div>

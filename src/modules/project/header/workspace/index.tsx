@@ -20,14 +20,14 @@ const Workspace = () => {
             <div className='flex w-full justify-between items-center'>
                 <div className='flex flex-col gap-2'>
                     <Typography variant='bold' className='text-md md:text-xl'>{project.title}</Typography>
-                    <Typography variant='medium' className='text-gray text-[12px] md:text-sm'>{project.desc}</Typography>
+                    <Typography variant='medium' className='text-gray-light-100 text-[12px] md:text-sm'>{project.desc}</Typography>
                 </div>
                 <Image
                     src={menubar}
                     alt='share'
                     width={35}
                     height={35}
-                    className='md:hidden hover:bg-light-dark p-2 rounded-[8px]'
+                    className='md:hidden hover:bg-noble-black-600 p-2 rounded-[8px]'
                     onClick={() => dispatch(setOpenMobileMenu(true))}
                 />
             </div>
@@ -40,7 +40,7 @@ const Workspace = () => {
                             alt='share'
                             width={35}
                             height={35}
-                            className='hover:bg-light-dark p-2 rounded-[8px]'
+                            className='hover:bg-noble-black-600 p-2 rounded-[8px]'
                         />
                 </div>
             </div>

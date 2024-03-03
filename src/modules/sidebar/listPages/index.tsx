@@ -26,7 +26,7 @@ const ListPages = () => {
                   className=''
                 />
               ) : null}
-              <Typography variant='semibold' className='text-sm text-gray-200'>{page.title}</Typography>
+              <Typography variant='semibold' className='text-sm text-noble-black-100'>{page.title}</Typography>
             </div>
           </div>
         </Link>

@@ -10,14 +10,14 @@ const buttonVariants = cva(
     {
       variants: {
         variant: {
-          default: "bg-theme-primary text-slate-950",
+          default: "bg-theme-greenish text-slate-950",
           green: "bg-green-main text-slate-950",
-          gray: "bg-light-dark text-gray",
+          gray: "bg-noble-black-600 text-gray",
           orange: "bg-orange-main text-slate-950",
           light: "bg-light-main text-slate-950",
           destructive: "bg-red-500 text-slate-950",
           outline:
-            "border border-slate-200 bg-white",
+            "border-2 border-noble-black-400 ",
           secondary:
             "bg-slate-100 text-slate-900 ",
           ghost: "hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-slate-950",

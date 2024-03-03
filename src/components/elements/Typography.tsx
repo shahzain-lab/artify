@@ -11,7 +11,7 @@ const variants = {
 }
 const themes = {
   'default': 'text-inherit',
-  'gray': 'text-gray',
+  'gray': 'text-gray-light-100',
   "blueGreen500": 'bg-clip-text bg-blue-green-500 text-transparent',
   "blueGreen600": 'bg-clip-text bg-blue-green-600 text-transparent',
   "blueGreen700": 'bg-clip-text bg-blue-green-700 text-transparent'

@@ -30,16 +30,16 @@ const LibraryItem = ({ library, index, currentIndex, setCurrentIndex }: Props) =
             <div className={`${currentIndex === index ? 'flex' : 'hidden'} md:flex flex-col gap-4 h-screen overflow-y-scroll no-scrollbar w-full `}>
                 <div className='flex items-center gap-2 justify-between md:hidden'>
                    {['Images', 'Documents', 'Ideas'].map((t, i) => (
-                       <p key={i} onClick={() => setCurrentIndex(i)} className={`bg-light-dark text-sm p-1 px-3 rounded-[8px] ${i===index?'text-theme-primary':''}`}>{t}</p>
+                       <p key={i} onClick={() => setCurrentIndex(i)} className={`bg-noble-black-600 text-sm p-1 px-3 rounded-[8px] ${i===index?'text-theme-greenish':''}`}>{t}</p>
                    ))}
                    </div>
                 {library.assets.map((asset, i) => (
                     <div 
                         key={i}
                         onClick={() => handleOpenWindow(asset)} 
-                        className='p-6 cursor-pointer rounded-[20px] bg-dark-800 flex flex-col gap-3 w-full'>
+                        className='p-6 cursor-pointer rounded-[20px] bg-noble-black-800 flex flex-col gap-3 w-full'>
                         <Typography className='text-base font-semibold'>{asset.name}</Typography>
-                        <Typography className='text-base font-medium text-gray'>{asset.caption}</Typography>
+                        <Typography className='text-base font-medium text-gray-light-100'>{asset.caption}</Typography>
                         <div className='grid grid-cols-3 gap-2'>
                             {asset.medias.map((media, i) => (
                                 <div key={i}>
@@ -53,7 +53,7 @@ const LibraryItem = ({ library, index, currentIndex, setCurrentIndex }: Props) =
                                 </div>
                             ))}
                         </div>
-                        <div className='pt-6 border-t-2 border-light-dark flex justify-between items-center px-2'>
+                        <div className='pt-6 border-t-2 border-noble-black-600 flex justify-between items-center px-2'>
                             <UsersList users={asset.contributors} depth={2} />
                             <div className='flex items-center gap-2'>
                                 <Typography className='text-sm font-semibold'>{asset.comments.length}</Typography>
@@ -61,7 +61,7 @@ const LibraryItem = ({ library, index, currentIndex, setCurrentIndex }: Props) =
                             </div>
                         </div>
                         {index !== 0 && (
-                            <div className='w-[1px] h-full absolute bg-light-dark -top-4 -left-2 '></div>
+                            <div className='w-[1px] h-full absolute bg-noble-black-600 -top-4 -left-2 '></div>
                         )}
                     </div>
                 ))}

@@ -16,13 +16,11 @@ export default function RootLayout({
     children: React.ReactNode
 }) {
     return (
-        <MainLayout>
-            <div className='flex flex-col w-full items-end bg-dark'>
-                <Headers />
-                <div className='w-full md:w-[79%] pb-28 relative'>
-                    {children}
-                </div>
-            </div>
-        </MainLayout>
+        <div className='flex flex-col w-full'>
+            <Headers />
+            {/* <div className='w-full md:w-[79%] pb-28 relative'> */}
+                {children}
+            {/* </div> */}
+        </div>
     )
 }

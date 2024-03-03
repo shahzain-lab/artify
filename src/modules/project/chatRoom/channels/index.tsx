@@ -50,9 +50,9 @@ const Channels = ({ isOpen }: Props) => {
 
     return (
         <div className={`  
-        ${isOpen ? 'block w-[80%] fixed h-full top-0 p-3 z-30 bg-light-dark right-0' : 'hidden'} 
+        ${isOpen ? 'block w-[80%] fixed h-full top-0 p-3 z-30 bg-noble-black-600 right-0' : 'hidden'} 
         md:block md:relative md:w-1/3`}>
-            <div className='h-screen pb-20 overflow-y-scroll md:sticky top-0'>
+            <div className='h-screen pb-20 overflow-y-scroll no-scrollbar md:sticky top-0'>
                 {toggleBar === 0 ?
                     <Participant /> : <Groups channelGroups={channelGroups} />
                 }

@@ -12,13 +12,13 @@ const Share = () => {
         <>
             <Button
               onClick={() => setIsOpen(true)}
-                className='bg-transparent text-sm font-semibold text-gray-light flex gap-1'>
+                className='bg-transparent text-sm font-semibold text-noble-black-400 flex gap-1'>
                 <Image
                     src={share}
                     alt='share'
                     width={35}
                     height={35}
-                    className='hover:bg-light-dark p-2 rounded-[8px]'
+                    className='hover:bg-noble-black-600 p-2 rounded-[8px]'
                 />
                 <span className='hidden md:block'>Share</span>
             </Button>
