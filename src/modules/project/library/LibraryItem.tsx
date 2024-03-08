@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { IUser } from '../../../interfaces/IUser.interface';
 import Typography from '@/components/elements/Typography';
 import Image, { StaticImageData } from 'next/image';
-import { ChatGradient, Status, TwoDots } from '@/shared/icons';
+import { ChatGradient, Status, TwoDots } from '@/utils/icons';
 import DetailWindow from './DetailWindow';
 import { ILibrary, ILibraryAsset } from '@/interfaces/app.interface';
 import UsersList from '../header/UsersList';

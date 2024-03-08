@@ -1,16 +1,12 @@
-import Card from '@/components/elements/Card'
 import React from 'react'
-import card from '@/assets/card.png'
+import VerticalCards from './Vertical'
+import Horizontal from './Horizontal'
 
 const page = () => {
   return (
-    <div>
-        <Card 
-          title='HELLO'
-          content='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, commodi!'
-          image={card}
-          tags={['UI', 'Design', 'Development']}
-        />
+    <div className='flex flex-col gap-4'>
+      <VerticalCards />
+      <Horizontal />
     </div>
   )
 }

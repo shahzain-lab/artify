@@ -7,7 +7,7 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/modules/**/*.{js,ts,jsx,tsx,mdx}',
     './src/layout/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/shared/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/utils/**/*.{js,ts,jsx,tsx,mdx}',
     ],
   theme: {
     extend: {
@@ -32,6 +32,7 @@ const config: Config = {
         'noble-black-700': '#131619',
         'noble-black-800': '#0D0F10',
         'noble-black-900': '#060708',
+        'noble-black-light': '#ffffff34',
         // Day Blue
         'day-blue-100': '#EBEDFC',
         'day-blue-200': '#D2D8F9',
@@ -72,6 +73,7 @@ const config: Config = {
         'stem-green-700': '#739F5F',
         'stem-green-800': '#4D6A3F',
         'stem-green-900': '#263520',
+        'stem-green-light': '#39ffa338',
         // Heisenberg Blue
         'heisenberg-blue-100': '#F1FBFE',
         'heisenberg-blue-200': '#E0F6FD',
@@ -86,12 +88,10 @@ const config: Config = {
         'happy-orange-100': '#FFF2E9',
         'happy-orange-200': '#FF7B20',
         'happy-orange-300': '#391C08',
-        'happy-orange-600': '#FF7B20',
         // Electric Green
         'electric-green-100': '#F3FBF7',
         'electric-green-200': '#4AC97E',
         'electric-green-300': '#122B1D',
-        'electric-green-600': '#4AC97E',
         // Red Power
         'red-power-100': '#FBECEC',
         'red-power-200': '#D90200',
@@ -116,6 +116,35 @@ const config: Config = {
       }
     },
   },
+  safelist: [
+    {
+      pattern: /^(bg|text|border)-noble-black-[1-9]00$/
+    },
+    {
+      pattern: /^(bg|text|border)-day-blue-[1-9]00$/
+    },
+    {
+      pattern: /^(bg|text|border)-purple-blue-[1-9]00$/
+    },
+    {
+      pattern: /^(bg|text|border)-sun-glow-[1-9]00$/
+    },
+    {
+      pattern: /^(bg|text|border)-stem-green-[1-9]00$/
+    },
+    {
+      pattern: /^(bg|text|border)-heisenberg-blue-[1-9]00$/
+    },
+    {
+      pattern: /^(bg|text|border)-happy-orange-[1-9]00$/
+    },
+    {
+      pattern: /^(bg|text|border)-electric-green-[1-9]00$/
+    },
+    {
+      pattern: /^(bg|text|border)-red-power-[1-9]00$/
+    },
+  ],
   plugins: [],
 }
 export default config

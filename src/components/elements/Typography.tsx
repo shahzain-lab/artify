@@ -27,7 +27,7 @@ const sizes = {
     default: 'text-base leading-8'
 }
 interface Props {
-    children: React.ReactNode
+    children?: React.ReactNode
     size?: 'xl' | 'lg' | 'md' | 'ms' | 'sm' | 'xs' | 'default'
     variant?: 'regular' | 'medium' | 'semibold' | 'bold'
     theme?: 'default' | 'gray' | 'blueGreen500' | 'blueGreen600' | 'blueGreen700'

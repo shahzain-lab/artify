@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import LibraryItem from './LibraryItem'
-import { Plus } from '@/shared/icons'
+import { Plus } from '@/utils/icons'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/model/store'
 

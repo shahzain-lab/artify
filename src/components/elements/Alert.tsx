@@ -1,5 +1,5 @@
 import { IAlertProps } from '@/interfaces/IElements.interface';
-import { Cross, Danger, Idea, Success, Warning } from '@/shared/icons';
+import { Cross, Danger, Idea, Success, Warning } from '@/utils/icons';
 import React from 'react'
 
 const Alert: React.FC<IAlertProps> = ({

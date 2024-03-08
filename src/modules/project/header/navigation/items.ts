@@ -1,5 +1,5 @@
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
-import { Artificium, Chat, GetStarted, Library } from '@/shared/icons'
+import { Artificium, Chat, GetStarted, Library } from '@/utils/icons'
 import { Url } from 'next/dist/shared/lib/router/router'
 
 export interface IMenu {

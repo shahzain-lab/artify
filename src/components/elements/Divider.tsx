@@ -8,7 +8,7 @@ interface Props {
 const Divider = ({className}: Props) => {
   return (
     <div className={cn(
-        'h-[0.5px] bg-[#363A3D]',
+        'h-[0.5px] bg-noble-black-500 w-full',
         className
     )}></div>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { Status } from '@/shared/icons'
+import { Status } from '@/utils/icons'
 import { IUser } from '@/interfaces/app.interface';
 
 interface Props {

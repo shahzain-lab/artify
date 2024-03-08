@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Messages from '../artificium/chatbot/Messages'
 import Prompt from '../../prompt'
 import Channels from './channels'
-import { DoubleLeft, DoubleRight } from '@/shared/icons'
+import { DoubleLeft, DoubleRight } from '@/utils/icons'
 import { preventScroll } from '@/lib/preventScroll'
 
 const ChatRoom = () => {

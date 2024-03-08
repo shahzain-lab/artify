@@ -1,4 +1,5 @@
 import Alert from '@/components/elements/Alert'
+import CardLayer from '@/components/elements/CardLayer'
 import { IAlertProps } from '@/interfaces/IElements.interface'
 import React from 'react'
 
@@ -9,49 +10,58 @@ const page = () => {
         { title: 'Success!', message: 'Your changes have been saved.', type: 'success' },
         { title: 'Good To Know', message: 'You can use me in informative places', type: 'idea/FYI' },
         { title: 'Warning!', message: 'This action cannot be undone.', type: 'success' },
-      ]
+    ]
     return (
         <main>
-            <div className="flex flex-col gap-2 border border-dashed rounded-[10px] border-noble-black-300 bg-noble-black-500 p-3 w-full">
-                {alerts.map((alert) => (
-                    <Alert
-                        key={alert.title}
-                        {...alert}
-                        theme="solid"
-                    />
-                ))}
-            </div>
-            <div className="grid md:grid-cols-2 gap-2 mt-2 w-full">
-                <div className="flex flex-col gap-2 border border-dashed rounded-[10px] border-noble-black-300 bg-noble-black-500 p-2">
-                    {alerts.map((alert) => (
-                        <Alert
-                            key={alert.title}
-                            {...alert}
-                        />
-                    ))}
-                </div>
-                <div className="flex flex-col gap-2 border border-dashed rounded-[10px] border-noble-black-300 bg-noble-black-500 p-2">
-                    {alerts.map((alert) => (
-                        <Alert
-                            key={alert.title}
-                            {...alert}
-                            theme="bordered"
-                        />
-                    ))}
-                </div>
-            </div>
-            <div className="grid md:grid-cols-2 gap-2 mt-2 w-full">
-                <div className="flex flex-col gap-2 border border-dashed rounded-[10px] border-noble-black-300 bg-noble-black-500 p-2">
+            <CardLayer title='Solid'>
+                <div className="flex flex-col gap-2 w-full">
                     {alerts.map((alert) => (
                         <Alert
                             key={alert.title}
                             {...alert}
                             theme="solid"
-                            variant="vertical"
                         />
                     ))}
                 </div>
-                <div className="flex flex-col gap-2 border border-dashed rounded-[10px] border-noble-black-300 bg-noble-black-500 p-2">
+            </CardLayer>
+            <div className="grid md:grid-cols-2 gap-2 mt-2 w-full">
+                <CardLayer title='Default'>
+                    <div className="flex flex-col gap-2 rounded-[10px] w-full">
+                        {alerts.map((alert) => (
+                            <Alert
+                                key={alert.title}
+                                {...alert}
+                            />
+                        ))}
+                    </div>
+                </CardLayer>
+                <CardLayer title='Border'>
+                    <div className="flex flex-col gap-2 w-full">
+                        {alerts.map((alert) => (
+                            <Alert
+                                key={alert.title}
+                                {...alert}
+                                theme="bordered"
+                            />
+                        ))}
+                    </div>
+                </CardLayer>
+            </div>
+            <div className="grid md:grid-cols-2 gap-2 mt-2 w-full">
+                <CardLayer title='Vertical'>
+                    <div className="flex flex-col gap-2 w-full">
+                        {alerts.map((alert) => (
+                            <Alert
+                                key={alert.title}
+                                {...alert}
+                                theme="solid"
+                                variant="vertical"
+                            />
+                        ))}
+                    </div>
+                </CardLayer>
+                <CardLayer title='Bordered'>
+                <div className="flex flex-col gap-2 w-full">
                     {alerts.map((alert) => (
                         <Alert
                             key={alert.title}
@@ -61,6 +71,7 @@ const page = () => {
                         />
                     ))}
                 </div>
+                </CardLayer>
             </div>
         </main>
     )

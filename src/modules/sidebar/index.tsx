@@ -7,11 +7,12 @@ import Project from './project'
 import Settings from './settings'
 import { useDispatch, useSelector } from 'react-redux'
 import { preventScroll } from '@/lib/preventScroll'
-import { CheveronDown, CheveronRight, Cross } from '@/shared/icons'
+import { CheveronDown, CheveronRight, Cross } from '@/utils/icons'
 import { RootState } from '@/model/store'
 import { setOpenMobileMenu } from '@/model/store/slices/navigationSlice'
 import Typography from '@/components/elements/Typography'
 import ListPages from './listPages'
+import ListTask from './task'
 
 const Sidebar = () => {
   const dispatch = useDispatch()
@@ -37,6 +38,10 @@ const Sidebar = () => {
     {
       title: 'Projects',
       Route: Project
+    },
+    {
+      title: 'Task',
+      Route: ListTask
     },
     {
       title: 'Pages',

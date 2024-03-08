@@ -3,7 +3,7 @@ import Participant from './participants'
 import ToggleMembers from './participants/ToggleMembers'
 import { users } from '@/lib/userDB'
 import Groups from './groups'
-import { Globe, Lock } from '@/shared/icons'
+import { Globe, Lock } from '@/utils/icons'
 
 interface Props {
     isOpen: boolean
