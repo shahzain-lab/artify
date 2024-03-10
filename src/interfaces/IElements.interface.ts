@@ -1,6 +1,8 @@
 import { StaticImageData } from "next/image";
 import { IComments, IUser } from "./app.interface";
 
+export type TColor = "primary" | "destructive" | "secondary" | 'blue' | "ghost" | "link" | "green" | "warning" | "gray" | "light"
+
 export interface IAlertProps {
     title: string;
     message: string;
@@ -21,7 +23,7 @@ export interface ICardProps {
     position?: 'vertical' | 'horizontal';
     variant?: 'primary';
     theme?: 'solid' | 'bordered' | 'default';
-    classNames?: {title: string; content: string; base: string};
+    classNames?: {title?: string; content?: string; base?: string};
     children?: React.ReactNode;
     handler?: {title: string, onClick: () => void};
     handler2?: {title: string, onClick: () => void};
@@ -39,5 +41,15 @@ export interface ITaskCardProps {
     variant?: 'primary';
     comments?: IComments[];
     likes?: number;
-    users?: IUser[]
+    users?: IUser[];
+}
+
+
+export interface IDropdownProps {
+    title?: string | React.ReactNode;
+    children?: React.ReactNode;
+    classNames?: {button?: string; base?: string; items?: string; item?: string};  
+    options?: string[];  
+    Icon?: boolean | React.ReactNode;
+    color?: TColor;
 }

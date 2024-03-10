@@ -24,7 +24,12 @@ const KanbanPage = () => {
               >
                 New Board
               </Button>
-              <Dropdown size='lg' />
+              <Dropdown 
+               title="Dropdown"
+               options={['Newest', 'Oldest', 'A-Z', 'Z-A']} 
+               Icon
+               color='ghost'
+              />
           </div>
           <div className='hidden md:block'>
            <UsersList users={project.members} depth={4} />

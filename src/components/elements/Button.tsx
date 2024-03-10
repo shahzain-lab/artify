@@ -1,8 +1,8 @@
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
+import { TColor } from "@/interfaces/IElements.interface"
 
-export type TColor = "primary" | "destructive" | "secondary" | 'blue' | "ghost" | "link" | "green" | "warning" | "gray" | "light"
 export type TSize = "default" | "sm" | "lg" | "icon"
 
 const buttonVariants = cva(
@@ -20,6 +20,8 @@ const buttonVariants = cva(
         blue: "bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:outline-none focus:ring-blue-300",
         ghost: "bg-slate-800 hover:text-white",
         link: "text-blue-500 underline-offset-4 underline ",
+        white: 'text-gray-900 bg-white',
+        black: 'text-white bg-black'
       },
       variant: {
         primaryoutline: 'border border-theme-greenish bg-inherit text-theme-greenish',
@@ -31,6 +33,8 @@ const buttonVariants = cva(
         secondaryoutline: "border border-slate-100 bg-inherit text-slate-100 ",
         ghostoutline: "border border-slate-800 bg-inherit hover:text-slate-800",
         linkoutline: "text-blue-500 underline-offset-4 underline",
+        whiteoutline: 'border border-white bg-inherit text-white',
+        blackoutline: 'border border-gray-900 bg-inherit text-gray-900'
       },
       size: {
         default: "h-10 px-4 py-2",
