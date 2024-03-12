@@ -3,6 +3,7 @@ import Image from 'next/image'
 import cog from '@/assets/icons/cog.svg'
 import avatar from '@/assets/avatars/Avatar-7.png'
 import Typography from '@/components/elements/Typography'
+import Link from 'next/link'
 
 const Settings = () => {
     return (
@@ -19,12 +20,14 @@ const Settings = () => {
                     <Typography variant="medium" className='text-[12px] text-theme-greenish'>Premium</Typography>
                 </div>
             </div>
-            <Image
-                src={cog}
-                alt='cog'
-                width={24}
-                height={24}
-            />
+            <Link href={'/profile'}>
+                <Image
+                    src={cog}
+                    alt='cog'
+                    width={24}
+                    height={24}
+                />
+            </Link>
         </div>
     )
 }

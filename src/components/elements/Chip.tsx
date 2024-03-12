@@ -1,21 +1,28 @@
+import { TColor } from '@/interfaces/IElements.interface';
+import { cn } from '@/lib/utils';
 import React from 'react';
 
 interface ChipProps {
-  variant?: 'green' | 'purple' | 'gray' | 'pink';
-  content?: string | React.ReactNode
+  color?: "primary" | "green" | "warning" | "destructive" | "purple" | "blue";
+  content?: string | React.ReactNode;
+  className?: string
 }
 
-const Chip: React.FC<ChipProps> = ({ variant, content }) => {
+const Chip: React.FC<ChipProps> = ({ color, content, className }) => {
   const getVariantStyles = () => {
-    switch (variant) {
+    switch (color) {
+      case 'primary':
+        return 'text-theme-greenish bg-[#b7f09c43]';
       case 'green':
-        return 'text-green-500 bg-stem-green-light';
+        return 'text-[#37ff70] bg-[#37ff7041]';
+      case 'warning':
+        return 'text-[#f9e93e] bg-[#f5e63e3f]';
+      case 'destructive':
+        return 'text-[#f93e44] bg-[#f93e4446]';
       case 'purple':
-        return 'text-purple-600 bg-purple-100';
-      case 'gray':
-        return 'text-gray-300 bg-noble-black-light';
-      case 'pink':
-        return 'text-pink-600 bg-pink-100';
+        return 'text-[#f93eb7] bg-[#f93eb73c]';
+      case 'blue':
+        return 'text-[#3e3ef9] bg-[#3e3ef939]';
       default:
         return 'text-gray-600 bg-gray-100';
     }
@@ -23,7 +30,10 @@ const Chip: React.FC<ChipProps> = ({ variant, content }) => {
 
   return (
     <span
-      className={`inline-flex items-center px-2 py-1 rounded-lg text-[12px] font-medium ${getVariantStyles()}`}
+      className={cn(
+        `inline-flex items-center px-2 py-1 rounded-lg text-[12px] font-medium ${getVariantStyles()}`,
+        className
+      )}
     >
       {content}
     </span>

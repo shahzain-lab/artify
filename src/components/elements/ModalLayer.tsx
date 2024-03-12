@@ -6,7 +6,7 @@ import crossSVG from '@/assets/icons/cross.svg'
 import { preventScroll } from '@/lib/preventScroll';
 
 interface Props {
-  children: React.ReactNode
+  children?: React.ReactNode
   setIsOpen: Dispatch<SetStateAction<boolean>>
 }
 

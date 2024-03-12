@@ -24,7 +24,7 @@ const TaskDetails = () => {
         reporter: project.members[1]
     }
     return (
-        <SimpleCard className='max-w-[350px] min-w-[350px] sticky'>
+        <SimpleCard className='w-full md:max-w-[350px] md:min-w-[350px] sticky'>
             <div className='flex items-center justify-between mb-5'>
                 <Typography className='font-bold text-xl'>Details</Typography>
                 <div className="flex gap-3 items-center">
