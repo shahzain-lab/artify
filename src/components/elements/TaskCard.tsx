@@ -51,7 +51,7 @@ const TaskCard: React.FC<ITaskCardProps> = ({
           <Typography className='block text-sm font-bold'>{title}</Typography>
         )}
         {content && (
-          <Typography className='block text-sm text-noble-black-300'>{content}</Typography>
+          <Typography className='block text-[12px] text-noble-black-300'>{content}</Typography>
         )}
         {images?.length ? (
           <div className='flex gap-1'>
