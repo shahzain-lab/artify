@@ -144,6 +144,12 @@ const config: Config = {
     {
       pattern: /^(bg|text|border)-red-power-[1-9]00$/
     },
+    {
+      pattern: /^grid-cols-\d+$/
+    },
+    {
+      pattern: /^grid-rows-\d+$/
+    },
   ],
   plugins: [],
 }

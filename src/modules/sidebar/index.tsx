@@ -64,7 +64,7 @@ const Sidebar = () => {
             <Fragment key={i}>
               <Divider />
               <div className='py-4'>
-                  <div onClick={() => setActive(active===i?null:i)} className='mb-5 cursor-pointer flex justify-between items-center'>
+                  <div onClick={() => setActive(active===i?null:i)} className='my-3 cursor-pointer flex justify-between items-center'>
                     <Typography variant='semibold' className='text-[12px] text-noble-black-400'>{module.title}</Typography>
                     {active===i?(
                       <CheveronDown />

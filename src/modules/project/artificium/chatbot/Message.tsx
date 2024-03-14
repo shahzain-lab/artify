@@ -13,6 +13,7 @@ import MessageFeatures from './MessageFeatures'
 import EmojiList from '@/components/app/EmojiList'
 import ReactEmojiPicker from '@/components/app/EmojiPicker'
 import { IEmoji } from '../../../../interfaces/IApp.interface'
+import Dropdown from '@/components/elements/Dropdown'
 
 interface Props {
     message: IMessage
@@ -102,15 +103,21 @@ const Message = ({ message }: Props) => {
 
                 {message.isHuman ? null : (
                     <div className='pt-3 flex items-center gap-2'>
-                        <Button size={'sm'} variant={'gray'} className='font-semibold text-[12px]'>Regenerate response</Button>
-                        <Button size={'sm'} variant={'gray'} className='font-semibold text-[12px]'>Modify</Button>
+                        <Button size={'sm'} color='gray' className='font-semibold text-[12px]'>Regenerate response</Button>
+                        <Dropdown 
+                        color='gray' 
+                         title='Modify'
+                         Icon
+                         classNames={{button: 'font-semibold text-[12px] pt-2.5 pb-1.5', items: 'bg-noble-black-900 w-44', item: 'hover:bg-noble-black-800'}}
+                         options={['Create variations', 'Adjust', 'Share', 'Export']}
+                        ></Dropdown>
                     </div>
                 )}
                 {message.isHuman && (
                     <div className='flex items-center justify-between gap-3 -mb-5 md:-mb-7 pt-4'>
                         <EmojiList emoji={emoji} />
                         <div className='flex items-center gap-1 pr-4'>
-                            <Button size={'sm'} variant={'gray'} className='font-semibold h-7 text-[12px]'>Reply</Button>
+                            <Button size={'sm'} color='gray' className='font-semibold h-7 text-[12px]'>Reply</Button>
                             <ReactEmojiPicker setEmoji={setEmoji} />
                         </div>
                     </div>

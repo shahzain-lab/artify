@@ -70,9 +70,9 @@ export const Globe = ({ className, color = '#9B9C9E' }: Props) => {
 
 export const Cross = ({ className, color = '#686B6E' }: Props) => {
     return (
-        <svg className={cn(className)} width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={cn('text-[#686B6E]', className)} width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="cross">
-                <path id="icon" d="M4.16699 4.16666L15.8337 15.8333M15.8337 4.16666L4.16699 15.8333" stroke={color} stroke-width="1.5" stroke-linecap="round" />
+                <path id="icon" d="M4.16699 4.16666L15.8337 15.8333M15.8337 4.16666L4.16699 15.8333" stroke='currentColor' stroke-width="1.5" stroke-linecap="round" />
             </g>
         </svg>
     )
@@ -86,10 +86,10 @@ export const Watch = ({ className, color = '#686B6E' }: Props) => {
     )
 }
 
-export const Comment = ({ className, color = '#38A7B6' }: Props) => {
+export const Comment = ({ className }: Props) => {
     return (
-        <svg className={cn(className)} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12V21H12Z" stroke={color} stroke-width="1.5" stroke-linecap="round" />
+        <svg className={cn('w-5 h-5 text-[#38A7B6]',className)} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12V21H12Z" stroke={'currentColor'} stroke-width="1.5" stroke-linecap="round" />
         </svg>
     )
 }
@@ -209,7 +209,7 @@ export const ChatGradient = ({ className, color = "#686B6E" }: Props) => {
 export const Chat = ({ className, color = '#686B6E' }: Props) => {
     return (
         <svg className={cn(
-            'w-4 h-4 md:w-auto md:h-auto',
+            'w-4 h-4 ',
             className
         )} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M18 3H6C4.34315 3 3 4.34315 3 6V15.7574C3 16.553 3.31607 17.3161 3.87868 17.8787L6.71967 20.7197C7.19214 21.1921 8 20.8575 8 20.1893V19C8 17.8954 8.89543 17 10 17H18C19.6569 17 21 15.6569 21 14V6C21 4.34315 19.6569 3 18 3Z" stroke={color} strokeWidth="1.5" strokeLinecap="round" />
@@ -229,12 +229,12 @@ export const TwoDots = ({ className, color = '#686B6E' }: Props) => {
 export const GetStarted = ({ className, color = '#686B6E' }: Props) => {
     return (
         <svg className={cn(
-            'w-4 h-4 md:w-auto md:h-auto',
+            'w-5 h-5 text-[#686B6E]',
             className
         )} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="magic-wand">
                 <path id="icon" d="M10.5002 10.5L12.586 8.41421C13.367 7.63316 14.6334 7.63317 15.4144 8.41421L15.586 8.58579C16.367 9.36684 16.367 10.6332 15.586 11.4142L13.5002 13.5M10.5002 10.5L3.4144 17.5858C2.63335 18.3668 2.63335 19.6332 3.4144 20.4142L3.58597 20.5858C4.36702 21.3668 5.63335 21.3668 6.4144 20.5858L13.5002 13.5M10.5002 10.5L13.5002 13.5M8.29953 8.35722L6.00019 7.38534M11.3401 5.31499L10.4105 3M15.6457 5.31499L16.5752 3M18.6847 8.35353L20.9895 7.3949M18.6847 12.6465L21.0002 13.5794M15.6421 15.6865L16.5753 18"
-                    stroke={color}
+                    stroke='currentColor'
                     strokeWidth="1.5"
                     strokeLinecap="round"
                     strokeLinejoin="round" />
@@ -332,11 +332,11 @@ export const Success = ({ className, color = '#4AC97E' }: Props) => (
 export const Artificium = ({ className, color = "#686B6E" }: Props) => {
     return (
         <svg className={cn(
-            'w-4 h-4 md:w-auto md:h-auto',
+            'w-4 h-4 text-[#686B6E]',
             className
         )} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
             <path d="M15.4221 7.30751L20.7806 18.0276C21.4632 19.3932 20.4704 21 18.9441 21H15.4221M15.4221 7.30751L13.8365 4.13535C13.0798 2.62155 10.9202 2.62155 10.1635 4.13535L3.21942 18.0276C2.53681 19.3932 3.52955 21 5.05592 21H8.57789M15.4221 7.30751L12 10.7306M8.57789 21H15.4221M8.57789 21L5.15577 17.5769M15.4221 21L8.57789 14.1538M12 10.7306L20.7264 19.4596M12 10.7306L8.57789 14.1538M3.27361 19.4596L5.15577 17.5769M5.15577 17.5769L8.57789 14.1538"
-                stroke={color}
+                stroke='currentColor'
                 strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round" />
@@ -347,7 +347,7 @@ export const Artificium = ({ className, color = "#686B6E" }: Props) => {
 export const Library = ({ className, color = '#686B6E' }: Props) => {
     return (
         <svg className={cn(
-            'w-4 h-4 md:w-auto md:h-auto',
+            'w-4 h-4',
             className
         )} xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">
             <path d="M19 7.5H12.6499C12.2547 7.5 11.8966 7.26727 11.7361 6.90614L10.8889 5M19 7.5V7.5C20.1046 7.5 21 8.39543 21 9.5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H9.35013C9.74532 3 10.1034 3.23273 10.2639 3.59386L10.8889 5M19 7.5V6C19 5.44772 18.5523 5 18 5H10.8889" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -412,9 +412,136 @@ export const Dribble = ({ className, color = '#101828' }: Props) => {
 
 export const Level = ({ className, color = '#101828' }: Props) => {
     return (
-        <svg width="24" height="24" className={cn(className)} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="24" height="24" className={cn('w-5 h-5',className)} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 3.99995V9.99995M1 9.99995H7M1 9.99995L5.64 5.63995C6.71475 4.56467 8.04437 3.77916 9.50481 3.35673C10.9652 2.93429 12.5089 2.8887 13.9917 3.22421C15.4745 3.55972 16.8482 4.26539 17.9845 5.27537C19.1209 6.28536 19.9828 7.56674 20.49 8.99995M23 20V14M23 14H17M23 14L18.36 18.36C17.2853 19.4352 15.9556 20.2207 14.4952 20.6432C13.0348 21.0656 11.4911 21.1112 10.0083 20.7757C8.52547 20.4402 7.1518 19.7345 6.01547 18.7245C4.87913 17.7145 4.01717 16.4332 3.51 15"
                 stroke={color} stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    )
+}
+
+export const Backlog = ({ className, color = '#000000' }: Props) => {
+    return (
+        <svg className={cn('w-5 h-5 text-[#000] ',className)} fill='currentColor' width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5,5 L19,5 L19,4.5 C19,3.67157288 18.3284271,3 17.5,3 L6.5,3 C5.67157288,3 5,3.67157288 5,4.5 L5,5 Z M4,5.5 L4,4.5 C4,3.11928813 5.11928813,2 6.5,2 L17.5,2 C18.8807119,2 20,3.11928813 20,4.5 L20,5.5 C20,5.77614237 19.7761424,6 19.5,6 L4.5,6 C4.22385763,6 4,5.77614237 4,5.5 Z M4,10.5 L4,7.5 C4,7.22385763 4.22385763,7 4.5,7 L19.5,7 C19.7761424,7 20,7.22385763 20,7.5 L20,10.5 C20,10.7761424 19.7761424,11 19.5,11 L4.5,11 C4.22385763,11 4,10.7761424 4,10.5 Z M5,10 L19,10 L19,8 L5,8 L5,10 Z M6,15.5 L6,12.5 C6,12.2238576 6.22385763,12 6.5,12 L21.5,12 C21.7761424,12 22,12.2238576 22,12.5 L22,15.5 C22,15.7761424 21.7761424,16 21.5,16 L6.5,16 C6.22385763,16 6,15.7761424 6,15.5 Z M7,15 L21,15 L21,13 L7,13 L7,15 Z M4,18.5 L4,17.5 C4,17.2238576 4.22385763,17 4.5,17 L19.5,17 C19.7761424,17 20,17.2238576 20,17.5 L20,18.5 C20,19.8807119 18.8807119,21 17.5,21 L6.5,21 C5.11928813,21 4,19.8807119 4,18.5 Z M5,18 L5,18.5 C5,19.3284271 5.67157288,20 6.5,20 L17.5,20 C18.3284271,20 19,19.3284271 19,18.5 L19,18 L5,18 Z" />
+        </svg>
+    )
+}
+
+export const Task = ({ className }: Props) => {
+    return (
+        <svg className={cn('text-[#231815]',className)} width="800px" height="800px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M864 512a32 32 0 0 0-32 32v96a32 32 0 0 0 64 0v-96a32 32 0 0 0-32-32zM881.92 389.44a23.68 23.68 0 0 0-5.76-2.88 19.84 19.84 0 0 0-6.08-1.92 32 32 0 0 0-28.8 8.64A32 32 0 0 0 832 416a32 32 0 1 0 64 0 33.6 33.6 0 0 0-9.28-22.72z"
+            fill='currentColor' /><path d="M800 128h-32a96 96 0 0 0-96-96H352a96 96 0 0 0-96 96H224a96 96 0 0 0-96 93.44v677.12A96 96 0 0 0 224 992h576a96 96 0 0 0 96-93.44V736a32 32 0 0 0-64 0v162.56a32 32 0 0 1-32 29.44H224a32 32 0 0 1-32-29.44V221.44A32 32 0 0 1 224 192h32a96 96 0 0 0 96 96h320a96 96 0 0 0 96-96h32a32 32 0 0 1 32 29.44V288a32 32 0 0 0 64 0V221.44A96 96 0 0 0 800 128z m-96 64a32 32 0 0 1-32 32H352a32 32 0 0 1-32-32V128a32 32 0 0 1 32-32h320a32 32 0 0 1 32 32z"
+                fill='currentColor' /><path d="M712.32 426.56L448 721.6l-137.28-136.32A32 32 0 0 0 265.6 630.4l160 160a32 32 0 0 0 22.4 9.6 32 32 0 0 0 23.04-10.56l288-320a32 32 0 0 0-47.68-42.88z"
+                    fill='currentColor' />
+        </svg>
+    )
+}
+
+export const Login = ({ className, color = '#1C274C' }: Props) => {
+    return (
+        <svg className={cn(className)} width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.00098 11.999L16.001 11.999M16.001 11.999L12.501 8.99902M16.001 11.999L12.501 14.999" stroke={color} stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M9.00195 7C9.01406 4.82497 9.11051 3.64706 9.87889 2.87868C10.7576 2 12.1718 2 15.0002 2L16.0002 2C18.8286 2 20.2429 2 21.1215 2.87868C22.0002 3.75736 22.0002 5.17157 22.0002 8L22.0002 16C22.0002 18.8284 22.0002 20.2426 21.1215 21.1213C20.3531 21.8897 19.1752 21.9862 17 21.9983M9.00195 17C9.01406 19.175 9.11051 20.3529 9.87889 21.1213C10.5202 21.7626 11.4467 21.9359 13 21.9827"
+                stroke={color} stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+    )
+}
+
+export const Workspace = ({ className, color = '#000000' }: Props) => {
+    return (
+        <svg className={cn(className)} fill={color} width="800px" height="800px" viewBox="0 0 32 32" id="icon" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+            </defs>
+            <path d="M16,17v8H6V17H16m0-2H6a2,2,0,0,0-2,2v8a2,2,0,0,0,2,2H16a2,2,0,0,0,2-2V17a2,2,0,0,0-2-2Z" />
+            <path d="M27,6v5H17V6H27m0-2H17a2,2,0,0,0-2,2v5a2,2,0,0,0,2,2H27a2,2,0,0,0,2-2V6a2,2,0,0,0-2-2Z" />
+            <path d="M27,17v5H22V17h5m0-2H22a2,2,0,0,0-2,2v5a2,2,0,0,0,2,2h5a2,2,0,0,0,2-2V17a2,2,0,0,0-2-2Z" />
+            <path d="M11,6v5H6V6h5m0-2H6A2,2,0,0,0,4,6v5a2,2,0,0,0,2,2h5a2,2,0,0,0,2-2V6a2,2,0,0,0-2-2Z" />
+            <g id="_Rectangle_" data-name="&lt;Rectangle&gt;">
+                <rect fill="none" width="32" height="32" />
+            </g>
+        </svg>
+    )
+}
+
+export const Register = ({ className, color = '#000000' }: Props) => {
+    return (
+        <svg className={cn('w-5 h-5',className)} fill={color} height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 310 310" xmlSpace="preserve">
+            <path d="M300.606,159.727l-45.333-45.333c-5.857-5.858-15.355-5.858-21.213,0L225,123.454V15c0-8.284-6.716-15-15-15H20
+	C11.716,0,5,6.716,5,15v240.002c0,8.284,6.716,15,15,15h85V295c0,8.284,6.716,15,15,15h45.333c3.979,0,7.794-1.581,10.607-4.394
+	l124.667-124.667C306.465,175.081,306.465,165.585,300.606,159.727z M35,30h160v123.454l-85.606,85.605
+	c-0.302,0.301-0.581,0.619-0.854,0.942H35V30z M159.12,280H135v-24.121l109.667-109.666l24.12,24.12L159.12,280z"/>
+        </svg>
+    )
+}
+
+export const Join = ({ className, color = '#000000' }: Props) => {
+    return (
+        <svg className={cn('w-5 h-5',className)} fill={color} version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+            width="800px" height="800px" viewBox="0 0 461.759 461.759"
+            xmlSpace="preserve">
+            <g>
+                <path d="M0,301.058h147.916v147.919H0V301.058z M194.432,448.977H342.35V301.058H194.432V448.977z M2.802,257.347h147.916V109.434
+		H2.802V257.347z M325.476,92.219l-51.603-79.437l-79.441,51.601l51.604,79.437L325.476,92.219z M219.337,213.733l71.045,62.663
+		l62.66-71.039l-71.044-62.669L219.337,213.733z M412.107,57.967l-80.668,49.656l49.652,80.666l80.668-49.65L412.107,57.967z"/>
+            </g>
+        </svg>
+    )
+}
+
+export const UserPlus = ({ className }: Props) => {
+    return (
+        <svg className={cn('text-[#1C274C] w-5 h-5', className)} width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="6" r="4" stroke="currentColor" stroke-width="1.5" />
+            <path d="M21 10H19M19 10H17M19 10L19 8M19 10L19 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+    )
+}
+
+export const User = ({ className }: Props) => {
+    return (
+        <svg className={cn('text-[#000] w-5 h-5', className)} width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    )
+}
+
+export const Project = ({ className }: Props) => {
+    return (
+        <svg className={cn('text-[#000] w-5 h-5', className)} fill="currentColor" width="800px" height="800px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <path d="M2,9H9V2H2ZM4,4H7V7H4Zm7-2V9h7V2Zm5,5H13V4h3ZM2,18H9V11H2Zm2-5H7v3H4Zm7,5h7V11H11Zm2-5h3v3H13Z" />
+            </g>
+        </svg>
+    )
+}
+
+export const Resource = ({ className }: Props) => {
+    return (
+        <svg className={cn('text-[#000] w-5 h-5', className)} width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="none" stroke="currentColor" stroke-width="2" d="M12,3 L21,7.5 L12,12 L3,7.5 L12,3 Z M16.5,10.25 L21,12.5 L12,17 L3,12.5 L7.5,10.25 L7.5,10.25 M16.5,15.25 L21,17.5 L12,22 L3,17.5 L7.5,15.25 L7.5,15.25" />
+        </svg>
+    )
+}
+
+export const Document = ({ className }: Props) => {
+    return (
+        <svg className={cn('text-[#1C274D] w-5 h-5', className)} width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6.00002V6.75002H18.75V6.00002H18ZM15.7172 2.32614L15.6111 1.58368L15.7172 2.32614ZM4.91959 3.86865L4.81353 3.12619H4.81353L4.91959 3.86865ZM5.07107 6.75002H18V5.25002H5.07107V6.75002ZM18.75 6.00002V4.30604H17.25V6.00002H18.75ZM15.6111 1.58368L4.81353 3.12619L5.02566 4.61111L15.8232 3.0686L15.6111 1.58368ZM4.81353 3.12619C3.91638 3.25435 3.25 4.0227 3.25 4.92895H4.75C4.75 4.76917 4.86749 4.63371 5.02566 4.61111L4.81353 3.12619ZM18.75 4.30604C18.75 2.63253 17.2678 1.34701 15.6111 1.58368L15.8232 3.0686C16.5763 2.96103 17.25 3.54535 17.25 4.30604H18.75ZM5.07107 5.25002C4.89375 5.25002 4.75 5.10627 4.75 4.92895H3.25C3.25 5.9347 4.06532 6.75002 5.07107 6.75002V5.25002Z" fill="#1C274D" />
+            <path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M8 15.5H13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M4 6V19C4 20.6569 5.34315 22 7 22H17C18.6569 22 20 20.6569 20 19V14M4 6V5M4 6H17C18.6569 6 20 7.34315 20 9V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+    )
+}
+
+export const Image = ({ className }: Props) => {
+    return (
+        <svg className={cn('text-[#000] w-5 h-5', className)} width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.2639 15.9375L12.5958 14.2834C11.7909 13.4851 11.3884 13.086 10.9266 12.9401C10.5204 12.8118 10.0838 12.8165 9.68048 12.9536C9.22188 13.1095 8.82814 13.5172 8.04068 14.3326L4.04409 18.2801M14.2639 15.9375L14.6053 15.599C15.4112 14.7998 15.8141 14.4002 16.2765 14.2543C16.6831 14.126 17.12 14.1311 17.5236 14.2687C17.9824 14.4251 18.3761 14.8339 19.1634 15.6514L20 16.4934M14.2639 15.9375L18.275 19.9565M18.275 19.9565C17.9176 20 17.4543 20 16.8 20H7.2C6.07989 20 5.51984 20 5.09202 19.782C4.71569 19.5903 4.40973 19.2843 4.21799 18.908C4.12796 18.7313 4.07512 18.5321 4.04409 18.2801M18.275 19.9565C18.5293 19.9256 18.7301 19.8727 18.908 19.782C19.2843 19.5903 19.5903 19.2843 19.782 18.908C20 18.4802 20 17.9201 20 16.8V16.4934M4.04409 18.2801C4 17.9221 4 17.4575 4 16.8V7.2C4 6.0799 4 5.51984 4.21799 5.09202C4.40973 4.71569 4.71569 4.40973 5.09202 4.21799C5.51984 4 6.07989 4 7.2 4H16.8C17.9201 4 18.4802 4 18.908 4.21799C19.2843 4.40973 19.5903 4.71569 19.782 5.09202C20 5.51984 20 6.0799 20 7.2V16.4934M17 8.99989C17 10.1045 16.1046 10.9999 15 10.9999C13.8954 10.9999 13 10.1045 13 8.99989C13 7.89532 13.8954 6.99989 15 6.99989C16.1046 6.99989 17 7.89532 17 8.99989Z" 
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
     )
 }

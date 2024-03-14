@@ -43,14 +43,14 @@ const WindowLayer = ({ children, setIsOpen }: Props) => {
             <div
                 onClick={handleCloseModal}
                 className='w-full h-screen fixed top-0 left-0 bg-bg-layer backdrop-blur-sm'></div>
-            <div className='shadow-xl-inset bg-glass-modal p-10 rounded-l-2xl w-[50%] h-full relative'>
+            <div className='shadow-xl-inset bg-glass-modal p-4 md:p-10 rounded-l-2xl w-[90%] md:w-[50%] h-full relative'>
                 <Image
                     onClick={handleCloseModal}
                     src={crossSVG}
                     alt='cross'
                     width={20}
                     height={20}
-                    className='absolute right-8 top-10 cursor-pointer'
+                    className='absolute right-8 top-5 md:top-10 cursor-pointer'
                 />
                 {children}
             </div>

@@ -79,7 +79,7 @@ const Tab: React.FC<TabProps> = ({
 };
 
 interface TabsProps {
-    children: ReactNode;
+    children?: ReactNode;
     defaultTab?: number;
     orientation?: 'vertical' | 'horizontal';
     className?: string
@@ -97,6 +97,7 @@ const Tabs: React.FC<TabsProps> = ({
         setActiveTab(tabId);
     };
     const totalTabs = Children.count(children);
+    const gridItems = orientation === 'vertical' ? ` grid-rows-${totalTabs} mr-4 ` : `mb-4 grid-cols-${totalTabs}`;
 
     return (
         <div className={cn(
@@ -105,8 +106,8 @@ const Tabs: React.FC<TabsProps> = ({
         )}>
             <div className={cn(
                 'p-3 rounded-xl bg-noble-black-800 shadow-md',
-                orientation === 'vertical' ? ` grid-rows-${totalTabs} mr-4 ` : `mb-4 grid-cols-${totalTabs}`,
                 `grid`,
+                gridItems,
                 className
             )}>
                 {Children.map(children, (child, index) => (

@@ -18,7 +18,7 @@ const Share = () => {
                     alt='share'
                     width={35}
                     height={35}
-                    className='hover:bg-noble-black-600 p-2 rounded-[8px]'
+                    className='p-2 rounded-[8px]'
                 />
                 <span className='hidden md:block'>Share</span>
             </Button>

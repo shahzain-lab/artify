@@ -17,12 +17,6 @@ export const IMenuItems: IMenu[] = [
         heading: 'GENERAL'
     },
     {
-        title: 'Search',
-        icon: search,
-        path: '/search-tab',
-        tag: searchCommand
-    },
-    {
         title: 'Billing',
         icon: creditCard,
         path: '/billing'

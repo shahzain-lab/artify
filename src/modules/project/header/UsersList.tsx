@@ -12,7 +12,7 @@ const UsersList = ({users, depth = 0}: Props) => {
   return (
     <div className='flex items-center'>
     {users.slice(0, depth).map((user, i: number) => (
-        <div key={i} className='-ml-3 z-10 relative'>
+        <div key={i} className='userItem -ml-3 z-10 relative'>
             <Image
                 src={user.avatar}
                 alt=''

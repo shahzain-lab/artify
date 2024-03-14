@@ -47,7 +47,7 @@ const Dropdown: React.FC<IDropdownProps> = ({ title, classNames, children, optio
 
   return (
     <div className={cn(
-      "relative inline-block text-left",
+      "relative inline-block text-left dropdown-element",
       getColor(color, 'base'),
       classNames?.base
     )}>
