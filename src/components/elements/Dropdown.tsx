@@ -4,21 +4,6 @@ import { cn } from '@/lib/utils';
 import { CheveronDown } from '@/utils/icons';
 import React, { useState } from 'react';
 
-const colors: { [k: string]: string } = {
-  primary: "bg-theme-greenish text-slate-950",
-  green: "bg-emerald-500 text-white",
-  gray: "bg-noble-black-600 text-gray",
-  warning: "bg-yellow-500 text-white",
-  light: "bg-noble-black-400 text-white",
-  destructive: "bg-red-500 text-white",
-  secondary: "bg-slate-100 text-slate-900 ",
-  blue: "bg-blue-700 text-white",
-  ghost: "bg-slate-800 text-white",
-  white: 'text-gray-900 bg-white',
-  black: 'text-white bg-black',
-  outline: 'bg-inherit border border-gray-300 text-white'
-}
-
 const getColor = (color: TColor, type: 'base' | 'button' | 'item' | 'items' | 'icon') => {
   switch(color) {
     case 'primary':
