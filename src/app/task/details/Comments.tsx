@@ -8,48 +8,44 @@ import { useSelector } from 'react-redux'
 import { RootState } from '@/model/store'
 import { Button } from '@/components/elements/Button'
 
-
 const Comments = () => {
-    const project = useSelector((state: RootState) => state.workspace.project)
-    const date: any = new Date()
-    const comments = [
-      {
-        date: new Date(date - 3 * 60 * 60 * 1000),
-        title: `<b class="text-neutral-300">${project.members[0].name}</b> shared a file with <b class="text-neutral-300">you</b>`, 
-        user: project.members[0], 
-        description: "Let's integrate this beautiful package to stimulate the process"
-      },
-      {
-        date: new Date(date - 2 * 60 * 60 * 1000),
-        title: `<b class="text-neutral-300">${project.members[1].name}</b>`, 
-        user: project.members[1], 
-        description: "Nice addition to the current task"
-      },
-      {
-        date: new Date(),
-        title: `<b class="text-neutral-300">${project.members[0].name}</b> mentioned <b class="text-neutral-300">you</b> in a comment`, 
-        user: project.members[0], 
-        description: `developing rapidly keep up your work ${project.members[1].username}`
-      },
-    ] 
-    return (
-        <>
-            <div className='my-3 flex flex-col gap-6 relative'>
-                {comments.map((coment, i) => (
-                    <Comment key={i} coment={coment} />
-                    ))}
-                    <div className='w-[1px] h-[300px] border-l border-dashed border-gray-500 absolute left-14'></div>
-            </div>
-            <div className="flex gap-2">
-                <Avatar src={image} />
-                <Input
-                    className='dark:bg-noble-black-700'
-                    placeholder='Enter Your Comment'
-                />
-                <Button>Send</Button>
-            </div>
-        </>
-    )
+  const project = useSelector((state: RootState) => state.workspace.project)
+  const date: Date = new Date()
+  const comments = [
+    {
+      date: new Date(date.getTime() - 3 * 60 * 60 * 1000),
+      title: `<b class="text-neutral-300">${project.members[0].name}</b> shared a file with <b class="text-neutral-300">you</b>`,
+      user: project.members[0],
+      description: "Let's integrate this beautiful package to stimulate the process"
+    },
+    {
+      date: new Date(date.getTime() - 2 * 60 * 60 * 1000),
+      title: `<b class="text-neutral-300">${project.members[1].name}</b>`,
+      user: project.members[1],
+      description: 'Nice addition to the current task'
+    },
+    {
+      date: new Date(),
+      title: `<b class="text-neutral-300">${project.members[0].name}</b> mentioned <b class="text-neutral-300">you</b> in a comment`,
+      user: project.members[0],
+      description: `developing rapidly keep up your work ${project.members[1].username}`
+    }
+  ]
+  return (
+    <>
+      <div className='my-3 flex flex-col gap-6 relative'>
+        {comments.map((coment, i) => (
+          <Comment key={i} coment={coment} />
+        ))}
+        <div className='w-[1px] h-[300px] border-l border-dashed border-gray-500 absolute left-14'></div>
+      </div>
+      <div className='flex gap-2'>
+        <Avatar src={image} />
+        <Input className='dark:bg-noble-black-700' placeholder='Enter Your Comment' />
+        <Button>Send</Button>
+      </div>
+    </>
+  )
 }
 
 export default Comments

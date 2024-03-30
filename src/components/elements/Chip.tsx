@@ -1,32 +1,32 @@
-import { TColor } from '@/interfaces/IElements.interface';
-import { cn } from '@/lib/utils';
-import React from 'react';
+import { cn } from '@/lib/utils'
+import React from 'react'
 
 interface ChipProps {
-  color?: "primary" | "green" | "warning" | "destructive" | "purple" | "blue";
-  content?: string | React.ReactNode;
+  color?: 'primary' | 'green' | 'warning' | 'destructive' | 'purple' | 'blue'
+  content?: string | React.ReactNode
   className?: string
+  variant?: string
 }
 
 const Chip: React.FC<ChipProps> = ({ color, content, className }) => {
   const getVariantStyles = () => {
     switch (color) {
       case 'primary':
-        return 'text-theme-greenish bg-[#b7f09c43]';
+        return 'text-theme-greenish bg-[#b7f09c43]'
       case 'green':
-        return 'text-[#37ff70] bg-[#37ff7041]';
+        return 'text-[#37ff70] bg-[#37ff7041]'
       case 'warning':
-        return 'text-[#f9e93e] bg-[#f5e63e3f]';
+        return 'text-[#f9e93e] bg-[#f5e63e3f]'
       case 'destructive':
-        return 'text-[#f93e44] bg-[#f93e4446]';
+        return 'text-[#f93e44] bg-[#f93e4446]'
       case 'purple':
-        return 'text-[#f93eb7] bg-[#f93eb73c]';
+        return 'text-[#f93eb7] bg-[#f93eb73c]'
       case 'blue':
-        return 'text-[#3e3ef9] bg-[#3e3ef939]';
+        return 'text-[#3e3ef9] bg-[#3e3ef939]'
       default:
-        return 'text-gray-600 bg-gray-100';
+        return 'text-gray-600 bg-gray-100'
     }
-  };
+  }
 
   return (
     <span
@@ -37,7 +37,7 @@ const Chip: React.FC<ChipProps> = ({ color, content, className }) => {
     >
       {content}
     </span>
-  );
-};
+  )
+}
 
-export default Chip;
+export default Chip

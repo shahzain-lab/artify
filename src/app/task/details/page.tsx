@@ -1,11 +1,8 @@
-import Avatar from '@/components/elements/Avatar'
 import Dropdown from '@/components/elements/Dropdown'
 import { Tabs, Tab } from '@/components/elements/Tabs'
 import Typography from '@/components/elements/Typography'
 import TaskDetails from '@/modules/task/TaskDetails'
 import React from 'react'
-import { useSelector } from 'react-redux'
-import { RootState } from '@/model/store'
 import Comments from './Comments'
 
 const details = `
@@ -68,27 +65,21 @@ const details = `
 `
 
 const DetailPage = () => {
-
   return (
     <div>
       <Typography className='text-2xl'>Comprehensive Guide Creation</Typography>
       <div className='flex flex-col md:flex-row justify-between gap-4 md:gap-0 items-start md:pr-6'>
         <div className='flex flex-col-reverse md:flex-row md:items-start justify-between w-full'>
-          <Tabs className='bg-inherit shadow-none flex' defaultTab={0} orientation="horizontal">
-            <Tab color='primary' variant='underline' id={0} title="Description">
+          <Tabs className='bg-inherit shadow-none flex' defaultTab={0} orientation='horizontal'>
+            <Tab color='primary' variant='underline' id={0} title='Description'>
               <p className='text-noble-black-300 text-sm leading-7' dangerouslySetInnerHTML={{ __html: details }}></p>
             </Tab>
-            <Tab color='primary' variant='underline' id={1} title="Comments">
+            <Tab color='primary' variant='underline' id={1} title='Comments'>
               <Comments />
             </Tab>
           </Tabs>
           <div className='md:mt-5 my-5 md:my-0 ml-2 md:ml-0 md:mr-4 '>
-            <Dropdown
-              title="Testing"
-              Icon
-              color='ghost'
-              options={['Done', 'Testing', 'In Progress']}
-            />
+            <Dropdown title='Testing' Icon color='ghost' options={['Done', 'Testing', 'In Progress']} />
           </div>
         </div>
         <TaskDetails />
