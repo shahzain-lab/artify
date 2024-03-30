@@ -33,7 +33,7 @@ export const chats: IMessage[] = [
       text: 'Of course! What kind of ideas are you looking for?',
       medias: []
     },
-    timeAgo: new Date(date - 3 * 60 * 60 * 1000),
+    timeAgo: new Date(date.getTime() - 3 * 60 * 60 * 1000),
     project: projects[0]
   },
   {
@@ -103,7 +103,7 @@ export const chats: IMessage[] = [
         }
       ]
     },
-    timeAgo: new Date(date - 3 * 60 * 60 * 1000),
+    timeAgo: new Date(date.getTime() - 3 * 60 * 60 * 1000),
     project: projects[0]
   },
   {
@@ -114,7 +114,7 @@ export const chats: IMessage[] = [
       text: ' Actually, I think I really like <b>Cosmic Voyager</b>. Maybe we could stick with that name and work on designing a more realistic concept art? 🤔',
       medias: []
     },
-    timeAgo: new Date(date - 3 * 60 * 60 * 1000),
+    timeAgo: new Date(date.getTime() - 3 * 60 * 60 * 1000),
     project: projects[0]
   }
 ]
