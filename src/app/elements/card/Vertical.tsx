@@ -1,10 +1,10 @@
 'use client'
-import Card from '@/components/elements/Card'
 import React from 'react'
-import card from '@/assets/card.png'
-import card2 from '@/assets/card2.png'
+import Card from '@/components/elements/Card'
 import { Watch } from '@/utils/icons'
 import CardLayer from '@/components/elements/CardLayer'
+import card from '@/assets/card.png'
+import card2 from '@/assets/card2.png'
 
 const VerticalCards = () => {
   return (

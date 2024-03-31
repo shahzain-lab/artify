@@ -1,6 +1,9 @@
+import React, { useState } from 'react'
 import { Button } from '@/components/elements/Button'
 import EmojiPicker, { Theme } from 'emoji-picker-react'
-import React, { useState } from 'react'
+{
+  /* Utils */
+}
 import { IconPlus } from '../../utils/icons'
 
 interface IEmojiEvent {

@@ -1,3 +1,6 @@
+{
+  /* Images */
+}
 import avatar5 from '@/assets/avatars/Avatar-12.png'
 import avatar6 from '@/assets/avatars/Avatar-13.png'
 import avatar7 from '@/assets/avatars/Avatar-14.png'

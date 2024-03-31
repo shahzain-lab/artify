@@ -1,15 +1,20 @@
 'use client'
-import Typography from '@/components/elements/Typography'
 import React from 'react'
-import Image from 'next/image'
-// Avatars
-import edit from '@/assets/icons/edit.svg'
-import menubar from '@/assets/icons/menubar.svg'
-import Share from './Share'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from '@/model/store'
 import { setOpenMobileMenu } from '@/model/store/slices/navigationSlice'
+{
+  /* Components */
+}
+import Typography from '@/components/elements/Typography'
+import Share from './Share'
 import UsersList from '../UsersList'
+{
+  /* Images */
+}
+import Image from 'next/image'
+import edit from '@/assets/icons/edit.svg'
+import menubar from '@/assets/icons/menubar.svg'
 
 const Workspace = () => {
   const project = useSelector((state: RootState) => state.workspace.project)

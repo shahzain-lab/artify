@@ -1,5 +1,8 @@
-import Typography from '@/components/elements/Typography'
 import React from 'react'
+{
+  /* Components */
+}
+import Typography from '@/components/elements/Typography'
 import Features from './Features'
 import Prompt from '../../prompt'
 

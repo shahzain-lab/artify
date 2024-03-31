@@ -1,10 +1,8 @@
-import ChatRoom from '@/modules/project/chatRoom'
 import React from 'react'
+import ChatRoom from '@/modules/project/chatRoom'
 
 const page = () => {
-  return (
-    <ChatRoom />
-  )
+  return <ChatRoom />
 }
 
 export default page

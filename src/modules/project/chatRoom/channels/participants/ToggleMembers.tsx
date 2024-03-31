@@ -1,4 +1,7 @@
 import React from 'react'
+{
+  /* Images */
+}
 import chatPrimary from '@/assets/icons/chat-primary.svg'
 import groupGray from '@/assets/icons/group-gray.svg'
 import Image from 'next/image'

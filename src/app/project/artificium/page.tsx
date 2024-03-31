@@ -1,10 +1,8 @@
-import Artificium from '@/modules/project/artificium'
 import React from 'react'
+import Artificium from '@/modules/project/artificium'
 
 const page = () => {
-  return (
-    <Artificium />
-  )
+  return <Artificium />
 }
 
 export default page

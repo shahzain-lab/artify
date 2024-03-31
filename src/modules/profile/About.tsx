@@ -1,7 +1,11 @@
-import Image from 'next/image'
 import React from 'react'
-import aboutImg from '@/assets/avatars/about.png'
 import Typography from '@/components/elements/Typography'
+{
+  /* Images */
+}
+import Image from 'next/image'
+import aboutImg from '@/assets/avatars/about.png'
+
 const About = () => {
   return (
     <div className='w-full'>

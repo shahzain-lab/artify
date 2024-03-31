@@ -5,8 +5,8 @@ import Prompt from '../../prompt'
 const Artificium = () => {
   return (
     <div>
-        <Messages />
-        <Prompt />
+      <Messages />
+      <Prompt />
     </div>
   )
 }

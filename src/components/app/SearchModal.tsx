@@ -1,9 +1,14 @@
-// components/SearchModal.tsx
 import React, { useState } from 'react'
+{
+  /* Components */
+}
 import ModalLayer from '../elements/ModalLayer'
 import Input from '../elements/Input'
 import { Button } from '../elements/Button'
 import Typography from '../elements/Typography'
+{
+  /* Utils */
+}
 import {
   Backlog,
   Comment,

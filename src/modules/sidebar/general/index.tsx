@@ -1,10 +1,19 @@
 import React from 'react'
-import { IMenuItems } from './items'
-import Image from 'next/image'
+{
+  /* Component */
+}
 import Typography from '@/components/elements/Typography'
 import SearchModal from '@/components/app/SearchModal'
+{
+  /* Images */
+}
+import Image from 'next/image'
 import search from '@/assets/icons/search.svg'
 import searchCommand from '@/assets/icons/search-command.svg'
+{
+  /* Utils */
+}
+import { IMenuItems } from './items'
 
 const General = () => {
   return (

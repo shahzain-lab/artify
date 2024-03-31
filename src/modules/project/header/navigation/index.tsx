@@ -1,8 +1,11 @@
 'use client'
 import React from 'react'
 import RoutePanel from '../../../../components/app/RoutePanel'
-import { Artificium, Chat, GetStarted, Library } from '@/utils/icons'
 import { Url } from 'next/dist/shared/lib/router/router'
+{
+  /* Utils */
+}
+import { Artificium, Chat, GetStarted, Library } from '@/utils/icons'
 export interface IMenu {
   title: string
   path: Url
@@ -12,26 +15,26 @@ export interface IMenu {
 const Navigation = () => {
   const menuItems: IMenu[] = [
     {
-        title: 'Get Started',
-        icon: <GetStarted className='w-5 h-5' />,
-        path: '/project'
+      title: 'Get Started',
+      icon: <GetStarted className='w-5 h-5' />,
+      path: '/project'
     },
     {
-        title: 'Artificium',
-        icon: <Artificium className='w-5 h-5' />,
-        path: '/project/artificium'
+      title: 'Artificium',
+      icon: <Artificium className='w-5 h-5' />,
+      path: '/project/artificium'
     },
     {
-        title: 'Chat',
-        icon: <Chat className='w-5 h-5' />,
-        path: '/project/chat'
+      title: 'Chat',
+      icon: <Chat className='w-5 h-5' />,
+      path: '/project/chat'
     },
     {
-        title: 'Library',
-        icon: <Library className='w-5 h-5' />,
-        path: '/project/library'
-    },
-]
+      title: 'Library',
+      icon: <Library className='w-5 h-5' />,
+      path: '/project/library'
+    }
+  ]
 
   return (
     <RoutePanel

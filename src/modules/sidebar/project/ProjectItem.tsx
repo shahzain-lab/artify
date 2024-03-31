@@ -1,8 +1,8 @@
-import Typography from '@/components/elements/Typography'
+import React, { FC } from 'react'
 import { IProject } from '@/interfaces/app.interface'
 import Image from 'next/image'
+import Typography from '@/components/elements/Typography'
 import Link from 'next/link'
-import React, { FC } from 'react'
 
 interface Props {
   project: IProject

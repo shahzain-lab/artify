@@ -1,5 +1,9 @@
+import React from 'react'
 import { Button } from '@/components/elements/Button'
 import CardLayer from '@/components/elements/CardLayer'
+{
+  /* Icons */
+}
 import {
   Artificium,
   Chat,
@@ -28,7 +32,6 @@ import {
   TwoDots,
   Warning
 } from '@/utils/icons'
-import React from 'react'
 
 const Page = () => {
   return (

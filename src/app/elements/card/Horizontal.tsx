@@ -1,9 +1,15 @@
 'use client'
-import Card from '@/components/elements/Card'
 import React from 'react'
+{
+  /* Components */
+}
+import Card from '@/components/elements/Card'
+import CardLayer from '@/components/elements/CardLayer'
+{
+  /* Images */
+}
 import card from '@/assets/card.png'
 import card2 from '@/assets/card2.png'
-import CardLayer from '@/components/elements/CardLayer'
 
 const Horizontal = () => {
   return (

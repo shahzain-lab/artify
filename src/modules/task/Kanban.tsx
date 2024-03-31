@@ -1,12 +1,18 @@
-import TaskPanel from '@/components/app/TaskPanel'
-import TaskCard from '@/components/elements/TaskCard'
-import image1 from '@/assets/card.png'
-import image2 from '@/assets/card2.png'
+import React, { useState } from 'react'
 import { ITaskCardProps } from '@/interfaces/IElements.interface'
 import { DragDropContext, Droppable, Draggable, DropResult } from 'react-beautiful-dnd'
 import { RootState } from '@/model/store'
-import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
+{
+  /* Components */
+}
+import TaskPanel from '@/components/app/TaskPanel'
+import TaskCard from '@/components/elements/TaskCard'
+{
+  /* Images */
+}
+import image1 from '@/assets/card.png'
+import image2 from '@/assets/card2.png'
 
 const Kanban = () => {
   const project = useSelector((state: RootState) => state.workspace.project)

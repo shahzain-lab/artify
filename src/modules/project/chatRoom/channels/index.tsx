@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
 import Participant from './participants'
 import ToggleMembers from './participants/ToggleMembers'
-import { users } from '@/lib/userDB'
 import Groups from './groups'
-import { Globe, Lock } from '@/utils/icons'
 import { IUser } from '@/interfaces/IUser.interface'
+{
+  /* Utils */
+}
+import { users } from '@/lib/userDB'
+import { Globe, Lock } from '@/utils/icons'
 
 interface Props {
   isOpen: boolean

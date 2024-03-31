@@ -1,13 +1,19 @@
-import { ITaskCardProps } from '@/interfaces/IElements.interface'
-import { formatDate } from '@/lib/formatDate'
-import { formatTimeDifference } from '@/lib/formatTimeDifference'
-import { CommentDashed, Like, TripleDot, Watch } from '@/utils/icons'
 import React from 'react'
-import Typography from './Typography'
+import { ITaskCardProps } from '@/interfaces/IElements.interface'
+{
+  /* Components */
+}
 import Image from 'next/image'
+import Typography from './Typography'
 import UsersList from '@/modules/project/header/UsersList'
 import Chip from './Chip'
 import Dropdown from './Dropdown'
+{
+  /* Utils */
+}
+import { formatTimeDifference } from '@/lib/formatTimeDifference'
+import { CommentDashed, Like, TripleDot, Watch } from '@/utils/icons'
+import { formatDate } from '@/lib/formatDate'
 
 const TaskCard: React.FC<ITaskCardProps> = ({
   id,

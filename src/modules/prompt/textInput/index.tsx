@@ -1,12 +1,18 @@
 'use client'
-import Input from '@/components/elements/Input'
 import React, { useState } from 'react'
-import { extractMentions } from '../utils'
 import { useSelector } from 'react-redux'
-import Image from 'next/image'
 import { RootState } from '@/model/store'
+{
+  /* Components */
+}
+import Input from '@/components/elements/Input'
+import Image from 'next/image'
 import { IChannel, channelGroups } from '@/modules/project/chatRoom/channels'
 import { IUser } from '@/interfaces/app.interface'
+{
+  /* Utils */
+}
+import { extractMentions } from '../utils'
 
 const TextInput = () => {
   const project = useSelector((state: RootState) => state.workspace.project)

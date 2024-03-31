@@ -1,10 +1,8 @@
-import Starter from '@/modules/project/starter'
 import React from 'react'
+import Starter from '@/modules/project/starter'
 
 const page = () => {
-  return (
-    <Starter />
-  )
+  return <Starter />
 }
 
 export default page

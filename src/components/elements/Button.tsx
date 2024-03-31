@@ -1,7 +1,10 @@
 import * as React from 'react'
 import { cva, type VariantProps } from 'class-variance-authority'
-import { cn } from '@/lib/utils'
 import { TColor } from '@/interfaces/IElements.interface'
+{
+  /* Utils */
+}
+import { cn } from '@/lib/utils'
 
 export type TSize = 'default' | 'sm' | 'lg' | 'icon'
 
@@ -32,6 +35,7 @@ const buttonVariants = cva(
         destructiveoutline: 'border border-red-500 bg-inherit text-red-500',
         secondaryoutline: 'border border-slate-100 bg-inherit text-slate-100 ',
         ghostoutline: 'border border-slate-800 bg-inherit hover:text-slate-800',
+        blueoutline: 'border border-slate-800 bg-inherit hover:text-slate-800',
         linkoutline: 'text-blue-500 underline-offset-4 underline',
         whiteoutline: 'border border-white bg-inherit text-white',
         blackoutline: 'border border-gray-900 bg-inherit text-gray-900',
@@ -68,6 +72,7 @@ export interface ButtonProps
     | 'warningoutline'
     | 'lightoutline'
     | 'destructiveoutline'
+    | 'blueoutline'
     | 'secondaryoutline'
     | 'ghostoutline'
     | 'linkoutline'

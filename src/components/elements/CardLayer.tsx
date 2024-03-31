@@ -1,6 +1,12 @@
 import React from 'react'
+{
+  /* Components */
+}
 import Typography from './Typography'
 import Divider from './Divider'
+{
+  /* Utils */
+}
 import { cn } from '@/lib/utils'
 
 interface Props {

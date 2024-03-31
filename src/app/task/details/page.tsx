@@ -5,6 +5,9 @@ import TaskDetails from '@/modules/task/TaskDetails'
 import React from 'react'
 import Comments from './Comments'
 
+{
+  /* Description Markup from CMS or markup editor */
+}
 const details = `
   <div>
   <h2 class="text-white text-base">Task Description:</h2>

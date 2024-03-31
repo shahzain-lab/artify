@@ -1,12 +1,18 @@
 'use client'
+import React from 'react'
+{
+  /* Components */
+}
 import Comment from '@/components/app/Comment'
 import Avatar from '@/components/elements/Avatar'
 import Input from '@/components/elements/Input'
-import React from 'react'
-import image from '@/assets/avatars/Avatar-7.png'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/model/store'
 import { Button } from '@/components/elements/Button'
+{
+  /* Image */
+}
+import image from '@/assets/avatars/Avatar-7.png'
 
 const Comments = () => {
   const project = useSelector((state: RootState) => state.workspace.project)

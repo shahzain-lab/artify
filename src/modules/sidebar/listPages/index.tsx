@@ -1,6 +1,12 @@
+import React from 'react'
+{
+  /* Components */
+}
 import Typography from '@/components/elements/Typography'
 import Link from 'next/link'
-import React from 'react'
+{
+  /* Utils */
+}
 import { Join, Login, Register, Workspace } from '@/utils/icons'
 
 interface IPage {

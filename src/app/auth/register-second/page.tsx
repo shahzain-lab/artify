@@ -1,12 +1,18 @@
 import React from 'react'
-import Image from 'next/image'
-import logo from '@/assets/Logo.svg'
+{
+  /* Components */
+}
 import Typography from '@/components/elements/Typography'
 import Link from 'next/link'
 import { Button } from '@/components/elements/Button'
 import Input from '@/components/elements/Input'
-import imgSrc from '@/assets/backgrounds/bg-3.png'
 import Divider from '@/components/elements/Divider'
+{
+  /* Image */
+}
+import Image from 'next/image'
+import imgSrc from '@/assets/backgrounds/bg-3.png'
+import logo from '@/assets/Logo.svg'
 
 const page = () => {
   return (

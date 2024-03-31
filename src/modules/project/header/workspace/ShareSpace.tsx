@@ -1,9 +1,15 @@
-import { users } from '@/lib/userDB'
-import Typography from '@/components/elements/Typography'
-import { cn } from '@/lib/utils'
-import Image from 'next/image'
 import React from 'react'
+{
+  /* Components */
+}
+import Typography from '@/components/elements/Typography'
+import Image from 'next/image'
 import InviteForm from './InviteForm'
+{
+  /* Utils */
+}
+import { users } from '@/lib/userDB'
+import { cn } from '@/lib/utils'
 
 const ShareSpace = () => {
   return (
