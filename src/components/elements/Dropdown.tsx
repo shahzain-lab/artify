@@ -120,8 +120,7 @@ const Dropdown: React.FC<IDropdownProps> = ({ title, classNames, children, optio
         {/* Add dropdown icon here */}
         {typeof Icon === 'boolean' ? (
           <CheveronDown
-            color={getColor(color, 'icon')}
-            className={`ml-2 h-5 w-5 transition-transform transform ${isOpen ? 'rotate-180' : ''}`}
+            className={`${getColor(color, 'icon')} ml-2 h-5 w-5 transition-transform transform ${isOpen ? 'rotate-180' : ''}`}
           />
         ) : Icon ? (
           <>{Icon}</>

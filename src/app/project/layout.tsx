@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className='flex flex-col w-full'>
+    <div className='flex flex-col w-full md:w-[79%] p-2'>
       <Headers />
       {/* <div className='w-full md:w-[79%] pb-28 relative'> */}
       {children}

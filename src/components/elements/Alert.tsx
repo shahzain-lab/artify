@@ -19,13 +19,13 @@ const Alert: React.FC<IAlertProps> = ({
     UserIcon ? (
       <UserIcon />
     ) : type === 'danger' ? (
-      <Danger color={color ? color : '#D90200'} />
+      <Danger className={color ? color : 'text-[#D90200]'} />
     ) : type === 'idea/FYI' ? (
-      <Idea color={color ? color : '#4D62E5'} />
+      <Idea className={color ? color : 'text-[#4D62E5]'} />
     ) : type === 'success' ? (
-      <Success color={color ? color : '#4AC97E'} />
+      <Success className={color ? color : 'text-[#4AC97E]'} />
     ) : (
-      <Warning color={color ? color : '#FF7B20'} />
+      <Warning className={color ? color : 'text-[#FF7B20]'} />
     )
   const color =
     type === 'danger'
@@ -70,7 +70,9 @@ const Alert: React.FC<IAlertProps> = ({
       <div className={`${variant === 'vertical' && 'flex justify-between w-full'}`}>
         <Icon color={theme === 'solid' ? '#fff' : ''} />
         <span onClick={onCancel}>
-          <Cross color={theme === 'solid' ? '#fff' : '#686B6E'} className={`${variant === 'default' && 'hidden'}`} />
+          <Cross
+            className={`${theme === 'solid' ? 'text-[#fff]' : 'text-[#686B6E]'} ${variant === 'default' && 'hidden'}`}
+          />
         </span>
       </div>
       <p className='flex gap-2'>
@@ -78,8 +80,7 @@ const Alert: React.FC<IAlertProps> = ({
       </p>
       <span onClick={onCancel}>
         <Cross
-          color={theme === 'solid' ? '#fff' : '#686B6E'}
-          className={`${variant === 'vertical' && 'hidden'} absolute right-2 md:right-3`}
+          className={`${theme === 'solid' ? '#fff' : '#686B6E'} ${variant === 'vertical' && 'hidden'} absolute right-2 md:right-3`}
         />
       </span>
     </div>

@@ -21,7 +21,7 @@ const KanbanPage = () => {
       <Typography className='text-2xl font-semibold'>Kanban Board</Typography>
       <SimpleCard align='item-between' alignSM='item-col-between' className='md:my-4 md:py-6 gap-3 my-3'>
         <div className='flex gap-2 items-center justify-between md:justify-normal w-full md:w-auto'>
-          <Button size={'sm'} Icon={<Plus color='#000' />}>
+          <Button size={'sm'} Icon={<Plus className='text-[#000]' />}>
             New Board
           </Button>
           <Dropdown title='Dropdown' options={['Newest', 'Oldest', 'A-Z', 'Z-A']} Icon color='ghost' />

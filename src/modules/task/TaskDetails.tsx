@@ -37,7 +37,7 @@ const TaskDetails = () => {
       <div className='flex items-center justify-between mb-5'>
         <Typography className='font-bold text-xl'>Details</Typography>
         <div className='flex gap-3 items-center'>
-          <Setting color='#fff' />
+          <Setting className='text-[#fff]' />
           <Dropdown
             color='gray'
             classNames={{

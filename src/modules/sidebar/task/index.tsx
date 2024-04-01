@@ -14,8 +14,8 @@ interface ITask {
 
 const ListTask = () => {
   const tasks: ITask[] = [
-    { title: 'Kanban', path: '/task/kanban', icon: <Backlog className='w-[18px] h-[18px]' color='#fff' /> },
-    { title: 'Task Detail', path: '/task/details', icon: <Task className='w-[18px] h-[18px]' color='#fff' /> }
+    { title: 'Kanban', path: '/task/kanban', icon: <Backlog className='w-[18px] h-[18px] text-[#fff]' /> },
+    { title: 'Task Detail', path: '/task/details', icon: <Task className='w-[18px] h-[18px] text-[#fff]' /> }
   ]
   return (
     <div className='flex flex-col gap-1'>

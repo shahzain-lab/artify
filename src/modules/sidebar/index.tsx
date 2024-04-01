@@ -19,10 +19,13 @@ import ListTask from './task'
 }
 import { preventScroll } from '@/lib/preventScroll'
 import { CheveronDown, CheveronRight, Cross } from '@/utils/icons'
+import { usePathname } from 'next/navigation'
+import { PUBLIC_ROUTES } from '@/lib/publicRoutes'
 
 const Sidebar = () => {
   const dispatch = useDispatch()
   const [active, setActive] = useState<number | null>(null)
+  const pathname = usePathname()
   const openMobileMenu = useSelector((state: RootState) => state.navigation.openMobileMenu)
   useEffect(() => {
     if (openMobileMenu) {
@@ -54,43 +57,46 @@ const Sidebar = () => {
       Route: ListPages
     }
   ]
+  console.log(pathname)
   return (
     <>
-      <div
-        className={`${openMobileMenu ? 'flex w-[80%] z-30 fixed h-screen overflow-y-scroll pb-4 no-scrollbar' : 'hidden'} md:w-[20%] md:overflow-y-scroll no-scrollbar md:fixed md:h-[100%] md:flex flex-col justify-between px-3 py-2 bg-noble-black-800 rounded-[12px]`}
-      >
-        {openMobileMenu && (
-          <div className='w-full h-screen fixed top-0 left-0 bg-bg-layer backdrop-blur-sm'>
-            <p
-              onClick={handleClose}
-              className='absolute top-4 right-4 border-2 border-noble-black-500 p-1 rounded-[8px]'
-            >
-              <Cross />
-            </p>
-          </div>
-        )}
-        <div className='z-20 md:z-auto'>
-          <Profile />
-          {modules.map((module, i) => (
-            <Fragment key={i}>
-              <Divider />
-              <div className='py-4'>
-                <div
-                  onClick={() => setActive(active === i ? null : i)}
-                  className='my-3 cursor-pointer flex justify-between items-center'
-                >
-                  <Typography variant='semibold' className='text-[12px] text-noble-black-400'>
-                    {module.title}
-                  </Typography>
-                  {active === i ? <CheveronDown /> : <CheveronRight />}
+      {PUBLIC_ROUTES.includes(pathname) ? null : (
+        <div
+          className={`${openMobileMenu ? 'flex w-[80%] z-30 fixed h-screen overflow-y-scroll pb-4 no-scrollbar' : 'hidden'} md:w-[20%] md:overflow-y-scroll no-scrollbar md:fixed md:h-[100%] md:flex flex-col justify-between px-3 py-2 bg-noble-black-800 rounded-[12px]`}
+        >
+          {openMobileMenu && (
+            <div className='w-full h-screen fixed top-0 left-0 bg-bg-layer backdrop-blur-sm'>
+              <p
+                onClick={handleClose}
+                className='absolute top-4 right-4 border-2 border-noble-black-500 p-1 rounded-[8px]'
+              >
+                <Cross />
+              </p>
+            </div>
+          )}
+          <div className='z-20 md:z-auto'>
+            <Profile />
+            {modules.map((module, i) => (
+              <Fragment key={i}>
+                <Divider />
+                <div className='py-4'>
+                  <div
+                    onClick={() => setActive(active === i ? null : i)}
+                    className='my-3 cursor-pointer flex justify-between items-center'
+                  >
+                    <Typography variant='semibold' className='text-[12px] text-noble-black-400'>
+                      {module.title}
+                    </Typography>
+                    {active === i ? <CheveronDown /> : <CheveronRight />}
+                  </div>
+                  {active === i && <module.Route />}
                 </div>
-                {active === i && <module.Route />}
-              </div>
-            </Fragment>
-          ))}
+              </Fragment>
+            ))}
+          </div>
+          <Settings />
         </div>
-        <Settings />
-      </div>
+      )}
     </>
   )
 }

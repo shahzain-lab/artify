@@ -52,7 +52,7 @@ const page = () => {
               <Tab
                 key={i}
                 id={i}
-                Icon={<Plus color='#fff' />}
+                Icon={<Plus className='text-[#fff]' />}
                 className='justify-start'
                 color='green'
                 title={`Tab ${i + 1}`}
@@ -63,7 +63,7 @@ const page = () => {
           </Tabs>
           <Tabs defaultTab={0} orientation='horizontal' className='w-full'>
             {[1, 2, 3].map((_, i) => (
-              <Tab key={i} id={i} color='primary' Icon={<Artificium color='#eee' />} title={`Tab ${i + 1}`}>
+              <Tab key={i} id={i} color='primary' Icon={<Artificium className='text-[#eeee]' />} title={`Tab ${i + 1}`}>
                 Content of Tab {i + 1}
               </Tab>
             ))}
@@ -73,7 +73,7 @@ const page = () => {
               <Tab
                 key={i}
                 id={i}
-                Icon={<Danger color='#fff' />}
+                Icon={<Danger className='text-[#fff]' />}
                 className='justify-start'
                 color='light'
                 title={`Tab ${i + 1}`}
@@ -84,7 +84,7 @@ const page = () => {
           </Tabs>
           <Tabs defaultTab={0} orientation='horizontal' className='w-full'>
             {[1, 2, 3].map((_, i) => (
-              <Tab key={i} id={i} color='warning' Icon={<Warning color='#fff' />} title={`Tab ${i + 1}`}>
+              <Tab key={i} id={i} color='warning' Icon={<Warning className='text-[#fff]' />} title={`Tab ${i + 1}`}>
                 Content of Tab {i + 1}
               </Tab>
             ))}

@@ -51,44 +51,44 @@ const page = () => {
       <div className='grid grid-cols-2 gap-2 my-2'>
         <CardLayer title='Buttons with icon'>
           <div className='flex gap-2 flex-wrap'>
-            <Button color={'primary'} Icon={<Setting color='#000' />}>
+            <Button color={'primary'} Icon={<Setting />}>
               Primary
             </Button>
-            <Button color={'destructive'} Icon={<Library color='#fff' />}>
+            <Button color={'destructive'} Icon={<Library />}>
               Destructive
             </Button>
-            <Button color={'ghost'} Icon={<Setting color='#fff' />}>
+            <Button color={'ghost'} Icon={<Setting />}>
               Ghost
             </Button>
-            <Button color={'green'} Icon={<Artificium color='#fff' />}>
+            <Button color={'green'} Icon={<Artificium />}>
               Green
             </Button>
-            <Button color={'warning'} Icon={<Download color='#fff' />}>
+            <Button color={'warning'} Icon={<Download />}>
               Warning
             </Button>
-            <Button color={'light'} Icon={<Share color='#fff' />}>
+            <Button color={'light'} Icon={<Share />}>
               Light
             </Button>
           </div>
         </CardLayer>
         <CardLayer title='Rounded Buttons with icon'>
           <div className='flex gap-2 flex-wrap'>
-            <Button color={'primary'} outlook={'rounded'} Icon={<Setting color='#000' />}>
+            <Button color={'primary'} outlook={'rounded'} Icon={<Setting />}>
               Primary
             </Button>
-            <Button color={'destructive'} outlook={'rounded'} Icon={<Library color='#fff' />}>
+            <Button color={'destructive'} outlook={'rounded'} Icon={<Library />}>
               Destructive
             </Button>
-            <Button color={'ghost'} outlook={'rounded'} Icon={<Setting color='#fff' />}>
+            <Button color={'ghost'} outlook={'rounded'} Icon={<Setting />}>
               Ghost
             </Button>
-            <Button color={'green'} outlook={'rounded'} Icon={<Artificium color='#fff' />}>
+            <Button color={'green'} outlook={'rounded'} Icon={<Artificium />}>
               Green
             </Button>
-            <Button color={'warning'} outlook={'rounded'} Icon={<Download color='#fff' />}>
+            <Button color={'warning'} outlook={'rounded'} Icon={<Download />}>
               Warning
             </Button>
-            <Button color={'light'} outlook={'rounded'} Icon={<Share color='#fff' />}>
+            <Button color={'light'} outlook={'rounded'} Icon={<Share />}>
               Light
             </Button>
           </div>
@@ -97,54 +97,44 @@ const page = () => {
       <div className='grid grid-cols-2 gap-2 my-2'>
         <CardLayer title='Outline Buttons with icon'>
           <div className='flex gap-2 flex-wrap'>
-            <Button color={'primary'} variant={'primaryoutline'} Icon={<Setting color='#B6F09C' />}>
+            <Button color={'primary'} variant={'primaryoutline'} Icon={<Setting />}>
               Primary
             </Button>
-            <Button color={'destructive'} variant={'destructiveoutline'} Icon={<Library color='#ef4444' />}>
+            <Button color={'destructive'} variant={'destructiveoutline'} Icon={<Library />}>
               Destructive
             </Button>
-            <Button color={'ghost'} variant={'ghostoutline'} Icon={<Setting color='#1e293b' />}>
+            <Button color={'ghost'} variant={'ghostoutline'} Icon={<Setting />}>
               Ghost
             </Button>
-            <Button color={'green'} variant={'greenoutline'} Icon={<Artificium color='#10b981' />}>
+            <Button color={'green'} variant={'greenoutline'} Icon={<Artificium />}>
               Green
             </Button>
-            <Button color={'warning'} variant={'warningoutline'} Icon={<Download color='#eab308' />}>
+            <Button color={'warning'} variant={'warningoutline'} Icon={<Download />}>
               Warning
             </Button>
-            <Button color={'light'} variant={'lightoutline'} Icon={<Share color='#686B6E' />}>
+            <Button color={'light'} variant={'lightoutline'} Icon={<Share />}>
               Light
             </Button>
           </div>
         </CardLayer>
         <CardLayer title='Outline Rounded Buttons with icon'>
           <div className='flex gap-2 flex-wrap'>
-            <Button color={'primary'} variant={'primaryoutline'} outlook={'rounded'} Icon={<Setting color='#B6F09C' />}>
+            <Button color={'primary'} variant={'primaryoutline'} outlook={'rounded'} Icon={<Setting />}>
               Primary
             </Button>
-            <Button
-              color={'destructive'}
-              variant={'destructiveoutline'}
-              outlook={'rounded'}
-              Icon={<Library color='#ef4444' />}
-            >
+            <Button color={'destructive'} variant={'destructiveoutline'} outlook={'rounded'} Icon={<Library />}>
               Destructive
             </Button>
-            <Button color={'ghost'} variant={'ghostoutline'} outlook={'rounded'} Icon={<Setting color='#1e293b' />}>
+            <Button color={'ghost'} variant={'ghostoutline'} outlook={'rounded'} Icon={<Setting />}>
               Ghost
             </Button>
-            <Button color={'green'} variant={'greenoutline'} outlook={'rounded'} Icon={<Artificium color='#10b981' />}>
+            <Button color={'green'} variant={'greenoutline'} outlook={'rounded'} Icon={<Artificium />}>
               Green
             </Button>
-            <Button
-              color={'warning'}
-              variant={'warningoutline'}
-              outlook={'rounded'}
-              Icon={<Download color='#eab308' />}
-            >
+            <Button color={'warning'} variant={'warningoutline'} outlook={'rounded'} Icon={<Download />}>
               Warning
             </Button>
-            <Button color={'light'} variant={'lightoutline'} outlook={'rounded'} Icon={<Share color='#686B6E' />}>
+            <Button color={'light'} variant={'lightoutline'} outlook={'rounded'} Icon={<Share />}>
               Light
             </Button>
           </div>

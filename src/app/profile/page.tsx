@@ -1,7 +1,7 @@
 import React from 'react'
 import SimpleCard from '@/components/elements/SimpleCard'
 import Typography from '@/components/elements/Typography'
-import { Dribble, DollarSign, Level } from '@/utils/icons'
+import { Dribble, DollarSign } from '@/utils/icons'
 import SidePanel from '@/modules/profile/SidePanel'
 import About from '@/modules/profile/About'
 {
@@ -13,7 +13,7 @@ import banner from '@/assets/backgrounds/banner.jpg'
 
 const page = () => {
   return (
-    <div>
+    <div className='w-full md:w-[79%] p-2'>
       <SimpleCard className='h-60 flex justify-end flex-col'>
         <Image src={banner} alt='' width={200} height={200} className='w-full h-44 rounded-xl' />
         <div className='h-20 py-1 relative bg-noble-black-600 rounded-xl -mb-10'>
@@ -26,14 +26,12 @@ const page = () => {
             </Typography>
             <div className='flex gap-5'>
               <Typography className='text-[12px] text-noble-black-200 flex items-center gap-1'>
-                <Dribble color='#ccc' className='w-3 h-3' /> UX Designer
+                <Dribble className='w-3 h-3 text-[#ccc]' /> UX Designer
               </Typography>
               <Typography className='text-[12px] text-noble-black-200 flex items-center gap-1'>
-                <DollarSign color='#ccc' className='w-3 h-3' /> 15k
+                <DollarSign className='w-3 h-3 text-[#ccc]' /> 15k
               </Typography>
-              <Typography className='text-[12px] text-noble-black-200 flex items-center gap-2'>
-                <Level color='#ccc' className='w-3 h-3' /> Level 2
-              </Typography>
+              <Typography className='text-[12px] text-noble-black-200 flex items-center gap-2'></Typography>
             </div>
           </div>
         </div>

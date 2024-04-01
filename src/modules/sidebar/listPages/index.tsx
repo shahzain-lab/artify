@@ -17,10 +17,10 @@ interface IPage {
 
 const ListPages = () => {
   const pages: IPage[] = [
-    { title: 'Login', path: '/auth/login', icon: <Login color='#fff' className='w-4 h-4' /> },
-    { title: 'Login 2', path: '/auth/login-second', icon: <Workspace color='#fff' className='w-4 h-4' /> },
-    { title: 'Register', path: '/auth/register', icon: <Register color='#fff' className='w-4 h-4' /> },
-    { title: 'Join', path: '/auth/register-second', icon: <Join color='#fff' className='w-4 h-4' /> }
+    { title: 'Login', path: '/auth/login', icon: <Login className='w-4 h-4 text-[#fff]' /> },
+    { title: 'Login 2', path: '/auth/login-second', icon: <Workspace className='w-4 h-4 text-[#fff]' /> },
+    { title: 'Register', path: '/auth/register', icon: <Register className='w-4 h-4 text-[#fff]' /> },
+    { title: 'Join', path: '/auth/register-second', icon: <Join className='w-4 h-4 text-[#fff]' /> }
   ]
   return (
     <div className='flex flex-col gap-1'>

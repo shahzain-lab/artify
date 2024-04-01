@@ -9,7 +9,7 @@ import { CheveronDown, CheveronRight, Status, TriLine } from '@/utils/icons'
 
 interface IChannel {
   name: string
-  Icon: ({ color }: { color?: string }) => JSX.Element
+  Icon: ({ className }: { className?: string }) => JSX.Element
   members: IUser[]
 }
 
@@ -39,7 +39,11 @@ const Groups = ({ channelGroups }: Props) => {
             onClick={() => setOpenGroup({ ...openGroup, group: openGroup.group === i ? null : i })}
             className='flex gap-2 cursor-pointer items-center'
           >
-            {openGroup.group === i ? <CheveronDown color='#CDCECF' /> : <CheveronRight color='#686B6E' />}
+            {openGroup.group === i ? (
+              <CheveronDown className='text-[#CDCECF]' />
+            ) : (
+              <CheveronRight className='text-[#686B6E]' />
+            )}
             <span className={`${openGroup.group === i ? 'text-noble-black-200' : 'text-gray-light-100'} `}>
               {group.name}
             </span>
@@ -54,7 +58,7 @@ const Groups = ({ channelGroups }: Props) => {
                 >
                   <div className='flex justify-between items-center'>
                     <div className='flex items-center gap-2'>
-                      <channel.Icon color='#686B6E' />
+                      <channel.Icon className='text-[#686B6E]' />
                       <span className={`${openGroup.channel === i ? 'text-white' : 'text-gray-light-100'} `}>
                         {channel.name}
                       </span>

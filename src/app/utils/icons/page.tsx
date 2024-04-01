@@ -39,82 +39,82 @@ const Page = () => {
       <CardLayer title='Icons'>
         <div className='flex flex-wrap gap-14'>
           <Button color='ghost'>
-            <CheveronRight color='#fff' />
+            <CheveronRight className='#fff' />
           </Button>
           <Button color='ghost'>
-            <CheveronDown color='#fff' />
+            <CheveronDown className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Download color='#fff' />
+            <Download className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Share color='#fff' />
+            <Share className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Lock color='#fff' />
+            <Lock className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Globe color='#fff' />
+            <Globe className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Cross color='#fff' />
+            <Cross className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Comment color='#fff' />
+            <Comment className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Code color='#fff' />
+            <Code className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Pencil color='#fff' />
+            <Pencil className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Idea color='#fff' />
+            <Idea className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Setting color='#fff' />
+            <Setting className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Status color='#fff' />
+            <Status className='#fff' />
           </Button>
           <Button color='ghost'>
-            <TriLine color='#fff' />
+            <TriLine className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Plus color='#fff' />
+            <Plus className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Sqaure color='#fff' />
+            <Sqaure className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Chat color='#fff' />
+            <Chat className='#fff' />
           </Button>
           <Button color='ghost'>
-            <TwoDots color='#fff' />
+            <TwoDots className='#fff' />
           </Button>
           <Button color='ghost'>
-            <GetStarted color='#fff' />
+            <GetStarted className='#fff' />
           </Button>
           <Button color='ghost'>
-            <DoubleLeft color='#fff' />
+            <DoubleLeft className='#fff' />
           </Button>
           <Button color='ghost'>
-            <DoubleRight color='#fff' />
+            <DoubleRight className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Warning color='#fff' />
+            <Warning className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Danger color='#fff' />
+            <Danger className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Success color='#fff' />
+            <Success className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Artificium color='#fff' />
+            <Artificium className='#fff' />
           </Button>
           <Button color='ghost'>
-            <Library color='#fff' />
+            <Library className='#fff' />
           </Button>
         </div>
       </CardLayer>
