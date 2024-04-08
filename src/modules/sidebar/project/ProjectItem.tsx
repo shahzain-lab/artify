@@ -22,7 +22,7 @@ const ProjectItem: FC<Props> = ({ project, index, active, setActive }) => {
         {project.logo ? (
           <Image src={project.logo} alt={project.title || ''} width={20} height={20} className='' />
         ) : null}
-        <Typography variant='semibold' className='text-sm text-noble-black-100'>
+        <Typography variant='semibold' className='text-sm dark:text-noble-black-100 text-noble-black-400'>
           {project.title}
         </Typography>
       </div>

@@ -62,14 +62,14 @@ const Features = () => {
     <div className='md:flex md:items-start gap-10 grid grid-cols-2 pt-3 md:pt-0'>
       {features.map((feat: IFeature, i: number) => (
         <div key={i} className='flex flex-col items-center gap-2 mt-5'>
-          <p className='bg-glass-fill p-2 md:p-3 rounded-[100%]'>{feat.Icon}</p>
+          <p className='dark:bg-glass-fill bg-white p-2 md:p-3 rounded-[100%]'>{feat.Icon}</p>
           <Typography variant='semibold' className='text-sm md:text-lg'>
             {feat.title}
           </Typography>
           <ul className='md:flex flex-col gap-2 hidden'>
             {feat.tools.map((asst) => (
               <li
-                className='bg-glass-fill shadow-sm p-4 flex justify-between items-center gap-16 rounded-[12px]'
+                className='dark:bg-glass-fill bg-white shadow-sm p-4 flex justify-between items-center gap-16 rounded-[12px]'
                 key={asst.title}
               >
                 <Typography variant='semibold' size='sm'>

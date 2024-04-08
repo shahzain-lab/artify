@@ -23,7 +23,7 @@ const LibraryItem = ({ library, index, currentIndex, setCurrentIndex }: Props) =
   return (
     <div className={`md:flex flex-col gap-4 relative w-full ${currentIndex === index ? 'flex' : 'hidden'}`}>
       <div className='px-4 hidden md:flex items-center justify-between'>
-        <Typography className='text-xl font-extrabold'>{library.name}</Typography>
+        <Typography className='text-xl font-bold'>{library.name}</Typography>
         <span>
           <TwoDots />
         </span>
@@ -36,7 +36,7 @@ const LibraryItem = ({ library, index, currentIndex, setCurrentIndex }: Props) =
             <p
               key={i}
               onClick={() => setCurrentIndex(i)}
-              className={`bg-noble-black-600 text-sm p-1 px-3 rounded-[8px] ${i === index ? 'text-theme-greenish' : ''}`}
+              className={`dark:bg-noble-black-600 bg-white text-sm p-1 px-3 rounded-[8px] ${i === index ? 'text-theme-greenish' : ''}`}
             >
               {t}
             </p>
@@ -46,7 +46,7 @@ const LibraryItem = ({ library, index, currentIndex, setCurrentIndex }: Props) =
           <div
             key={i}
             onClick={() => handleOpenWindow(asset)}
-            className='p-6 cursor-pointer rounded-[20px] bg-noble-black-800 flex flex-col gap-3 w-full'
+            className='p-6 cursor-pointer rounded-[20px] dark:bg-noble-black-800 bg-white flex flex-col gap-3 w-full'
           >
             <Typography className='text-base font-semibold'>{asset.name}</Typography>
             <Typography className='text-base font-medium text-gray-light-100'>{asset.caption}</Typography>
@@ -64,7 +64,7 @@ const LibraryItem = ({ library, index, currentIndex, setCurrentIndex }: Props) =
                 <ChatGradient />
               </div>
             </div>
-            {index !== 0 && <div className='w-[1px] h-full absolute bg-noble-black-600 -top-4 -left-2 '></div>}
+            {index !== 0 && <div className='w-[1px] h-full absolute dark:bg-noble-black-600 bg-white -top-4 -left-2 '></div>}
           </div>
         ))}
       </div>

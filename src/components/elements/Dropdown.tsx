@@ -106,7 +106,7 @@ const Dropdown: React.FC<IDropdownProps> = ({ title, classNames, children, optio
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className={cn('relative inline-block text-left dropdown-element', getColor(color, 'base'), classNames?.base)}>
+    <div className={cn('relative inline-block  text-left dropdown-element', getColor(color, 'base'), classNames?.base)}>
       <button
         type='button'
         className={cn(
@@ -120,7 +120,7 @@ const Dropdown: React.FC<IDropdownProps> = ({ title, classNames, children, optio
         {/* Add dropdown icon here */}
         {typeof Icon === 'boolean' ? (
           <CheveronDown
-            className={`${getColor(color, 'icon')} ml-2 h-5 w-5 transition-transform transform ${isOpen ? 'rotate-180' : ''}`}
+            className={`${getColor(color, 'icon')} ml-2 h-5  w-5 transition-transform transform ${isOpen ? 'rotate-180' : ''}`}
           />
         ) : Icon ? (
           <>{Icon}</>
@@ -129,7 +129,7 @@ const Dropdown: React.FC<IDropdownProps> = ({ title, classNames, children, optio
       {isOpen && (
         <div className='origin-top-right absolute -left-5 md:left-0 mt-2 z-20 rounded-md shadow-lg ring-1 ring-black ring-opacity-5'>
           <div
-            className={cn('py-1 block text-sm text-gray-700 rounded-xl', getColor(color, 'items'), classNames?.items)}
+            className={cn('py-1 block text-sm text-gray-700  rounded-xl', getColor(color, 'items'), classNames?.items)}
             role='menu'
             aria-orientation='vertical'
             aria-labelledby='options-menu'

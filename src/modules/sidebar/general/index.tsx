@@ -22,7 +22,7 @@ const General = () => {
         <div className='py-4 flex justify-between items-center'>
           <div className=' flex items-center'>
             <Image src={search} alt={'Search'} width={40} height={40} className='-mb-5' />
-            <Typography variant='semibold' className='text-sm text-noble-black-100'>
+            <Typography variant='semibold' className='text-sm dark:text-noble-black-100 text-noble-black-400'>
               Search
             </Typography>
           </div>
@@ -36,7 +36,7 @@ const General = () => {
               {item.icon ? (
                 <Image src={item.icon} alt={item.title || ''} width={40} height={40} className='-mb-5' />
               ) : null}
-              <Typography variant='semibold' className='text-sm text-noble-black-100'>
+              <Typography variant='semibold' className='text-sm dark:text-noble-black-100 text-noble-black-400'>
                 {item.title}
               </Typography>
             </div>

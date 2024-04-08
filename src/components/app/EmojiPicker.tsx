@@ -22,7 +22,7 @@ const ReactEmojiPicker = ({ setEmoji }: Props) => {
     setOpen(false)
   }
   return (
-    <Button onClick={() => setOpen(!open)} size={'sm'} color={'gray'} className='font-semibold h-7 text-[12px]'>
+    <Button onClick={() => setOpen(!open)} size={'sm'} color={'gray'} className='font-semibold h-7 text-[12px] bg-gray-400 text-black'>
       <div className='absolute md:static left-0 z-50'>
         <EmojiPicker open={open} theme={Theme.DARK} onEmojiClick={handleEmojiClick} width={330} />
       </div>

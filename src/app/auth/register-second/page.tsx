@@ -32,24 +32,24 @@ const page = () => {
             <Button>Join Workspace</Button>
           </div>
           <div className='grid grid-cols-3 items-center my-5'>
-            <Divider />
+            <Divider className='bg-noble-black-400' />
             <Typography
-              className='text-[12px] tracking-[0.15px] text-noble-black-400 text-center'
+              className='text-[12px] tracking-[0.15px] text-noble-black-500 text-center'
               size='sm'
               variant='medium'
             >
               or
             </Typography>
-            <Divider />
+            <Divider className='bg-noble-black-400' />
           </div>
           <Button color={'gray'}>Create new Workspace</Button>
         </div>
         <div className='flex items-center justify-between'>
-          <Typography variant='medium' className='text-gray-light-100 text-sm'>
+          <Typography variant='medium' className='dark:text-gray-light-100 text-gray-light-200 text-sm'>
             Artificium.app © 2024
           </Typography>
           <Link href={'#'}>
-            <Typography variant='medium' className='text-gray-light-100 text-sm'>
+            <Typography variant='medium' className='dark:text-gray-light-100 text-gray-light-200 text-sm'>
               Privacy Policy
             </Typography>
           </Link>

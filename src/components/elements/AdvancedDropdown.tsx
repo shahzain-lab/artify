@@ -27,7 +27,7 @@ const AdvancedDropdown: FC<Props> = ({ children, header, list, footer }) => {
     <div className='relative'>
       <button onClick={() => setOpen(!open)}>{children}</button>
       {open && (
-        <div className='absolute right-0 w-72 bg-glass-fill p-3 rounded-md'>
+        <div className='absolute bg-gray-100 text-black right-0 w-72 bg-glass-fill p-3 rounded-md'>
           {header && (
             <div className='flex justify-between items-center'>
               <Typography>{header.title}</Typography>

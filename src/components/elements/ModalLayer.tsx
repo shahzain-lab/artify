@@ -60,7 +60,7 @@ const ModalLayer = ({ children, setIsOpen, position = 'center' }: Props) => {
       )}
     >
       <div onClick={handleCloseModal} className='w-full h-screen fixed top-0 left-0 bg-bg-layer backdrop-blur-sm'></div>
-      <div className='shadow-xl-inset bg-glass-modal p-3 md:p-10 rounded-2xl w-full md:w-[50%] relative'>
+      <div className='shadow-xl-inset dark:bg-glass-modal bg-white top-6 p-3 md:p-10 rounded-2xl w-full md:w-[50%] relative'>
         <Button
           size={'sm'}
           onClick={handleCloseModal}

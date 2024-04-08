@@ -20,7 +20,7 @@ const Comments = () => {
   const comments = [
     {
       date: new Date(date.getTime() - 3 * 60 * 60 * 1000),
-      title: `<b class="text-neutral-300">${project.members[0].name}</b> shared a file with <b class="text-neutral-300">you</b>`,
+      title: `<b class="dark:text-neutral-300">${project.members[0].name}</b> shared a file with <b class="text-neutral-300">you</b>`,
       user: project.members[0],
       description: "Let's integrate this beautiful package to stimulate the process"
     },
@@ -47,7 +47,7 @@ const Comments = () => {
       </div>
       <div className='flex gap-2'>
         <Avatar src={image} />
-        <Input className='dark:bg-noble-black-700' placeholder='Enter Your Comment' />
+        <Input className='dark:bg-noble-black-700 bg-white' placeholder='Enter Your Comment' />
         <Button>Send</Button>
       </div>
     </>

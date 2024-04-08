@@ -68,7 +68,7 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen = false, children }) =
           <div className='mt-4'>
             {/* Search Input (UI only, no functionality) */}
             <div className='flex gap-2 items-center'>
-              <Input placeholder='Search ...' className='bg-gray-800  text-white outline-none pl-2 border-none' />
+              <Input placeholder='Search ...' className='dark:bg-gray-800 bg-gray-200  dark:text-white text-black outline-none pl-2 border-none' />
               <Button>Search</Button>
             </div>
             <p className='text-gray-500 text-sm mt-2'>
@@ -77,11 +77,11 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen = false, children }) =
             <div className='flex justify-around my-10'>
               {tabs.map((tab, i) => (
                 <div key={i} className='flex items-start flex-col gap-3 md:w-64'>
-                  <Typography className='text-sm text-gray-200'>{tab.title}</Typography>
+                  <Typography className='text-sm dark:text-gray-200 text-gray-700'>{tab.title}</Typography>
                   {tab.elements.map((item) => (
                     <div
                       key={item.title}
-                      className='py-2 px-4 text-[12px] md:text-sm flex items-center gap-3 w-full transition duration-150 border cursor-pointer hover:bg-[#3e3bfc2c] text-blue-500 rounded-lg hover:border-blue-500 border-gray-800'
+                      className='py-2 px-4 text-[12px] md:text-sm flex items-center gap-3 w-full transition duration-150 border cursor-pointer hover:bg-[#3e3bfc2c] dark:text-blue-500 text-blue-700 rounded-lg hover:border-blue-500 border-gray-800'
                     >
                       {item.icon}
                       {item.title}
@@ -91,12 +91,12 @@ const SearchModal: React.FC<SearchModalProps> = ({ isOpen = false, children }) =
               ))}
             </div>
             <div>
-              <Typography className='text-sm text-gray-200'>Recent Search</Typography>
+              <Typography className='text-sm dark:text-gray-200 text-gray-700'>Recent Search</Typography>
               <div className='flex gap-2 my-4 items-center'>
                 {recent.map((rec) => (
                   <div
                     key={rec}
-                    className='py-1.5 px-4 text-[12px] md:text-sm flex items-center gap-3 transition duration-150 border cursor-pointer hover:bg-[#3e3bfc2c] text-blue-500 rounded-lg hover:border-blue-500 border-gray-800'
+                    className='py-1.5 px-4 text-[12px] md:text-sm flex items-center gap-3 transition duration-150 border cursor-pointer hover:bg-[#3e3bfc2c] dark:text-blue-500 text-blue-700 rounded-lg hover:border-blue-500 border-gray-800'
                   >
                     {rec}
                     <Cross className='w-4 h-4 hover:text-blue-500' />

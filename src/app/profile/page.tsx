@@ -16,8 +16,8 @@ const page = () => {
     <div className='w-full md:w-[79%] p-2'>
       <SimpleCard className='h-60 flex justify-end flex-col'>
         <Image src={banner} alt='' width={200} height={200} className='w-full h-44 rounded-xl' />
-        <div className='h-20 py-1 relative bg-noble-black-600 rounded-xl -mb-10'>
-          <div className='bg-noble-black-600 absolute bottom-0 rounded-xl inline-block'>
+        <div className='h-20 py-1 relative dark:bg-noble-black-600 bg-white rounded-xl -mb-10'>
+          <div className='dark:bg-noble-black-600 bg-white absolute bottom-0 rounded-xl inline-block'>
             <Image src={user} alt='' width={200} height={200} className='w-32 h-32' />
           </div>
           <div className='pl-40 flex flex-col gap-2'>
@@ -25,11 +25,11 @@ const page = () => {
               John Doe
             </Typography>
             <div className='flex gap-5'>
-              <Typography className='text-[12px] text-noble-black-200 flex items-center gap-1'>
-                <Dribble className='w-3 h-3 text-[#ccc]' /> UX Designer
+              <Typography className='text-[12px] dark:text-noble-black-200 text-black flex items-center gap-1'>
+                <Dribble className='w-3 h-3 dark:text-[#ccc] text-black' /> UX Designer
               </Typography>
-              <Typography className='text-[12px] text-noble-black-200 flex items-center gap-1'>
-                <DollarSign className='w-3 h-3 text-[#ccc]' /> 15k
+              <Typography className='text-[12px] dark:text-noble-black-200 text-black flex items-center gap-1'>
+                <DollarSign className='w-3 h-3 dark:text-[#ccc] text-black' /> 15k
               </Typography>
               <Typography className='text-[12px] text-noble-black-200 flex items-center gap-2'></Typography>
             </div>

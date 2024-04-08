@@ -8,32 +8,32 @@ import Typography from '@/components/elements/Typography'
 
 const SidePanel = () => {
   return (
-    <div className='bg-noble-black-800 min-w-[300px] p-2 rounded-xl'>
-      <Typography className='text-sm'>About</Typography>
-      <Divider className='mt-2' />
+    <div className='dark:bg-noble-black-800 bg-white min-w-[300px] p-2 rounded-xl'>
+      <Typography className='text-md font-medium'>About</Typography>
+      <Divider className='mt-2 dark:bg-noble-black-500 bg-noble-black-300' />
       <ul className='text-sm flex flex-col gap-3 py-3'>
         <li className='flex justify-between w-full'>
-          <Typography className='text-noble-black-400 text-sm'>Full Name:</Typography>{' '}
+          <Typography className='dark:text-noble-black-400 text-black text-sm'>Full Name:</Typography>{' '}
           <Typography className='text-sm'>Shahzain</Typography>
         </li>
         <li className='flex justify-between w-full'>
-          <Typography className='text-noble-black-400 text-sm'>Status:</Typography>{' '}
+          <Typography className='dark:text-noble-black-400 text-black text-sm'>Status:</Typography>{' '}
           <Typography className='text-sm'>Active</Typography>
         </li>
         <li className='flex justify-between w-full'>
-          <Typography className='text-noble-black-400 text-sm'>Role:</Typography>{' '}
+          <Typography className='dark:text-noble-black-400 text-black text-sm'>Role:</Typography>{' '}
           <Typography className='text-sm'>Developer</Typography>
         </li>
         <li className='flex justify-between w-full'>
-          <Typography className='text-noble-black-400 text-sm'>Country:</Typography>{' '}
+          <Typography className='dark:text-noble-black-400 text-black text-sm'>Country:</Typography>{' '}
           <Typography className='text-sm'>USA</Typography>
         </li>
         <li className='flex justify-between w-full'>
-          <Typography className='text-noble-black-400 text-sm'>Language:</Typography>{' '}
+          <Typography className='dark:text-noble-black-400 text-black text-sm'>Language:</Typography>{' '}
           <Typography className='text-sm'>English</Typography>
         </li>
       </ul>
-      <Divider className='my-3' />
+      <Divider className='my-3 dark:bg-noble-black-500 bg-noble-black-300' />
       <div className='flex flex-col gap-2'>
         <div className='flex justify-between items-center w-full'>
           <Typography className='text-sm'>Reviews</Typography>

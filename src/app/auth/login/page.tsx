@@ -26,7 +26,7 @@ const Login = () => {
               Let&apos;s get{' '}
               <span className='bg-clip-text bg-blue-green-500 text-transparent font-bold'>creative!</span>
             </Typography>
-            <Typography size='xs' variant='medium' className='text-gray-light-100'>
+            <Typography size='xs' variant='medium' className='text-gray-light-200'>
               Log in to Artificium to start creating magic.
             </Typography>
             <div className='my-4 flex flex-col gap-4'>
@@ -35,7 +35,7 @@ const Login = () => {
             </div>
             <div className='flex items-center justify-between mb-5'>
               <Checkbox>Rememeber Me</Checkbox>
-              <Typography variant='semibold' className='bg-clip-text bg-blue-green-500 text-transparent text-base'>
+              <Typography variant='semibold' className='bg-clip-text dark:bg-blue-green-500 bg-blue-green-700 text-transparent text-base'>
                 Forgot Password?
               </Typography>
             </div>
@@ -43,7 +43,7 @@ const Login = () => {
           </div>
 
           <div className='grid grid-cols-3 items-center my-8'>
-            <Divider />
+            <Divider className='bg-noble-black-400'  />
             <Typography
               className='text-[12px] tracking-[0.15px] text-noble-black-400 text-center'
               size='sm'
@@ -51,7 +51,7 @@ const Login = () => {
             >
               or continue with
             </Typography>
-            <Divider />
+            <Divider className='bg-noble-black-400' />
           </div>
 
           <div className='grid grid-cols-2 items-center gap-4'>
@@ -62,7 +62,7 @@ const Login = () => {
         <div>
           <Typography className='text-noble-black-400 text-base'>
             Don&apos;t have an account?{' '}
-            <span className='bg-clip-text bg-blue-green-500 text-transparent text-bold'>Sign Up</span>
+            <span className='bg-clip-text dark:bg-blue-green-500 bg-blue-green-700 text-transparent text-bold'>Sign Up</span>
           </Typography>
         </div>
       </div>

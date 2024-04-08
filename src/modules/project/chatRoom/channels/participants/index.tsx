@@ -17,7 +17,7 @@ const Participant = () => {
         {users.slice(0, 2).map((user) => (
           <div
             key={user.username}
-            className='flex items-start gap-2 py-2 px-3 rounded-2xl hover:shadow-xl-inset hover:bg-glass-fill border border-transparent hover:border-glass-stroke'
+            className='flex items-start gap-2 py-2 px-3 rounded-2xl hover:shadow-xl-inset dark:hover:bg-glass-fill border border-transparent hover:border-glass-stroke'
           >
             <div className=' z-10 relative'>
               <Image src={user.profilePic} alt='' width={48} height={48} />

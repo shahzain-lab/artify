@@ -62,7 +62,7 @@ const Sidebar = () => {
     <>
       {PUBLIC_ROUTES.includes(pathname) ? null : (
         <div
-          className={`${openMobileMenu ? 'flex w-[80%] z-30 fixed h-screen overflow-y-scroll pb-4 no-scrollbar' : 'hidden'} md:w-[20%] md:overflow-y-scroll no-scrollbar md:fixed md:h-[100%] md:flex flex-col justify-between px-3 py-2 bg-noble-black-800 rounded-[12px]`}
+          className={`${openMobileMenu ? 'flex w-[80%] z-30 fixed h-screen overflow-y-scroll pb-4 no-scrollbar' : 'hidden'} md:w-[20%] md:overflow-y-scroll no-scrollbar md:fixed md:h-[100%] md:flex flex-col justify-between px-3 py-2 dark:bg-noble-black-800 shadow-md bg-white dark:text-white text-black rounded-[1px]`}
         >
           {openMobileMenu && (
             <div className='w-full h-screen fixed top-0 left-0 bg-bg-layer backdrop-blur-sm'>
@@ -78,13 +78,13 @@ const Sidebar = () => {
             <Profile />
             {modules.map((module, i) => (
               <Fragment key={i}>
-                <Divider />
+                <Divider className='dark:bg-noble-black-500 bg-gray-300' />
                 <div className='py-4'>
                   <div
                     onClick={() => setActive(active === i ? null : i)}
                     className='my-3 cursor-pointer flex justify-between items-center'
                   >
-                    <Typography variant='semibold' className='text-[12px] text-noble-black-400'>
+                    <Typography variant='semibold' className='text-[12px] dark:text-noble-black-400 text-black'>
                       {module.title}
                     </Typography>
                     {active === i ? <CheveronDown /> : <CheveronRight />}

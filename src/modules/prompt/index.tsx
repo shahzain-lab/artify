@@ -24,7 +24,7 @@ const Prompt = ({ className }: Props) => {
   return (
     <div
       className={cn(
-        `prompt-input fixed bottom-4 md:right-5 p-3 md:p-6 bg-noble-black-800 w-full md:w-[77%] rounded-[20px]`,
+        `prompt-input fixed bottom-4 md:right-5 p-3 md:p-6 dark:bg-noble-black-800 bg-white w-full md:w-[77%] rounded-[20px]`,
         className
       )}
     >

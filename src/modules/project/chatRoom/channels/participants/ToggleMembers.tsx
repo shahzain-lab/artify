@@ -13,17 +13,17 @@ interface Props {
 
 const ToggleMembers = ({ toggleBar, setToggleBar }: Props) => {
   return (
-    <div className='fixed bottom-5 z-10 bg-noble-black-700 flex items-center shadow-lg border-[2px] rounded-xl border-noble-black-600 '>
+    <div className='fixed bottom-5 z-10 dark:bg-noble-black-700 bg-gray-800  flex items-center shadow-lg border-[2px] rounded-xl border-noble-black-600 '>
       <div
         onClick={() => setToggleBar(0)}
-        className={`cursor-pointer px-6 py-4 flex items-center gap-2  ${toggleBar === 0 ? 'bg-noble-black-600 rounded-xl text-white ' : 'text-gray-light-100'}`}
+        className={`cursor-pointer px-6 py-4 flex items-center gap-2  ${toggleBar === 0 ? 'dark:bg-noble-black-600 bg-white rounded-xl text-white ' : 'text-gray-light-100'}`}
       >
         <Image src={chatPrimary} alt='chatPrimary' width={24} height={24} />
         <span>Chats</span>
       </div>
       <div
         onClick={() => setToggleBar(1)}
-        className={`cursor-pointer px-6 py-4 flex items-center gap-2 ${toggleBar === 1 ? 'bg-noble-black-600 rounded-xl text-white' : 'text-gray-light-100'} `}
+        className={`cursor-pointer px-6 py-4 flex items-center gap-2 ${toggleBar === 1 ? 'dark:bg-noble-black-600 bg-white rounded-xl text-white' : 'text-gray-light-100'} `}
       >
         <Image src={groupGray} alt='groupGray' width={24} height={24} />
         <span>Members</span>

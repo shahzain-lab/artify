@@ -42,7 +42,7 @@ const SimpleCard = ({ className, children, align, alignSM }: Props) => {
   return (
     <div
       className={cn(
-        'p-4 bg-noble-black-800 rounded-3xl',
+        'p-4 dark:bg-noble-black-800 bg-white rounded-3xl',
         alignSM && contentAlignment[alignSM],
         align && contentAlignment[align].split(' ').join(' md:'),
         className

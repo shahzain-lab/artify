@@ -33,7 +33,7 @@ const ChatRoom = () => {
       </div>
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className={`md:hidden fixed px-0.5 z-30 top-[40%] bg-noble-black-600 py-10 rounded-s-[12px] ${isOpen ? 'right-[80%]' : 'right-0'} `}
+        className={`md:hidden fixed px-0.5 z-30 top-[40%] dark:bg-noble-black-600 bg-white py-10 rounded-s-[12px] ${isOpen ? 'right-[80%]' : 'right-0'} `}
       >
         {isOpen ? <DoubleRight /> : <DoubleLeft />}
       </div>

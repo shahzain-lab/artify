@@ -28,7 +28,7 @@ const TaskCard: React.FC<ITaskCardProps> = ({
   users
 }) => {
   return (
-    <div className='bg-noble-black-900 p-3 rounded-xl'>
+    <div className='dark:bg-noble-black-900 bg-white p-3 rounded-xl'>
       <div className='flex justify-between items-center text-[12px] my-2 text-noble-black-200'>
         <p className='flex items-center gap-2'>
           <Watch /> <span>Created - {created && formatDate(created)}</span>

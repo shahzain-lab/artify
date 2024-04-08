@@ -69,13 +69,13 @@ const details = `
 
 const DetailPage = () => {
   return (
-    <div>
+    <div className=''>
       <Typography className='text-2xl'>Comprehensive Guide Creation</Typography>
       <div className='flex flex-col md:flex-row justify-between gap-4 md:gap-0 items-start md:pr-6'>
         <div className='flex flex-col-reverse md:flex-row md:items-start justify-between w-full'>
           <Tabs className='bg-inherit shadow-none flex' defaultTab={0} orientation='horizontal'>
             <Tab color='primary' variant='underline' id={0} title='Description'>
-              <p className='text-noble-black-300 text-sm leading-7' dangerouslySetInnerHTML={{ __html: details }}></p>
+              <p className='dark:text-noble-black-300 text-noble-black-500 text-sm leading-7' dangerouslySetInnerHTML={{ __html: details }}></p>
             </Tab>
             <Tab color='primary' variant='underline' id={1} title='Comments'>
               <Comments />

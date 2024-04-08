@@ -20,7 +20,7 @@ const page = () => {
       <div className='flex flex-col justify-between p-12 w-[60%]'>
         <div className='flex items-center justify-between'>
           <Image src={logo} alt='logo' width={32} height={32} />
-          <Typography theme='blueGreen600' variant='bold'>
+          <Typography theme='blueGreen700' variant='bold'>
             Log In
           </Typography>
         </div>
@@ -35,16 +35,16 @@ const page = () => {
             <Input />
           </div>
           <Checkbox>
-            I agree with <Typography theme='blueGreen600'>Terms and conditions</Typography>
+            I agree with <Typography theme='blueGreen700'>Terms and conditions</Typography>
           </Checkbox>
           <Button>Create free account</Button>
         </div>
         <div className='flex items-center justify-between'>
-          <Typography variant='medium' className='text-gray-light-100 text-sm'>
+          <Typography variant='medium' className='dark:text-gray-light-100 text-gray-light-200 text-sm'>
             Artificium.app © 2024
           </Typography>
           <Link href={'#'}>
-            <Typography variant='medium' className='text-gray-light-100 text-sm'>
+            <Typography variant='medium' className='dark:text-gray-light-100 text-gray-light-200 text-sm'>
               Privacy Policy
             </Typography>
           </Link>

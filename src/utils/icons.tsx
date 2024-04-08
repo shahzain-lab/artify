@@ -449,7 +449,7 @@ export const Chat = ({ className }: Props) => {
 export const TwoDots = ({ className }: Props) => {
   return (
     <svg
-      className={cn('text-[#686B6E]', className)}
+      className={cn('dark:text-[#686B6E] text-[#484a4c]', className)}
       xmlns='http://www.w3.org/2000/svg'
       width='21'
       height='20'
@@ -531,7 +531,7 @@ export const DoubleRight = ({ className }: Props) => {
 export const IconPlus = ({ className }: Props) => {
   return (
     <svg
-      className={cn('text-[#CDCECF]', className)}
+      className={cn('text-[#050505]', className)}
       width='12'
       height='12'
       viewBox='0 0 12 12'

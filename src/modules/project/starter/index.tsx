@@ -15,7 +15,7 @@ const Starter = () => {
   // ]
   return (
     <main className='flex flex-col items-center justify-start gap-3 mt-5 min-h-[80vh] pt-4 md:pt-0 no-scrollbar overflow-y-scroll'>
-      <Typography className='text-center' variant='bold' size='md'>
+      <Typography className='text-center text-black' variant='bold' size='md'>
         Innovation Starter Pack
       </Typography>
       <Typography variant='medium' className='text-gray-light-100 text-sm md:text-base text-center md:text-start'>

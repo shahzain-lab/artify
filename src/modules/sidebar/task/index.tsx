@@ -14,8 +14,8 @@ interface ITask {
 
 const ListTask = () => {
   const tasks: ITask[] = [
-    { title: 'Kanban', path: '/task/kanban', icon: <Backlog className='w-[18px] h-[18px] text-[#fff]' /> },
-    { title: 'Task Detail', path: '/task/details', icon: <Task className='w-[18px] h-[18px] text-[#fff]' /> }
+    { title: 'Kanban', path: '/task/kanban', icon: <Backlog className='w-[18px] h-[18px] dark:text-[#fff] text-noble-black-700' /> },
+    { title: 'Task Detail', path: '/task/details', icon: <Task className='w-[18px] h-[18px] dark:text-[#fff] text-noble-black-700' /> }
   ]
   return (
     <div className='flex flex-col gap-1'>
@@ -24,7 +24,7 @@ const ListTask = () => {
           <div key={i} className={`hover:bg-glass-fill rounded-[8px] my-1 px-1 py-4 flex justify-between items-center`}>
             <div className=' flex items-center gap-2'>
               {task.icon ? <>{task.icon}</> : null}
-              <Typography variant='semibold' className='text-sm text-noble-black-100'>
+              <Typography variant='semibold' className='text-sm text-noble-black-400'>
                 {task.title}
               </Typography>
             </div>

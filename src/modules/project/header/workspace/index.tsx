@@ -35,7 +35,7 @@ const Workspace = () => {
           alt='share'
           width={35}
           height={35}
-          className='md:hidden hover:bg-noble-black-600 p-2 rounded-[8px]'
+          className='md:hidden dark:hover:bg-noble-black-600  p-2 rounded-[8px]'
           onClick={() => dispatch(setOpenMobileMenu(true))}
         />
       </div>

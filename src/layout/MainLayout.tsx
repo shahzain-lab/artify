@@ -1,4 +1,6 @@
 import React, { PropsWithChildren } from 'react'
+import { ThemeProvider } from 'next-themes'
+
 {
   /* Components */
 }
@@ -10,14 +12,16 @@ import Appbar from '@/modules/sidebar/Appbar'
 
 const MainLayout = ({ children }: PropsWithChildren) => {
   return (
-    <main className='bg-noble-black-700 min-h-screen flex w-full gap-3 relative'>
-      <Sidebar />
-      <div className='w-full flex flex-col items-end justify-start'>
-        <Appbar />
-        {children}
-      </div>
-    </main>
+    <ThemeProvider>
+      <main className='dark:bg-noble-black-700 bg-gray-50 min-h-screen flex w-full gap-3 relative'>
+        <Sidebar />
+        <div className='w-full flex flex-col items-end justify-start'>
+          <Appbar />
+          {children}
+        </div>
+      </main>
+    </ThemeProvider>
   )
-}
+};
 
 export default MainLayout

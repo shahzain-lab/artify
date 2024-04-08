@@ -17,10 +17,10 @@ interface IPage {
 
 const ListPages = () => {
   const pages: IPage[] = [
-    { title: 'Login', path: '/auth/login', icon: <Login className='w-4 h-4 text-[#fff]' /> },
-    { title: 'Login 2', path: '/auth/login-second', icon: <Workspace className='w-4 h-4 text-[#fff]' /> },
-    { title: 'Register', path: '/auth/register', icon: <Register className='w-4 h-4 text-[#fff]' /> },
-    { title: 'Join', path: '/auth/register-second', icon: <Join className='w-4 h-4 text-[#fff]' /> }
+    { title: 'Login', path: '/auth/login', icon: <Login className='w-4 h-4 dark:text-white text-gray-800' /> },
+    { title: 'Login 2', path: '/auth/login-second', icon: <Workspace className='w-4 h-4 dark:text-[#fff] text-gray-500' /> },
+    { title: 'Register', path: '/auth/register', icon: <Register className='w-4 h-4 dark:text-[#fff] text-gray-500' /> },
+    { title: 'Join', path: '/auth/register-second', icon: <Join className='w-4 h-4 dark:text-[#fff] text-gray-500' /> }
   ]
   return (
     <div className='flex flex-col gap-1'>
@@ -29,7 +29,7 @@ const ListPages = () => {
           <div key={i} className={`hover:bg-glass-fill rounded-[8px] my-1 px-1 py-4 flex justify-between items-center`}>
             <div className=' flex items-center gap-2'>
               {page.icon ? <>{page.icon}</> : null}
-              <Typography variant='semibold' className='text-sm text-noble-black-100'>
+              <Typography variant='semibold' className='text-sm dark:text-noble-black-100 text-noble-black-500'>
                 {page.title}
               </Typography>
             </div>

@@ -34,7 +34,7 @@ const Groups = ({ channelGroups }: Props) => {
   return (
     <div>
       {channelGroups.map((group, i) => (
-        <div key={i} className='py-5 border-b border-noble-black-600 text-sm font-semibold'>
+        <div key={i} className='py-5 border-b dark:border-noble-black-600 border-noble-black-500 text-sm font-semibold'>
           <div
             onClick={() => setOpenGroup({ ...openGroup, group: openGroup.group === i ? null : i })}
             className='flex gap-2 cursor-pointer items-center'
@@ -44,7 +44,7 @@ const Groups = ({ channelGroups }: Props) => {
             ) : (
               <CheveronRight className='text-[#686B6E]' />
             )}
-            <span className={`${openGroup.group === i ? 'text-noble-black-200' : 'text-gray-light-100'} `}>
+            <span className={`${openGroup.group === i ? 'dark:text-noble-black-200'  : 'text-gray-light-100'} `}>
               {group.name}
             </span>
           </div>
@@ -54,12 +54,12 @@ const Groups = ({ channelGroups }: Props) => {
                 <div
                   onClick={() => setOpenGroup({ ...openGroup, channel: openGroup.channel === i ? null : i })}
                   key={i}
-                  className={`${openGroup.channel === i ? 'border-[2px] rounded-xl border-noble-black-600' : ''} p-3 cursor-pointer`}
+                  className={`${openGroup.channel === i ? 'border-[2px] rounded-xl dark:border-noble-black-600 border-noble-black-400' : ''} p-3 cursor-pointer`}
                 >
                   <div className='flex justify-between items-center'>
                     <div className='flex items-center gap-2'>
-                      <channel.Icon className='text-[#686B6E]' />
-                      <span className={`${openGroup.channel === i ? 'text-white' : 'text-gray-light-100'} `}>
+                      <channel.Icon className='dark:text-[#686B6E] text-black' />
+                      <span className={`${openGroup.channel === i ? 'dark:text-white' : 'text-gray-light-400'} `}>
                         {channel.name}
                       </span>
                     </div>
@@ -78,8 +78,8 @@ const Groups = ({ channelGroups }: Props) => {
                           </div>
                           <div
                             key={user.username}
-                            className={`flex w-full items-center gap-2 py-2 px-3 rounded-2xl hover:shadow-xl-inset 
-                                                        hover:bg-glass-fill border border-transparent hover:border-glass-stroke}`}
+                            className={`flex w-full items-center gap-2 py-2  px-3 rounded-2xl hover:shadow-xl-inset 
+                                        hover:bg-glass-fill border border-transparent hover:border-glass-stroke}`}
                           >
                             <div className=' z-10 relative'>
                               <Image src={user.profilePic} alt='' width={48} height={48} />
@@ -90,7 +90,7 @@ const Groups = ({ channelGroups }: Props) => {
                               ) : null}
                             </div>
                             <div className='flex flex-col -mt-1'>
-                              <Typography className='text-gray-light-100' size='ms' variant='semibold'>
+                              <Typography className='dark:text-gray-light-100 text-gray-600' size='ms' variant='semibold'>
                                 {user.fullName}
                               </Typography>
                             </div>

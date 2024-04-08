@@ -33,7 +33,7 @@ const Login = () => {
               <SocialButton variant='APPLE'>Apple Account</SocialButton>
             </div>
             <div className='grid grid-cols-3 items-center my-5'>
-              <Divider />
+              <Divider className='bg-noble-black-400' />
               <Typography
                 className='text-[12px] tracking-[0.15px] text-noble-black-400 text-center'
                 size='sm'
@@ -41,7 +41,7 @@ const Login = () => {
               >
                 or continue with
               </Typography>
-              <Divider />
+              <Divider className='bg-noble-black-400' />
             </div>
             <div className='my-4 flex flex-col gap-4'>
               <Input />
@@ -49,7 +49,7 @@ const Login = () => {
             </div>
             <div className='flex items-center justify-between mb-4'>
               <Checkbox>Rememeber Me</Checkbox>
-              <Typography variant='semibold' className='bg-clip-text bg-blue-green-500 text-transparent text-base'>
+              <Typography variant='semibold' className='bg-clip-text dark:bg-blue-green-500 bg-blue-green-700 text-transparent text-base'>
                 Forgot Password?
               </Typography>
             </div>
