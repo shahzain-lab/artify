@@ -12,7 +12,7 @@ import Appbar from '@/modules/sidebar/Appbar'
 
 const MainLayout = ({ children }: PropsWithChildren) => {
   return (
-    <ThemeProvider>
+    <ThemeProvider defaultTheme='dark' attribute="class">
       <main className='dark:bg-noble-black-700 bg-gray-50 min-h-screen flex w-full gap-3 relative'>
         <Sidebar />
         <div className='w-full flex flex-col items-end justify-start'>
