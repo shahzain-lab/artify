@@ -53,11 +53,11 @@ const getColor = (color: TColor, type: 'base' | 'button' | 'item' | 'items' | 'i
       return type === 'base'
         ? ''
         : type === 'button'
-          ? 'bg-noble-black-600 text-gray'
+          ? 'dark:bg-noble-black-600 bg-noble-black-100 text-gray'
           : type === 'item'
             ? 'hover:bg-slate-700'
             : type === 'items'
-              ? 'bg-slate-800 text-white'
+              ? 'bg-noble-black-600 text-white'
               : '#fff'
     case 'green':
       return type === 'base'

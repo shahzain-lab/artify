@@ -8,7 +8,7 @@ import { chats } from '@/lib/chatDB'
 
 const Messages = () => {
   return (
-    <div className='p-1 flex flex-col gap-5 relative'>
+    <div className='p-1 flex flex-col gap-5 '>
       {chats.map((chat: IMessage) => (
         <Message key={chat.id} message={chat} />
       ))}

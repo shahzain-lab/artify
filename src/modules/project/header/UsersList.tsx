@@ -12,7 +12,7 @@ const UsersList = ({ users, depth = 0 }: Props) => {
   return (
     <div className='flex items-center'>
       {users.slice(0, depth).map((user, i: number) => (
-        <div key={i} className='userItem -ml-3 z-10 relative'>
+        <div key={i} className='no-overlay -ml-3 relative'>
           <Image
             src={user.avatar}
             alt=''
@@ -27,7 +27,7 @@ const UsersList = ({ users, depth = 0 }: Props) => {
           ) : null}
         </div>
       ))}
-      <div className='text-gray-light-100 bg-noble-black-700 mt-1 md:mt-auto w-7 h-7 md:w-9 md:h-9 text-sm -ml-2 rounded-[12px] flex justify-center items-center'>
+      <div className='text-gray-light-100 dark:bg-noble-black-700 bg-gray-200 mt-1 md:mt-auto w-7 h-7 md:w-9 md:h-9 text-sm -ml-3 rounded-[12px] flex justify-center items-center'>
         +{users.length - depth}
       </div>
     </div>

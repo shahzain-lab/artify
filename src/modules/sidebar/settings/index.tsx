@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Typography from '@/components/elements/Typography'
 import Link from 'next/link'
@@ -7,10 +8,17 @@ import Link from 'next/link'
 import Image from 'next/image'
 import cog from '@/assets/icons/cog.svg'
 import avatar from '@/assets/avatars/Avatar-7.png'
+import { useTheme } from 'next-themes'
+import { cn } from '@/lib/utils'
 
 const Settings = () => {
+  const { theme } = useTheme()
   return (
-    <div className='setting-widget bg-glass-fill p-4 rounded-[16px] flex items-center z-20 md:z-auto justify-between'>
+    <div className={cn(
+      'setting-widget no-overlay',
+      'p-4 rounded-[16px] flex items-center z-20 md:z-auto justify-between',
+      theme === 'dark' ? 'bg-glass-fill' : 'bg-gray-100'
+    )}>
       <div className='flex items-center gap-3'>
         <Image src={avatar} alt='user' width={48} height={48} />
         <div className='flex flex-col'>

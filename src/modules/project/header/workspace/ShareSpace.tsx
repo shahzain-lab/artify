@@ -10,8 +10,10 @@ import InviteForm from './InviteForm'
 }
 import { users } from '@/lib/userDB'
 import { cn } from '@/lib/utils'
+import { useTheme } from 'next-themes'
 
 const ShareSpace = () => {
+  const { theme } = useTheme()
   return (
     <div className='flex flex-col gap-2'>
       <Typography className='text-lg' variant='semibold'>
@@ -42,7 +44,8 @@ const ShareSpace = () => {
             </div>
             <button
               className={cn(
-                'bg-glass-fill border-t border-glass-stroke rounded-xl shadow-xl-inset px-3 py-2 text-[12px]',
+                'border-t border-glass-stroke rounded-xl shadow-xl-inset px-3 py-2 text-[12px]',  
+                theme === 'dark' ? 'bg-glass-fill' : 'bg-green-100',              
                 user.role === 0 ? 'text-theme-greenish' : user.role === 1 ? 'text-blue-md' : 'text-purple-md'
               )}
             >
@@ -51,7 +54,7 @@ const ShareSpace = () => {
           </div>
         ))}
       </div>
-      <div className='bg-noble-black-700 rounded-xl flex flex-col md:flex-row gap-2 md:gap-0 justify-between items-center py-4 px-6'>
+      <div className='dark:bg-noble-black-700 shadow-lg border dark:border-gray-800 border-gray-100 bg-white rounded-xl flex flex-col md:flex-row gap-2 md:gap-0 justify-between items-center py-4 px-6'>
         <div className='flex gap-2 items-center'>
           <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'>
             <path

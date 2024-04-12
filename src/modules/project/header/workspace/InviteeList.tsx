@@ -17,18 +17,18 @@ interface Props {
 
 const InviteeList = ({ text, handleSelectedUsers }: Props) => {
   return (
-    <div className='absolute top-[110%] w-full left-0 rounded-2xl bg-noble-black-800 p-3'>
+    <div className='absolute top-[110%] w-full shadow-lg left-0 rounded-2xl dark:bg-noble-black-800 bg-white py-3 px-4'>
       <Typography size='xs' className='text-gray-light-100' variant='medium'>
         Users
       </Typography>
-      <div className='flex flex-col'>
+      <div className='flex flex-col gap-3'>
         {users
           .filter((user) => user.fullName.toLowerCase().startsWith(text.toLowerCase()))
           .map((user) => (
             <div
               key={user.username}
               onClick={() => handleSelectedUsers(user)}
-              className='flex items-start gap-2 py-2 px-3 rounded-2xl hover:shadow-xl-inset hover:bg-glass-fill border border-noble-black-800 hover:border-glass-stroke'
+              className='flex items-start gap-2 py-2 px-3 rounded-2xl hover:shadow-xl-inset hover:bg-glass-fill border border-gray-300 hover:border-gray-600 dark:border-noble-black-800 dark:hover:border-glass-stroke'
             >
               <Image src={user.profilePic} alt={user.fullName} width={50} height={50} />
               <div className='flex flex-col -mt-1'>

@@ -33,13 +33,13 @@ const Message = ({ message }: Props) => {
   return (
     <div
       className={cn(
-        'p-2 md:p-4 rounded-[16px] border border-noble-black-600',
-        `${message.isHuman && 'dark:hover:border-noble-black-800 border-gray-400 hover:border-gray-300 group hover:shadow-xl dark:hover:bg-noble-black-800 hover:bg-white'}`
+        'p-2 md:p-4 rounded-[16px] border dark:border-noble-black-600 border-white',
+        `${message.isHuman && 'dark:hover:border-noble-black-800 hover:border-gray-300 group hover:shadow-xl dark:hover:bg-noble-black-800 hover:bg-white'}`
       )}
     >
       <div className='flex items-center justify-between'>
         <div className='flex items-center gap-4'>
-          <div className='relative'>
+          <div>
             {message.isHuman ? (
               <span className='absolute right-0 top-0 inline-flex rounded-full h-3 w-3 bg-[#4AC97E] border dark:border-black'></span>
             ) : null}
@@ -59,7 +59,6 @@ const Message = ({ message }: Props) => {
           </Typography>
         </div>
         <div>
-
           <Image src={copy} alt='copy' width={16} height={16} />
         </div>
       </div>
@@ -109,8 +108,8 @@ const Message = ({ message }: Props) => {
                 </div> */}
 
         {message.isHuman ? null : (
-          <div className='pt-3 flex items-center  gap-2'>
-            <Button size={'sm'} color='gray' className='font-semibold text-[12px] bg-gray-400'>
+          <div className='no-overlay pt-3 flex items-center gap-2'>
+            <Button size={'sm'} color='gray' className='font-semibold dark:text-white text-black text-[12px] dark:bg-noble-black-800 bg-noble-black-100'>
               Regenerate response
             </Button>
             <Dropdown
@@ -118,8 +117,8 @@ const Message = ({ message }: Props) => {
               title='Modify'
               Icon
               classNames={{
-                button: 'font-semibold text-[12px] pt-2.5 pb-1.5 bg-gray-400',
-                items: 'bg-noble-black-900 w-44',
+                button: 'font-semibold text-[12px] pt-2.5 pb-1.5',
+                items: 'w-44',
                 item: 'hover:bg-noble-black-800'
               }}
               options={['Create variations', 'Adjust', 'Share', 'Export']}
@@ -130,7 +129,7 @@ const Message = ({ message }: Props) => {
           <div className='flex items-center justify-between gap-3 -mb-5 md:-mb-7 pt-4'>
             <EmojiList emoji={emoji} />
             <div className='flex items-center gap-1 pr-4'>
-              <Button size={'sm'} color='gray' className='font-semibold h-7 text-[12px] bg-gray-400'>
+              <Button size={'sm'} color='gray' className='font-semibold h-7 text-[12px]'>
                 Reply
               </Button>
               <ReactEmojiPicker setEmoji={setEmoji} />

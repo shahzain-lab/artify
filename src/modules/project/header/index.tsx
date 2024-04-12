@@ -8,7 +8,7 @@ import Navigation from './navigation'
 
 const Headers = () => {
   return (
-    <div className='w-full flex flex-col justify-between dark:bg-noble-black-800 bg-white rounded-[12px] h-[190px]'>
+    <div className='w-full flex flex-col justify-between dark:bg-noble-black-800 bg-white shadow-md rounded-[12px] h-[190px]'>
       <Workspace />
       <Divider />
       <Navigation />

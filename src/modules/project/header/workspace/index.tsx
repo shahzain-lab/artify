@@ -13,8 +13,9 @@ import UsersList from '../UsersList'
   /* Images */
 }
 import Image from 'next/image'
-import edit from '@/assets/icons/edit.svg'
 import menubar from '@/assets/icons/menubar.svg'
+import { Button } from '@/components/elements/Button'
+import { Edit } from '@/utils/icons'
 
 const Workspace = () => {
   const project = useSelector((state: RootState) => state.workspace.project)
@@ -39,11 +40,16 @@ const Workspace = () => {
           onClick={() => dispatch(setOpenMobileMenu(true))}
         />
       </div>
-      <div className='pl-3 md:pl-auto flex items-center justify-between gap-2 md:py-0 md:px-0 w-full'>
+      <div className='pl-3 md:pl-auto flex items-center justify-between md:justify-end gap-2 md:py-0 md:px-0 w-full'>
         <UsersList depth={4} users={project.members} />
         <div className='flex items-center gap-2'>
           <Share />
-          <Image src={edit} alt='share' width={35} height={35} className='hover:bg-noble-black-600 p-2 rounded-[8px]' />
+          <Button
+            variant='grayoutline'
+            className='border-transparent'
+            >
+            <Edit className='dark:text-gray-200 text-gray-800' />
+          </Button>
         </div>
       </div>
     </div>

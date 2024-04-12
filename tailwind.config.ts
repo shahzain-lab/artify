@@ -116,9 +116,14 @@ const config: Config = {
       }
     },
   },
+  variants: {
+    extend: {
+      backgroundImage: ['dark']
+    }
+  },
   safelist: [
     {
-      pattern: /^(bg|text|border)-noble-black-[1-9]00$/
+      pattern: /^(dark):(bg|text|border)-noble-black-[1-9]00$/
     },
     {
       pattern: /^(bg|text|border)-day-blue-[1-9]00$/

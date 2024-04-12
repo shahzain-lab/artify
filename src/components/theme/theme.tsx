@@ -4,7 +4,7 @@ import { useTheme } from 'next-themes'
 const ThemeChanger = () => {
   const { theme, setTheme } = useTheme()
   
-  const chang = ()=>{
+  const toggleTheme = ()=>{
         console.log(theme);
         if(theme=='dark'){
            setTheme('light') 
@@ -14,8 +14,7 @@ const ThemeChanger = () => {
     }
   return (
     <div>
-      {/* The current theme is: {theme} */}
-      <button onClick={chang}>Toogle Mode</button>
+      <button onClick={toggleTheme}>Toogle Mode</button>
     </div>
   )
 };

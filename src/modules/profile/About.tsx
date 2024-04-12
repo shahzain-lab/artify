@@ -9,8 +9,8 @@ import aboutImg from '@/assets/avatars/about.png'
 const About = () => {
   return (
     <div className='w-full'>
-      <div className='h-60 w-full flex justify-between items-start dark:bg-[#c892fe47] bg-white rounded-xl shadow-md'>
-        <Image src={aboutImg} alt='' width={400} height={400} className='w-[270px] h-[290px]' />
+      <div className='h-60 w-full flex justify-between items-start bg-[#c892fe47] rounded-xl shadow-md'>
+        <Image src={aboutImg} alt='' width={400} height={400} className='w-[270px] h-[290px] md:block hidden' />
         <div className='flex items-center h-full mr-24 gap-7 p-4'>
           <div className='flex flex-col gap-2 items-center'>
             <Typography className='text-4xl font-bold'>88</Typography>
@@ -24,7 +24,7 @@ const About = () => {
           <div className='border-l dark:border-gray-300 border-noble-black-300 w-1 h-[60px]'></div>
           <div className='flex flex-col gap-2 items-center'>
             <Typography className='text-4xl font-bold'>1.8k</Typography>
-            <Typography className='text-sm dark:text-noble-black-200 bg-white'>Followers</Typography>
+            <Typography className='text-sm dark:text-noble-black-200'>Followers</Typography>
           </div>
         </div>
       </div>

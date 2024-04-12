@@ -15,7 +15,7 @@ const Appbar = () => {
   return (
     <>
       {PUBLIC_ROUTES.includes(pathname) ? null : (
-        <div className='dark:bg-noble-black-800 bg-white z-10 w-[80%] sticky top-0 gap-2 right-0 flex py-2 justify-end items-center px-5'>
+        <div className='no-overlay dark:bg-noble-black-800 bg-white w-full md:w-[80%] z-30 shadow-sm rounded-b-[15px] sticky top-0 gap-2 right-0 flex py-2 justify-end items-center px-5'>
           <span className='dark:bg-noble-black-800 bg-gray-200 text-black rounded-2xl sticky top-0 hover:bg-red-400 hover:text-white right-10 flex py-1 justify-end items-center px-5'>
             <button className='rounded-md  px-2 py-1'><ThemeChanger /></button>
           </span>

@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { IFeature } from '../../../interfaces/IMessage.interface'
 {
@@ -5,14 +6,10 @@ import { IFeature } from '../../../interfaces/IMessage.interface'
 }
 import Typography from '@/components/elements/Typography'
 {
-  /* Images */
-}
-import Image from 'next/image'
-import arrowRightGray from '@/assets/icons/arrow-right-gray.svg'
-{
   /* Utils */
 }
 import { Code, Comment, Idea, Pencil } from '@/utils/icons'
+import FeatureItem from './FeatureItem'
 
 const features: IFeature[] = [
   {
@@ -61,25 +58,7 @@ const Features = () => {
   return (
     <div className='md:flex md:items-start gap-10 grid grid-cols-2 pt-3 md:pt-0'>
       {features.map((feat: IFeature, i: number) => (
-        <div key={i} className='flex flex-col items-center gap-2 mt-5'>
-          <p className='dark:bg-glass-fill bg-white p-2 md:p-3 rounded-[100%]'>{feat.Icon}</p>
-          <Typography variant='semibold' className='text-sm md:text-lg'>
-            {feat.title}
-          </Typography>
-          <ul className='md:flex flex-col gap-2 hidden'>
-            {feat.tools.map((asst) => (
-              <li
-                className='dark:bg-glass-fill bg-white shadow-sm p-4 flex justify-between items-center gap-16 rounded-[12px]'
-                key={asst.title}
-              >
-                <Typography variant='semibold' size='sm'>
-                  {asst.title}
-                </Typography>
-                <Image src={arrowRightGray} alt='arrowRightGray' width={16} height={16} />
-              </li>
-            ))}
-          </ul>
-        </div>
+        <FeatureItem key={i} feature={feat} />
       ))}
     </div>
   )

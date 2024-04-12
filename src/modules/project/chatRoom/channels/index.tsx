@@ -22,7 +22,13 @@ export interface IChannel {
 export const channelGroups = [
   {
     name: 'Information',
-    channels: []
+    channels: [
+      {
+        name: 'Spaceship Crew',
+        Icon: Globe,
+        members: users.slice(0, -1)
+      },
+    ]
   },
   {
     name: 'Public Channels',
@@ -51,7 +57,13 @@ export const channelGroups = [
   },
   {
     name: 'User interface',
-    channels: []
+    channels: [
+      {
+        name: 'Accessibility',
+        Icon: Lock,
+        members: users.slice(0, 3)
+      },
+    ]
   }
 ]
 
@@ -61,7 +73,7 @@ const Channels = ({ isOpen }: Props) => {
   return (
     <div
       className={`  
-        ${isOpen ? 'block w-[80%] fixed h-full top-0 p-3 z-30 dark:bg-noble-black-600 bg-white right-0' : 'hidden'} 
+        ${isOpen ? 'block w-[80%] fixed h-full top-0 p-3 z-30 bg-noble-black-600 right-0' : 'hidden'} 
         md:block md:relative md:w-1/3`}
     >
       <div className='h-screen pb-20 overflow-y-scroll no-scrollbar md:sticky top-0'>

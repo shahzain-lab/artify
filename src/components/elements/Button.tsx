@@ -15,7 +15,7 @@ const buttonVariants = cva(
       color: {
         primary: 'bg-theme-greenish text-slate-950',
         green: 'bg-emerald-500 text-white',
-        gray: 'bg-noble-black-600 text-gray',
+        gray: 'dark:bg-noble-black-600 bg-gray-300 text-noble-black-800 text-gray-800 dark:text-white',
         warning: 'bg-yellow-500 text-white',
         light: 'bg-noble-black-400 text-white',
         destructive: 'bg-red-500 text-white',

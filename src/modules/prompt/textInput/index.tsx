@@ -81,7 +81,7 @@ const TextInput = () => {
     <div className='w-full relative'>
       {showList && renderList()}
       <Input
-        className='dark:text-noble-black-500 dark:bg-transparent bg-gray-200 text-black border-none outline-none w-full'
+        className='dark:text-noble-black-300 dark:bg-transparent bg-white text-black border-none outline-none w-full'
         placeholder='You can ask me anything! I am here to help.'
         value={inputValue}
         onChange={handleTextChange}

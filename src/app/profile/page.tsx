@@ -13,12 +13,12 @@ import banner from '@/assets/backgrounds/banner.jpg'
 
 const page = () => {
   return (
-    <div className='w-full md:w-[79%] p-2'>
+    <div className='w-full md:w-[80%] md:p-2'>
       <SimpleCard className='h-60 flex justify-end flex-col'>
-        <Image src={banner} alt='' width={200} height={200} className='w-full h-44 rounded-xl' />
-        <div className='h-20 py-1 relative dark:bg-noble-black-600 bg-white rounded-xl -mb-10'>
-          <div className='dark:bg-noble-black-600 bg-white absolute bottom-0 rounded-xl inline-block'>
-            <Image src={user} alt='' width={200} height={200} className='w-32 h-32' />
+        <Image src={banner} alt='' width={200} height={200} className='w-full h-44 rounded-xl ' />
+        <div className='h-20 py-1 dark:bg-noble-black-600 bg-white rounded-xl -mb-10'>
+          <div className='dark:bg-noble-black-600 bg-white absolute top-[22%] no-overlay md:top-[30%] rounded-xl inline-block'>
+            <Image src={user} alt='' width={200} height={200} className='w-32 h-32 ' />
           </div>
           <div className='pl-40 flex flex-col gap-2'>
             <Typography variant='semibold' className='text-xl text-white'>
@@ -36,7 +36,7 @@ const page = () => {
           </div>
         </div>
       </SimpleCard>
-      <div className='mt-16 flex gap-2'>
+      <div className='mt-16 flex flex-col-reverse md:flex-row gap-2'>
         <SidePanel />
         <About />
       </div>

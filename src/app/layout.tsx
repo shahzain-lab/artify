@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Providers from '@/components/app/Provider'
-import MainLayout from '@/layout/MainLayout'
+import MainLayout from '@/components/theme/MainLayout'
 {
   /* Custom CSS */
 }
