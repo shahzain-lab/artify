@@ -29,6 +29,7 @@ const Comment = ({ coment }: IComentProps) => {
     <div
 
       className={cn(
+        'no-overlay',
         'p-2 md:p-4 z-20 dark:bg-noble-black-700 text-black bg-white rounded-[16px] border dark:border-noble-black-600 border-noble-black-400',
         `dark:hover:border-noble-black-800 hover:bg-gray-100 group hover:shadow-xl dark:hover:bg-noble-black-800`
       )}

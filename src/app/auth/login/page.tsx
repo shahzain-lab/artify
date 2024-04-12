@@ -14,13 +14,14 @@ import Checkbox from '@/components/elements/Checkbox'
 import Image from 'next/image'
 import imgSrc from '@/assets/backgrounds/bg-1.png'
 import logo from '@/assets/Logo.svg'
+import Link from 'next/link'
 
 const Login = () => {
   return (
-    <div className='grid grid-cols-2 h-screen'>
-      <div className='p-12 px-20 flex flex-col justify-between'>
+    <div className='grid md:grid-cols-2 h-screen'>
+      <div className='py-12 px-4 md:px-20 flex flex-col justify-between'>
         <Image src={logo} alt='logo' width={32} height={32} />
-        <div className='px-20'>
+        <div className='md:px-20 my-5'>
           <div className='flex flex-col gap-4'>
             <Typography size='xl' variant='regular'>
               Let&apos;s get{' '}
@@ -30,8 +31,8 @@ const Login = () => {
               Log in to Artificium to start creating magic.
             </Typography>
             <div className='my-4 flex flex-col gap-4'>
-              <Input />
-              <Input />
+              <Input placeholder='Enter your email' />
+              <Input placeholder='Enter your password' />
             </div>
             <div className='flex items-center justify-between mb-5'>
               <Checkbox>Rememeber Me</Checkbox>
@@ -62,7 +63,7 @@ const Login = () => {
         <div>
           <Typography className='text-noble-black-400 text-base'>
             Don&apos;t have an account?{' '}
-            <span className='bg-clip-text dark:bg-blue-green-500 bg-blue-green-700 text-transparent text-bold'>Sign Up</span>
+            <Link href={'/auth/register'}><span className='bg-clip-text dark:bg-blue-green-500 bg-blue-green-700 text-transparent text-bold'>Sign Up</span></Link>
           </Typography>
         </div>
       </div>

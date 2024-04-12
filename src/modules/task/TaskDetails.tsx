@@ -17,9 +17,12 @@ import Image from 'next/image'
   /* Utils */
 }
 import { Setting, TripleDot } from '@/utils/icons'
+import { useTheme } from 'next-themes'
+import { cn } from '@/lib/utils'
 
 const TaskDetails = () => {
   const project = useSelector((state: RootState) => state.workspace.project)
+  const { theme } = useTheme()
 
   const details = {
     assignee: project.members[2],
@@ -33,17 +36,22 @@ const TaskDetails = () => {
     reporter: project.members[1]
   }
   return (
-    <SimpleCard className='w-full md:max-w-[350px] md:min-w-[350px] sticky'>
+    <SimpleCard className={cn(
+      'no-overlay',
+      'w-full md:max-w-[350px] md:min-w-[350px] sticky'
+    )}>
       <div className='flex items-center justify-between mb-5'>
         <Typography className='font-bold text-xl'>Details</Typography>
-        <div className='flex gap-3 items-center'>
-          <Setting className='text-[#fff]' />
+        <div className={cn(
+          'flex gap-3 items-center'
+          )}>
+          <Setting className='dark:text-[#fff] text-gray-700' />
           <Dropdown
-            color='gray'
+            color={theme === 'dark' ? 'gray' : 'light'}
             classNames={{
               button: 'px-2',
-              items: 'absolute -left-10 bg-gray-900 w-20 rounded-lg',
-              item: 'rounded-lg text-[12px] text-white hover:text-gray-800'
+              items: 'absolute -left-10 w-20 rounded-lg',
+              item: 'rounded-lg text-[12px] text-white hover:text-white'
             }}
             options={['view', 'Edit', 'Delete']}
             Icon={<TripleDot className='w-3 h-3' />}

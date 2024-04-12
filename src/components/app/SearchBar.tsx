@@ -35,7 +35,7 @@ const SearchBar: React.FC = () => {
           onFocus={() => setIsExpanded(true)}
           onBlur={() => setIsExpanded(false)}
         />
-        <Button className='absolute right-1 top-0.5' color='blue'>
+        <Button className='absolute right-1 top-0.5 text-white' color='blue'>
           Send
         </Button>
       </div>

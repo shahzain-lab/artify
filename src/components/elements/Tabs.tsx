@@ -54,7 +54,7 @@ const Tab: React.FC<TabProps> = ({
       destructive: 'border-b-[3px] rounded-[0px] border-red-500 text-red-500',
       secondary: 'border-b-[3px] rounded-[0px] border-slate-100 text-slate-100 ',
       blue: 'border-b-[3px] rounded-[0px] border-blue-700 text-blue-700',
-      ghost: 'border-b-[3px] rounded-[0px] border-none text-white',
+      ghost: 'border-b-[3px] rounded-[0px] border-none dark:text-white text-gray-600',
       link: 'text-blue-500 underline-offset-4 underline ',
       white: 'text-gray-900 bg-white',
       black: 'text-white bg-black'

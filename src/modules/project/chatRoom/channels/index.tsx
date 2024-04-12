@@ -8,6 +8,7 @@ import { IUser } from '@/interfaces/IUser.interface'
 }
 import { users } from '@/lib/userDB'
 import { Globe, Lock } from '@/utils/icons'
+import { cn } from '@/lib/utils'
 
 interface Props {
   isOpen: boolean
@@ -72,10 +73,11 @@ const Channels = ({ isOpen }: Props) => {
 
   return (
     <div
-      className={`  
-        ${isOpen ? 'block w-[80%] fixed h-full top-0 p-3 z-30 bg-noble-black-600 right-0' : 'hidden'} 
-        md:block md:relative md:w-1/3`}
-    >
+      className={cn(
+        'no-overlay',
+        isOpen ? 'block w-[80%] fixed h-full top-0 p-3 z-30 dbg-noble-black-600 right-0' : 'hidden',
+        'md:block md:relative md:w-1/3'
+      )}>
       <div className='h-screen pb-20 overflow-y-scroll no-scrollbar md:sticky top-0'>
         {toggleBar === 0 ? <Participant /> : <Groups channelGroups={channelGroups} />}
         <ToggleMembers toggleBar={toggleBar} setToggleBar={setToggleBar} />

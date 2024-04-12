@@ -13,8 +13,9 @@ const ToggleMembers = ({ toggleBar, setToggleBar }: Props) => {
   const { theme } = useTheme() 
   return (
     <div className={cn(
-      'fixed bottom-5 z-10  flex items-center shadow-lg border-[2px] rounded-xl',
-      theme === 'dark' ? 'bg-noble-black-700 border-noble-black-600' : 'bg-white border-gray-300'
+      'no-overlay',
+      'fixed bottom-5 z-10 flex items-center shadow-lg border-[2px] rounded-xl',
+      theme === 'dark' ? 'bg-noble-black-700 border-noble-black-600' : 'bg-white border-gray-200'
   )}>
       <div
         onClick={() => setToggleBar(0)}

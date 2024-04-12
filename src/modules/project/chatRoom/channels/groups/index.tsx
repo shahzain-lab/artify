@@ -6,6 +6,7 @@ import Typography from '@/components/elements/Typography'
   /* Utils */
 }
 import { CheveronDown, CheveronRight, Status, TriLine } from '@/utils/icons'
+import { cn } from '@/lib/utils'
 
 interface IChannel {
   name: string
@@ -34,7 +35,10 @@ const Groups = ({ channelGroups }: Props) => {
   return (
     <div>
       {channelGroups.map((group, i) => (
-        <div key={i} className='py-5 border-b dark:border-noble-black-600 border-noble-black-200 text-sm font-semibold'>
+        <div key={i} className={cn(
+          'py-5 text-sm font-semibold',
+          (channelGroups.length - 1) === i ? '' : 'border-b dark:border-noble-black-600 border-noble-black-200'
+        )}>
           <div
             onClick={() => setOpenGroup({ ...openGroup, group: openGroup.group === i ? null : i })}
             className='flex gap-2 cursor-pointer items-center'
@@ -73,8 +77,8 @@ const Groups = ({ channelGroups }: Props) => {
                     <div className='mt-3'>
                       {channel.members.map((user, i) => (
                         <div key={i} className='flex items-center'>
-                          <div className={`border-l-2 border-noble-black-500 ml-2 relative h-[69px] w-8`}>
-                            <TriLine className='absolute -left-[13px] top-[37%]' />
+                          <div className={`border-l-2 dark:border-noble-black-500 border-gray-200 ml-2 relative h-[69px] w-8`}>
+                            <TriLine className='absolute dark:text-noble-black-500 text-gray-200 -left-[13px] top-[37%]' />
                           </div>
                           <div
                             key={user.username}

@@ -24,7 +24,7 @@ const SocialButton = ({ variant, className, type = 'button', children, onClick }
       onClick={onClick}
       type={type}
       className={cn(
-        'flex items-center gap-2 text-noble-black-400 text-base justify-center bg-[#1A1D21] px-6 py-2 rounded-[12px]',
+        'flex items-center gap-2 text-noble-black-400 text-sm md:text-base justify-center dark:bg-[#1A1D21] bg-gray-200 px-6 py-2 rounded-[12px]',
         className
       )}
     >

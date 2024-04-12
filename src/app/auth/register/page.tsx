@@ -16,23 +16,25 @@ import logo from '@/assets/Logo.svg'
 
 const page = () => {
   return (
-    <div className='flex justify-between h-screen'>
-      <div className='flex flex-col justify-between p-12 w-[60%]'>
+    <div className='grid grid-cols-2 gap-14 h-screen'>
+      <div className='flex flex-col justify-between py-12 px-16'>
         <div className='flex items-center justify-between'>
           <Image src={logo} alt='logo' width={32} height={32} />
-          <Typography theme='blueGreen700' variant='bold'>
-            Log In
-          </Typography>
+          <Link href={'/auth/login'}>
+            <Typography theme='blueGreen700' variant='bold'>
+              Log In
+            </Typography>
+          </Link>
         </div>
-        <div className='px-28 flex flex-col gap-5'>
+        <div className='px-20 flex flex-col gap-5'>
           <Typography size='xl' className='mb-10' variant='regular'>
             Connect with your team and bring your creative ideas to life.
           </Typography>
           <div className='grid grid-cols-2 gap-4'>
-            <Input />
-            <Input />
-            <Input />
-            <Input />
+            <Input placeholder='Enter your name' />
+            <Input placeholder='Enter your email' />
+            <Input placeholder='Enter your password' />
+            <Input placeholder='Enter confirm password' />
           </div>
           <Checkbox>
             I agree with <Typography theme='blueGreen700'>Terms and conditions</Typography>
@@ -52,7 +54,7 @@ const page = () => {
       </div>
 
       {/* Right Side */}
-      <Image src={imgSrc} alt='background' width={50} height={330} unoptimized className='w-[40%] h-screen' />
+      <Image src={imgSrc} alt='background' width={50} height={330} unoptimized className='w-full h-screen' />
     </div>
   )
 }

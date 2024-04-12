@@ -16,19 +16,19 @@ import logo from '@/assets/Logo.svg'
 
 const page = () => {
   return (
-    <div className='flex justify-between h-screen'>
-      <div className='flex flex-col justify-between p-12 w-[60%]'>
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-24 h-screen'>
+      <div className='flex flex-col justify-between py-12 px-4 md:px-20'>
         <Image src={logo} alt='logo' width={32} height={32} />
-        <div className='px-28 flex flex-col gap-5'>
+        <div className='px-6 flex flex-col my-10 md:my-0'>
           <Typography size='xl' variant='regular'>
             Join or Create a Workspace
           </Typography>
-          <Typography className='mb-10 text-lg text-gray-light-100' variant='medium'>
+          <Typography className='mb-10 text-base md:text-lg text-gray-light-100' variant='medium'>
             Connect with others by joining an existing workspace or create a new one to collaborate with your team.
           </Typography>
 
-          <div className='flex gap-2 items-center'>
-            <Input placeholder='.artificium.app' className='w-[410px]' />
+          <div className='flex flex-col md:flex-row gap-2 items-center'>
+            <Input placeholder='.artificium.app' className='w-full md:w-[410px]' />
             <Button>Join Workspace</Button>
           </div>
           <div className='grid grid-cols-3 items-center my-5'>
@@ -44,7 +44,7 @@ const page = () => {
           </div>
           <Button color={'gray'}>Create new Workspace</Button>
         </div>
-        <div className='flex items-center justify-between'>
+        <div className='hidden md:flex items-center justify-between'>
           <Typography variant='medium' className='dark:text-gray-light-100 text-gray-light-200 text-sm'>
             Artificium.app © 2024
           </Typography>
@@ -57,7 +57,7 @@ const page = () => {
       </div>
 
       {/* Right Side */}
-      <Image src={imgSrc} alt='background' width={50} height={330} unoptimized className='w-[40%] h-screen' />
+      <Image src={imgSrc} alt='background' width={50} height={330} unoptimized className='w-full h-screen' />
     </div>
   )
 }

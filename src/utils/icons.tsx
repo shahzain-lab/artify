@@ -330,7 +330,7 @@ export const Status = ({ className }: Props) => {
 export const TriLine = ({ className }: Props) => {
   return (
     <svg
-      className={cn('#363A3D', className)}
+      className={cn('text-[#363A3D]', className)}
       xmlns='http://www.w3.org/2000/svg'
       width='24'
       height='24'

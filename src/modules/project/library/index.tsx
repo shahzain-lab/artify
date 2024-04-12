@@ -4,12 +4,16 @@ import LibraryItem from './LibraryItem'
 import { useSelector } from 'react-redux'
 import { RootState } from '@/model/store'
 import { Plus } from '@/utils/icons'
+import { cn } from '@/lib/utils'
 
 const Library = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const library = useSelector((state: RootState) => state.workspace.library)
   return (
-    <div className='flex items-start gap-2 py-5 relative'>
+    <div className={cn(
+      'no-overlay',
+      'flex items-start gap-2 py-5 relative'
+    )}>
       <div className='flex items-start gap-4'>
         {library.map((lib, i) => (
           <LibraryItem key={i} index={i} library={lib} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} />

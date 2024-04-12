@@ -14,7 +14,7 @@ interface Props {
 
 const TaskPanel = ({ title, children, className }: Props) => {
   return (
-    <div className={cn('dark:bg-noble-black-800 bg-gray-400 rounded-2xl p-3  flex-shrink-0', className)}>
+    <div className={cn('dark:bg-noble-black-800 bg-gray-200 rounded-2xl p-3  flex-shrink-0', className)}>
       <div className='flex justify-between items-center'>
         <span>{title}</span>
         <Button Icon={<Plus className='w-4 h-4' />} color='gray' className='text-[12px] gap-1 p-2 bg-gray-200' size={'sm'}>

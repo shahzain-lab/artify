@@ -17,10 +17,10 @@ import logo from '@/assets/Logo.svg'
 
 const Login = () => {
   return (
-    <div className='grid grid-cols-2 h-screen'>
-      <div className='p-12 px-20 flex flex-col gap-10'>
+    <div className='grid md:grid-cols-2 h-screen'>
+      <div className='p-12 px-4 md:px-20 flex flex-col gap-10'>
         <Image src={logo} alt='logo' width={32} height={32} />
-        <div className='px-20'>
+        <div className='md:px-20'>
           <div className='flex flex-col gap-4'>
             <Typography size='xl' variant='regular'>
               Hello, <span className='bg-clip-text bg-blue-green-600 text-transparent font-bold'>Mikołaj!</span>
@@ -44,8 +44,8 @@ const Login = () => {
               <Divider className='bg-noble-black-400' />
             </div>
             <div className='my-4 flex flex-col gap-4'>
-              <Input />
-              <Input />
+              <Input placeholder='Enter your email' />
+              <Input placeholder='Enter your password' />
             </div>
             <div className='flex items-center justify-between mb-4'>
               <Checkbox>Rememeber Me</Checkbox>

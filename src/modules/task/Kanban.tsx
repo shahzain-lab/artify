@@ -13,6 +13,7 @@ import TaskCard from '@/components/elements/TaskCard'
 }
 import image1 from '@/assets/card.png'
 import image2 from '@/assets/card2.png'
+import { cn } from '@/lib/utils'
 
 const Kanban = () => {
   const project = useSelector((state: RootState) => state.workspace.project)
@@ -72,7 +73,7 @@ const Kanban = () => {
                 {tasks.map((task, i) => (
                   <Draggable key={i} draggableId={i.toString()} index={i}>
                     {(provided) => (
-                      <div {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef}>
+                      <div {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef} className={cn('no-overlay')}>
                         <TaskCard {...task} />
                       </div>
                     )}
