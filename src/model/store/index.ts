@@ -9,8 +9,6 @@ const store = configureStore({
         workspace: workspaceSlice,
         [apiSlice.reducerPath]: apiSlice.reducer,
     },
-    // middleware: (getDefaultMiddleware) =>
-    //    getDefaultMiddleware().concat(apiSlice.middleware),
 })
 
 // Infer the `RootState` and `AppDispatch` types from the store itself
