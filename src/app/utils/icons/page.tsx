@@ -1,121 +1,137 @@
+'use client'
 import React from 'react'
-import { Button } from '@/components/elements/Button'
 import CardLayer from '@/components/elements/CardLayer'
 {
   /* Icons */
 }
 import {
   Artificium,
+  Alert,
+  AngleBR,
+  Backlog,
   Chat,
   CheveronDown,
   CheveronRight,
   Code,
   Comment,
+  CommentDashed,
   Cross,
+  Card,
+  ColorPallet,
   Danger,
   DoubleLeft,
   DoubleRight,
+  Dribble,
+  DollarSign,
+  DayLight,
+  Document,
   Download,
+  Edit,
   GetStarted,
+  GroupUser,
   Globe,
   Idea,
+  Image,
+  IconPlus,
+  Join,
   Library,
-  Lock,
+  Level,
+  Login,
+  Like,
+  Moon,
+  Notification,
   Pencil,
   Plus,
+  Project,
+  PaperPlane,
+  Register,
+  Resource,
+  Rectangle,
   Setting,
   Share,
   Sqaure,
+  Search,
   Status,
   Success,
   TriLine,
+  Task,
+  Tab,
+  TripleDot,
   TwoDots,
-  Warning
+  UserPlus,
+  User,
+  Warning,
+  Watch,
+  Workspace,
 } from '@/utils/icons'
+import IconItem from './IconItem'
 
 const Page = () => {
+  const storeInArray = [
+    Artificium,
+    AngleBR,
+    Alert,
+    Backlog,
+    Chat,
+    CheveronDown,
+    CheveronRight,
+    Code,
+    Comment,
+    CommentDashed,
+    Cross,
+    ColorPallet,
+    Card,
+    Danger,
+    DoubleLeft,
+    DoubleRight,
+    Dribble,
+    DollarSign,
+    DayLight,
+    Document,
+    Download,
+    Edit,
+    GetStarted,
+    GroupUser,
+    Globe,
+    Idea,
+    Image,
+    IconPlus,
+    Join,
+    Library,
+    Level,
+    Login,
+    Like,
+    Moon,
+    Notification,
+    Pencil,
+    Plus,
+    Project,
+    PaperPlane,
+    Register,
+    Resource,
+    Rectangle,
+    Setting,
+    Share,
+    Sqaure,
+    Search,
+    Status,
+    Success,
+    TriLine,
+    Task,
+    TripleDot,
+    Tab,
+    TwoDots,
+    UserPlus,
+    User,
+    Warning,
+    Watch, 
+    Workspace,
+  ]
   return (
     <div>
-      <CardLayer title='Icons'>
+      <CardLayer title='Icons Components'>
         <div className='flex flex-wrap gap-14'>
-          <Button color='ghost'>
-            <CheveronRight className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <CheveronDown className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Download className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Share className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Lock className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Globe className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Cross className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Comment className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Code className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Pencil className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Idea className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Setting className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Status className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <TriLine className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Plus className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Sqaure className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Chat className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <TwoDots className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <GetStarted className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <DoubleLeft className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <DoubleRight className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Warning className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Danger className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Success className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Artificium className='#fff' />
-          </Button>
-          <Button color='ghost'>
-            <Library className='#fff' />
-          </Button>
+        {storeInArray.map((Icon, i) => <IconItem key={i} Icon={Icon} />)}
         </div>
       </CardLayer>
     </div>

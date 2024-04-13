@@ -15,7 +15,7 @@ const Settings = () => {
   const { theme } = useTheme()
   return (
     <div className={cn(
-      'setting-widget no-overlay',
+      'setting-widget',
       'p-4 rounded-[16px] flex items-center z-20 md:z-auto justify-between',
       theme === 'dark' ? 'bg-glass-fill' : 'bg-gray-100'
     )}>

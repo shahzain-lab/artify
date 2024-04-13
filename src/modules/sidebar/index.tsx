@@ -21,6 +21,9 @@ import { preventScroll } from '@/lib/preventScroll'
 import { CheveronDown, CheveronRight, Cross } from '@/utils/icons'
 import { usePathname } from 'next/navigation'
 import { PUBLIC_ROUTES } from '@/lib/publicRoutes'
+import { hideElementHandler } from '@/lib/hideElement'
+import Elements from './elements'
+import Core from './core'
 
 const Sidebar = () => {
   const dispatch = useDispatch()
@@ -55,9 +58,26 @@ const Sidebar = () => {
     {
       title: 'Pages',
       Route: ListPages
+    },
+    {
+      title: 'Elements',
+      Route: Elements
+    },
+    {
+      title: 'Utils',
+      Route: Core
     }
   ]
-  console.log(pathname)
+
+  useEffect(() => {
+    if (openMobileMenu) {
+      hideElementHandler('none', ['.setting-widget'])
+    }
+    return () => {
+      hideElementHandler('', ['.setting-widget'])
+    }
+  }, [openMobileMenu])
+
   return (
     <>
       {PUBLIC_ROUTES.includes(pathname) ? null : (
@@ -65,7 +85,7 @@ const Sidebar = () => {
           className={`${openMobileMenu ? 'flex w-[80%] z-30 fixed h-screen overflow-y-scroll pb-4 no-scrollbar' : 'hidden'} md:w-[20%] md:overflow-y-scroll no-scrollbar md:fixed md:h-[100%] md:flex flex-col justify-between px-3 py-2 dark:bg-noble-black-800 shadow-md bg-white dark:text-white text-black rounded-[1px]`}
         >
           {openMobileMenu && (
-            <div className='w-full h-screen fixed top-0 left-0 bg-bg-layer backdrop-blur-sm'>
+            <div className='w-full h-screen fixed top-0 left-0 dark:bg-bg-layer backdrop-blur-sm'>
               <p
                 onClick={handleClose}
                 className='absolute top-4 right-4 border-2 border-noble-black-500 p-1 rounded-[8px]'

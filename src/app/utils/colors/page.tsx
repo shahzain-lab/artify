@@ -105,7 +105,7 @@ const Page = () => {
     }
   ]
   return (
-    <div>
+    <div className='flex flex-col gap-3'>
       {colors.map((color, i) => (
         <CardLayer key={i} title={color.title}>
           <div className='flex flex-wrap'>

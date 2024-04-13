@@ -7,6 +7,7 @@ import { Button } from './Button'
 import { preventScroll } from '@/lib/preventScroll'
 import { cn } from '@/lib/utils'
 import { Cross } from '@/utils/icons'
+import { hideElementHandler } from '@/lib/hideElement'
 
 interface Props {
   children?: React.ReactNode
@@ -24,27 +25,9 @@ const ModalLayer = ({ children, setIsOpen, position = 'center' }: Props) => {
   }, [])
 
   useEffect(() => {
-    const classes = ['.no-overlay']
-    classes.forEach((element) => {
-      // Identify elements to hide (replace 'className' with the appropriate selector)
-      const elementsToHide = document.querySelectorAll(element)
-
-      // Set z-index for each element
-      elementsToHide.forEach((element) => {
-        if (element instanceof HTMLElement) {
-          element.style.display = 'none' // Or any value lower than your layer div's z-index
-        }
-      })
-    })
+    hideElementHandler('none')
     return () => {
-      classes.forEach((element) => {
-        const elementsToHide = document.querySelectorAll(element)
-        elementsToHide.forEach((element) => {
-          if (element instanceof HTMLElement) {
-            element.style.display = '' // Or any value lower than your layer div's z-index
-          }
-        })
-      })
+      hideElementHandler()
     }
   }, [])
 

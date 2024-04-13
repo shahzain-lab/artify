@@ -4,15 +4,13 @@ import React from 'react'
 }
 import Link from 'next/link'
 import Typography from '@/components/elements/Typography'
-import { Alert, Card, Rectangle, Tab } from '@/utils/icons'
 
+import { ColorPallet, Danger } from '@/utils/icons'
 
-const Elements = () => {
+const Core = () => {
   const elements = [
-    { title: 'Alert', path: '/elements/alert', Icon: Alert },
-    { title: 'Button', path: '/elements/button', Icon: Rectangle },
-    { title: 'Card', path: '/elements/card', Icon: Card },
-    { title: 'Tabs', path: '/elements/tabs', Icon: Tab }
+    { title: 'Colors', path: '/utils/colors', Icon: ColorPallet },
+    { title: 'Icons', path: '/utils/icons', Icon: Danger }
   ]
   return (
     <div>
@@ -32,4 +30,4 @@ const Elements = () => {
   )
 }
 
-export default Elements
+export default Core

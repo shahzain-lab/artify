@@ -1,13 +1,16 @@
-import React from 'react'
-import Image, { StaticImageData } from 'next/image'
+import { cn } from "@/lib/utils";
+import Image, { StaticImageData } from "next/image";
+import React, { FC } from "react";
 
-interface AvatarProps {
-  src: StaticImageData
-  alt?: string
-  size?: 'small' | 'medium' | 'large'
+interface Props {
+  image?: StaticImageData; 
+  letter?: string; 
+  size?: string; 
+  className?: string;
 }
 
-const Avatar: React.FC<AvatarProps> = ({ src, alt = 'Avatar', size = 'medium' }) => {
+const Avatar: FC<Props> = ({ image, letter, size, className }) => {
+  let content = null;
   let avatarSize = ''
 
   switch (size) {
@@ -22,7 +25,35 @@ const Avatar: React.FC<AvatarProps> = ({ src, alt = 'Avatar', size = 'medium' })
       break
   }
 
-  return <Image src={src} alt={alt} width={50} height={50} className={`rounded-full ${avatarSize}`} />
-}
+  if (image) {
+    content = <Image width={30} height={30} src={image} alt="Avatar" className={cn(
+      'rounded-full',
+      avatarSize
+    )}
+      />;
+  } else if (letter) {
+    content = (
+      <div className={cn(
+        'flex items-center justify-center rounded-full uppercase bg-gray-300 text-gray-700 text-xl',
+        avatarSize
+      )}>
+        {letter}
+      </div>
+    );
+  }
 
-export default Avatar
+  return (
+    <div
+      className={`overflow-hidden ${className}`}
+    >
+      {content}
+    </div>
+  );
+};
+
+Avatar.defaultProps = {
+  size: "40px",
+  className: "",
+};
+
+export default Avatar;

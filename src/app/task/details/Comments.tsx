@@ -46,7 +46,7 @@ const Comments = () => {
         <div className='w-[1px] h-[300px] border-l border-dashed border-gray-500 absolute left-14'></div>
       </div>
       <div className='flex gap-2'>
-        <Avatar src={image} />
+        <Avatar image={image} />
         <Input className='dark:bg-noble-black-700 bg-white' placeholder='Enter Your Comment' />
         <Button>Send</Button>
       </div>
