@@ -1,5 +1,4 @@
 import React from 'react'
-import groupGray from '@/assets/icons/group-gray.svg'
 import { useTheme } from 'next-themes'
 import { cn } from '@/lib/utils'
 import { Chat, GroupUser } from '@/utils/icons'

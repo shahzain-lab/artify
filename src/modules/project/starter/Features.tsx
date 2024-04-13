@@ -2,10 +2,6 @@
 import React from 'react'
 import { IFeature } from '../../../interfaces/IMessage.interface'
 {
-  /* Components */
-}
-import Typography from '@/components/elements/Typography'
-{
   /* Utils */
 }
 import { Code, Comment, Idea, Pencil } from '@/utils/icons'

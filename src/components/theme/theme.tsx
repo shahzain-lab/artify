@@ -1,7 +1,6 @@
 import React from 'react'
 import { useTheme } from 'next-themes'
 import { DayLight, Moon } from '@/utils/icons';
-import { Button } from '../elements/Button';
 
 const ThemeChanger = () => {
   const { theme, setTheme } = useTheme()
