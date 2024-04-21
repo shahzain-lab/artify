@@ -17,7 +17,7 @@ interface IPage {
 
 const ListPages = () => {
   const pages: IPage[] = [
-    { title: 'Login', path: '/auth/login', icon: <Login className='w-5 h-5 dark:text-white text-gray-800' /> },
+    { title: 'Login', path: '/auth/login', icon: <Login className='w-5 h-5 dark:text-white text-gray-500' /> },
     { title: 'Login 2', path: '/auth/login-second', icon: <Workspace className='w-5 h-5 dark:text-[#fff] text-gray-500' /> },
     { title: 'Register', path: '/auth/register', icon: <Register className='w-5 h-5 dark:text-[#fff] text-gray-500' /> },
     { title: 'Join', path: '/auth/register-second', icon: <Join className='w-5 h-5 dark:text-[#fff] text-gray-500' /> }
