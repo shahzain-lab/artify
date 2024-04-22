@@ -1,4 +1,4 @@
-
+import React from 'react'
 import Image from 'next/image'
 import window from "@/assets/images/window.jpeg"
 import figma from "@/assets/images/figma.jpeg"
@@ -6,18 +6,11 @@ import sphere from "@/assets/images/sphere.jpeg"
 import dragon from "@/assets/images/dragon.jpeg"
 import cone from "@/assets/images/cone.jpeg"
 import hexa from "@/assets/images/hexa.jpeg"
-import React from 'react'
-import Main from '../firstmain/main'
 import { TwoDots } from '@/utils/icons'
 
-
-function Side() {
-    return (
-        <div className='flex flex-col md:gap-1 gap-4 md:flex-row pt-1'>
-            <div className='flex mx-3 md:mx-2 md:ml-36 md:p-4 md:pl-40'>
-                <Main />
-            </div>
-            <div className='bg-white px-2 md:py-3 py-1 md:mt-2  mx-3 md:w-[312px] dark:bg-noble-black-800 rounded-md'>
+const Sidebar = () => {
+  return (
+    <div className='bg-white px-2 md:py-3 py-1 md:mt-2 dark:bg-noble-black-800 rounded-md'>
                 <main className='my-2 dark:text-white'>
                     <h2 className='text-xl font-semibold my-3'>Upcoming Events</h2>
                     <div className='flex bg-gray-200 dark:bg-noble-black-600 justify-between rounded-md p-2'>
@@ -31,14 +24,14 @@ function Side() {
                                 </span>
                             </main>
                         </div>
-                        <div className='flex justify-right'><span><TwoDots/></span></div>
+                        <div className='flex justify-right'><span><TwoDots /></span></div>
                     </div>
                 </main>
 
                 <main className='my-2'>
                     <div className='flex justify-between bg-gray-200 dark:bg-noble-black-600 rounded-md p-2 dark:text-gray-700'>
                         <div className='flex'>
-                            <Image  className='h-[60px] w-[60px] rounded-md' height={30} width={70} alt='img' src={figma} />
+                            <Image className='h-[60px] w-[60px] rounded-md' height={30} width={70} alt='img' src={figma} />
                             <main className='mx-3 mt-1 dark:text-gray-300'>
                                 <h3 className='font-medium text-[16px]'>Figma UX/UI</h3>
                                 <span className='flex gap-5 pl-1 my-1 text-gray-400'>
@@ -47,12 +40,12 @@ function Side() {
                                 </span>
                             </main>
                         </div>
-                        <div>< TwoDots/></div>
+                        <div>< TwoDots /></div>
                     </div>
                 </main>
 
 
-                <main className=''>
+                <main>
                     <h2 className='text-xl font-semibold mt-7 mb-4 dark:text-white'>Top Performing Courses</h2>
                     <div className='flex justify-between  p-2'>
                         <div className='flex gap-1'>
@@ -64,7 +57,7 @@ function Side() {
                                 </span>
                             </main>
                         </div>
-                        <button className='text-green-500'>Read more</button>
+                        <button className='text-green-500 font-medium text-[12px]'>Read more</button>
                     </div>
                 </main>
 
@@ -79,7 +72,7 @@ function Side() {
                         </main>
                     </div>
 
-                    <button className='text-green-500'>Read more</button>
+                    <button className='text-green-500 font-medium text-[12px]'>Read more</button>
 
                 </div>
 
@@ -94,7 +87,7 @@ function Side() {
                             </span>
                         </main>
                     </div>
-                    <button className='text-green-500'>Check out</button>
+                    <button className='text-green-500 font-medium text-[12px]'>Check out</button>
                 </div>
 
                 <div className='flex p-2 gap-1 justify-between w-full'>
@@ -107,11 +100,10 @@ function Side() {
                             </span>
                         </main>
                     </div>
-                    <button className='text-green-500'>Check out</button>
+                    <button className='text-green-500 font-medium text-[12px]'>Check out</button>
                 </div>
             </div>
-        </div>
-    )
+  )
 }
 
-export default Side
+export default Sidebar

@@ -1,5 +1,5 @@
 import CardLayer from '@/components/elements/CardLayer'
-import Color from '@/utils/Color'
+import Color from '@/utils/color'
 import React from 'react'
 
 const Page = () => {

@@ -1,10 +1,6 @@
 
-import Side from "@/modules/home/rightside"
-import Main from "@/modules/firstmain/main"
+import General from "@/modules/home/General"
 
 export default function Home() {
-  return <main>
-    {/* <Main /> */}
-    <Side />
-  </main>
+  return <General />
 }
