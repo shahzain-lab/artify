@@ -26,7 +26,7 @@ const ListPages = () => {
     <div className='flex flex-col gap-1'>
       {pages.map((page, i) => (
         <Link key={i} href={page.path}>
-          <div key={i} className={`hover:bg-glass-fill rounded-[8px] my-1 px-1 py-4 flex justify-between items-center`}>
+          <div className={`hover:bg-glass-fill rounded-[8px] my-1 px-1 py-4 flex justify-between items-center`}>
             <div className=' flex items-center gap-2'>
               {page.icon ? <>{page.icon}</> : null}
               <Typography variant='semibold' className='text-sm dark:text-noble-black-100 text-noble-black-500'>

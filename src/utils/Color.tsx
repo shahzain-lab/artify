@@ -2,7 +2,6 @@ import React from 'react'
 import { cn } from '@/lib/utils'
 
 interface Props {
-  title: string
   color: string
 }
 

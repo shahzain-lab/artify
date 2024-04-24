@@ -27,7 +27,7 @@ import Core from './core'
 
 const Sidebar = () => {
   const dispatch = useDispatch()
-  const [active, setActive] = useState<number | null>(null)
+  const [active, setActive] = useState<number | null>(1)
   const pathname = usePathname()
   const openMobileMenu = useSelector((state: RootState) => state.navigation.openMobileMenu)
   useEffect(() => {

@@ -63,7 +63,7 @@ function Main() {
                 <div className="font-thin text-sm">Looks like a shady day</div>
                 <div className="text-2xl font-thin">36*</div>
               </main>
-              <div className=" flex justify-end p-4 pb-5 relative items-center"><div className="p-6 flex bg-white rounded-l-3xl rounded-b-3xl"><button className="flex px-4 py-2 text-xl bg-blue-700 rounded-[100%] text-white">+</button></div></div>
+              <div className=" flex justify-end p-4 pb-5 items-center"><div className="p-6 flex bg-white rounded-l-3xl rounded-b-3xl"><button className="flex px-4 py-2 text-xl bg-blue-700 rounded-[100%] text-white">+</button></div></div>
             </div>
           </div>
         </div>
