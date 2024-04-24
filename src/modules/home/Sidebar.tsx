@@ -18,10 +18,10 @@ const Sidebar = () => {
                             <Image className='h-[60px] w-[60px] rounded-md' height={30} width={70} alt='img' src={window} />
                             <main className='mx-3 mt-1 dark:text-gray-300'>
                                 <h3 className='font-medium text-[14px]'>Typography in UX/UI</h3>
-                                <span className='flex gap-5 pl-1 my-1 text-gray-400'>
-                                    <div>Design</div>
-                                    <div>.10:00 am</div>
-                                </span>
+                                <div className='flex text-sm gap-5 pl-1 my-1 text-gray-400'>
+                                    <span>Design</span>
+                                    <span>10:00 am</span>
+                                </div>
                             </main>
                         </div>
                         <div className='flex justify-right'><span><TwoDots /></span></div>
@@ -34,10 +34,10 @@ const Sidebar = () => {
                             <Image className='h-[60px] w-[60px] rounded-md' height={30} width={70} alt='img' src={figma} />
                             <main className='mx-3 mt-1 dark:text-gray-300'>
                                 <h3 className='font-medium text-[16px]'>Figma UX/UI</h3>
-                                <span className='flex gap-5 pl-1 my-1 text-gray-400'>
-                                    <div>Design</div>
-                                    <div>.10:00 am</div>
-                                </span>
+                                <div className='flex text-sm gap-5 pl-1 my-1 text-gray-400'>
+                                    <span>Design</span>
+                                    <span>10:00 am</span>
+                                </div>
                             </main>
                         </div>
                         <div>< TwoDots /></div>

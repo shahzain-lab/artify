@@ -54,7 +54,9 @@ const page = () => {
       </div>
 
       {/* Right Side */}
-      <Image src={imgSrc} alt='background' width={50} height={330} unoptimized className='w-full h-screen' />
+      <div className='w-full flex justify-end'>
+        <Image src={imgSrc} alt='background' width={850} height={850} unoptimized className='w-full md:w-[80%] h-screen' />
+      </div>
     </div>
   )
 }
