@@ -14,8 +14,8 @@ export const IMenuItems: IMenu[] = [
     heading: 'GENERAL'
   },
   {
-    title: 'Billing',
+    title: 'General',
     icon: creditCard,
-    path: '/billing'
+    path: '/'
   }
 ]
