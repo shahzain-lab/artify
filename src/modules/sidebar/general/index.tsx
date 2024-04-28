@@ -14,6 +14,7 @@ import searchCommand from '@/assets/icons/search-command.svg'
   /* Utils */
 }
 import { IMenuItems } from './items'
+import Link from 'next/link'
 
 const General = () => {
   return (
@@ -30,8 +31,8 @@ const General = () => {
         </div>
       </SearchModal>
       {IMenuItems.map((item, i) =>
-        item.heading ? null : (
-          <div key={i} className='py-4 flex justify-between items-center'>
+        (item.heading || !item.path) ? null : (
+          <Link key={i} href={item.path} className='hover:bg-glass-fill rounded-[8px] py-4 flex justify-between items-center'>
             <div className=' flex items-center'>
               {item.icon ? (
                 <Image src={item.icon} alt={item.title || ''} width={40} height={40} className='-mb-5' />
@@ -41,7 +42,7 @@ const General = () => {
               </Typography>
             </div>
             {item.tag ? <Image src={item.tag} alt={item.title || ''} width={40} height={40} className='' /> : null}
-          </div>
+          </Link>
         )
       )}
     </div>

@@ -17,7 +17,7 @@ const Settings = () => {
     <div className={cn(
       'setting-widget',
       'p-4 rounded-[16px] flex items-center z-20 md:z-auto justify-between',
-      theme === 'dark' ? 'bg-glass-fill' : 'bg-gray-100'
+      theme === 'light' ? 'bg-gray-100' : 'bg-glass-fill'
     )}>
       <div className='flex items-center gap-3'>
         <Image src={avatar} alt='user' width={48} height={48} />

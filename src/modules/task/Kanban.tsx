@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { ITaskCardProps } from '@/interfaces/IElements.interface'
-import { DragDropContext, Droppable, Draggable, DropResult } from 'react-beautiful-dnd'
 import { RootState } from '@/model/store'
 import { useSelector } from 'react-redux'
 {
@@ -13,12 +12,11 @@ import TaskCard from '@/components/elements/TaskCard'
 }
 import image1 from '@/assets/card.png'
 import image2 from '@/assets/card2.png'
-import { cn } from '@/lib/utils'
 
 const Kanban = () => {
   const project = useSelector((state: RootState) => state.workspace.project)
   const date = new Date()
-  const [tasks, setTasks] = useState<ITaskCardProps[]>([
+  const [tasks] = useState<ITaskCardProps[]>([
     {
       id: '#SPK-11',
       title: 'New dashboard design.',
@@ -54,37 +52,13 @@ const Kanban = () => {
     }
   ])
 
-  const onDragEnd = (result: DropResult) => {
-    if (!result.destination) return
-
-    const items = Array.from(tasks)
-    const [reorderedItem] = items.splice(result.source.index, 1)
-    items.splice(result.destination.index, 0, reorderedItem)
-    setTasks(items)
-  }
-
   return (
     <div className='flex gap-2 pr-10 overflow-x-scroll items-start justify-start no-scrollbar'>
-      <DragDropContext onDragEnd={onDragEnd}>
-        <Droppable droppableId='tasks'>
-          {(provided) => (
-            <div ref={provided.innerRef} {...provided.droppableProps}>
-              <TaskPanel title='new - 2' className='w-[340px]'>
-                {tasks.map((task, i) => (
-                  <Draggable key={i} draggableId={i.toString()} index={i}>
-                    {(provided) => (
-                      <div {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef} className={cn('no-overlay')}>
-                        <TaskCard {...task} />
-                      </div>
-                    )}
-                  </Draggable>
-                ))}
-              </TaskPanel>
-              {provided.placeholder}
-            </div>
-          )}
-        </Droppable>
-      </DragDropContext>
+      <TaskPanel title='Todo' className='w-[340px]'>
+        {tasks.map((task, i) => (
+          <TaskCard key={i} {...task} />
+        ))}
+      </TaskPanel>
       <TaskPanel title='Todo' className='w-[340px]'>
         {tasks.map((task, i) => (
           <TaskCard key={i} {...task} />

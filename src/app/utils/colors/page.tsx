@@ -110,7 +110,7 @@ const Page = () => {
         <CardLayer key={i} title={color.title}>
           <div className='flex flex-wrap'>
             {color.stream.map((st) => (
-              <Color key={st} title='' color={`bg-${st}`} />
+              <Color key={st} color={`bg-${st}`} />
             ))}
           </div>
         </CardLayer>
