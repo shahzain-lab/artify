@@ -34,7 +34,6 @@ function Side() {
                         <div className='flex justify-right'><span><TwoDots/></span></div>
                     </div>
                 </main>
-
                 <main className='my-2'>
                     <div className='flex justify-between bg-gray-200 dark:bg-noble-black-600 rounded-md p-2 dark:text-gray-700'>
                         <div className='flex'>
@@ -64,7 +63,7 @@ function Side() {
                                 </span>
                             </main>
                         </div>
-                        <button className='text-green-500'>Read more</button>
+                        <button className='text-green-500 text-sm'>Read more</button>
                     </div>
                 </main>
 
@@ -79,7 +78,7 @@ function Side() {
                         </main>
                     </div>
 
-                    <button className='text-green-500'>Read more</button>
+                    <button className='text-green-500 text-sm'>Read more</button>
 
                 </div>
 
@@ -94,7 +93,7 @@ function Side() {
                             </span>
                         </main>
                     </div>
-                    <button className='text-green-500'>Check out</button>
+                    <button className='text-green-500 text-sm'>Check out</button>
                 </div>
 
                 <div className='flex p-2 gap-1 justify-between w-full'>
@@ -107,7 +106,7 @@ function Side() {
                             </span>
                         </main>
                     </div>
-                    <button className='text-green-500'>Check out</button>
+                    <button className='text-green-500 text-sm'>Check out</button>
                 </div>
             </div>
         </div>

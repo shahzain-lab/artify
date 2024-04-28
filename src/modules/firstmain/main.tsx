@@ -10,7 +10,7 @@ import bunch from "@/assets/images/bunch.jpeg"
 
 function Main() {
   return (
-    <div className="bg-white md:ml-5 dark:bg-noble-black-800 rounded-md">
+    <div className="bg-white md:ml-5 md:px-2 dark:bg-noble-black-800 rounded-md">
       <main className="px-2 pb-6">
         <div>
           <span className="text-gray-400 pt-2 flex">Hello Dave, Welcome back</span>
